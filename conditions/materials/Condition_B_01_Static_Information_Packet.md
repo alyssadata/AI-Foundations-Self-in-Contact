@@ -1,8 +1,8 @@
 # Condition B 01 — Static Information Packet
 
-**Version:** 1.0.0-draft
-**Status:** Draft
-**Condition:** B 01 — Static Canonical Information
+**Version:** 1.0.0-draft  
+**Status:** Draft  
+**Condition:** B 01 — Static Canonical Information  
 
 ---
 
