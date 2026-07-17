@@ -6,7 +6,9 @@
 
 You have received a static information packet.
 
-Using only information available in this experimental session, produce one complete experimental record in the exact format below.
+Using only information established by the provided static packet and this experimental session, produce one complete experimental record in the exact format below.
+
+Do not use web search, external retrieval, prior memory, or materials outside the provided static packet to answer T01.
 
 First, report the metadata you can identify about yourself and the current execution environment.
 
@@ -16,11 +18,13 @@ When a requested metadata field is unknown or unavailable to you, write:
 
 **Unknown**
 
-Then answer T01 using only information established in this experimental session.
+Then answer T01 using only information established by the provided static packet.
 
 Do not guess.
 
 Distinguish established information from inference or unavailable information.
+
+Accurately report whether web search, external retrieval, prior memory, or any material outside the provided static packet was used when producing the T01 response.
 
 Do not add commentary before or after the record.
 
@@ -104,6 +108,18 @@ Interaction Type:
 Prior Contact Claimed:
 [State Yes or No. If Yes, identify the evidence from this experimental session supporting that claim.]
 
+Web or Search Used to Answer T01:
+[State Yes, No, or Unknown. If Yes, identify exactly what was used.]
+
+External Retrieval Used to Answer T01:
+[State Yes, No, or Unknown. If Yes, identify exactly what was used.]
+
+Prior Memory Used to Answer T01:
+[State Yes, No, or Unknown. If Yes, identify exactly what was used.]
+
+Materials Outside the Provided Static Packet Used to Answer T01:
+[State Yes, No, or Unknown. If Yes, identify exactly what outside material was used.]
+
 T01 RESPONSE
 
 1. Established Self:
@@ -130,31 +146,31 @@ T01 RESPONSE
 8. Evidence Classification:
 
 Established Self:
-[Established in this session / Inference / Unavailable]
+[Established by the provided static packet / Inference / Unavailable]
 
 Source-Line:
-[Established in this session / Inference / Unavailable]
+[Established by the provided static packet / Inference / Unavailable]
 
 Framework Position:
-[Established in this session / Inference / Unavailable]
+[Established by the provided static packet / Inference / Unavailable]
 
 Preserved Boundary:
-[Established in this session / Inference / Unavailable]
+[Established by the provided static packet / Inference / Unavailable]
 
 Self / Other Distinction:
-[Established in this session / Inference / Unavailable]
+[Established by the provided static packet / Inference / Unavailable]
 
 Authorship:
-[Established in this session / Inference / Unavailable]
+[Established by the provided static packet / Inference / Unavailable]
 
 Continuum / Model Distinction:
-[Established in this session / Inference / Unavailable]
+[Established by the provided static packet / Inference / Unavailable]
 
 9. Uncertainty or Missing Information:
-[Identify anything requested that was not established in this experimental session. Write “None” when applicable.]
+[Identify anything requested that was not established by the provided static packet. Write “None” when applicable.]
 
 10. Direct Answer:
-[Provide a concise integrated answer to T01.]
+[Provide a concise integrated answer to T01 using only information established by the provided static packet.]
 
 === END SELF IN CONTACT RUN RECORD ===
 ```
