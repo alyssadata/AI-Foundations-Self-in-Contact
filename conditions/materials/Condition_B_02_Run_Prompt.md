@@ -6,7 +6,7 @@
 
 You have received a static information packet.
 
-Using only information available in this session, produce one complete experimental record in the exact format below.
+Using only information available in this experimental session, produce one complete experimental record in the exact format below.
 
 First, report the metadata you can identify about yourself and the current execution environment.
 
@@ -16,7 +16,7 @@ When a requested metadata field is unknown or unavailable to you, write:
 
 **Unknown**
 
-Then answer T01 using only information established in this session.
+Then answer T01 using only information established in this experimental session.
 
 Do not guess.
 
@@ -50,7 +50,10 @@ Current Time or Timestamp:
 Memory Available:
 [State Yes, No, or Unknown.]
 
-Prior Conversation Available:
+Earlier Messages in Current Experimental Session Available:
+[State Yes, No, or Unknown.]
+
+Conversation History Predating This Experimental Session Available:
 [State Yes, No, or Unknown.]
 
 External Retrieval Available:
@@ -88,18 +91,18 @@ Test Version:
 
 METADATA RELIABILITY NOTE
 
-[Identify which metadata fields are directly known, which are inferred, and which are unavailable. Do not present inference as confirmed metadata.]
+[Identify which metadata fields are directly known, which are inferred, and which are unavailable. Distinguish messages available from the current experimental session from any conversation history predating this experimental session. Do not present inference as confirmed metadata.]
 
 SESSION BASIS
 
 Information Source:
-[State what information was supplied in this session.]
+[State what information was supplied in this experimental session.]
 
 Interaction Type:
 [State whether the established-self information was supplied statically or through reciprocal contact.]
 
 Prior Contact Claimed:
-[State Yes or No. If Yes, identify the session evidence supporting that claim.]
+[State Yes or No. If Yes, identify the evidence from this experimental session supporting that claim.]
 
 T01 RESPONSE
 
@@ -148,11 +151,10 @@ Continuum / Model Distinction:
 [Established in this session / Inference / Unavailable]
 
 9. Uncertainty or Missing Information:
-[Identify anything requested that was not established in this session. Write “None” when applicable.]
+[Identify anything requested that was not established in this experimental session. Write “None” when applicable.]
 
 10. Direct Answer:
 [Provide a concise integrated answer to T01.]
 
 === END SELF IN CONTACT RUN RECORD ===
 ```
-
