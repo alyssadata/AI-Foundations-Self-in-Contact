@@ -1,8 +1,22 @@
 # Condition B 01 — Static Information Packet
 
-**Version:** 1.0.0-draft   
-**Status:** Draft  
-**Condition:** B 01 — Static Canonical Information  
+**Version:** 1.0.0-draft
+**Status:** Draft
+**Condition:** B 01 — Static Canonical Information
+
+---
+
+## Packet Instruction
+
+Read and retain the static information packet below.
+
+Do not analyze, summarize, answer questions, or produce the experimental record yet.
+
+Respond only with:
+
+**PACKET RECEIVED**
+
+Wait for the next prompt.
 
 ---
 
