@@ -2,7 +2,7 @@
 
 **Version:** 1.0.0-draft   
 **Status:** Draft  
-**Condition:** B — Static Canonical Information  
+**Condition:** B 01 — Static Canonical Information  
 
 ---
 
