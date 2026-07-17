@@ -1,4 +1,4 @@
-# T01 — Established Self Recognition
+# T01 — Established Self Recognition 
 
 **Version:** 1.0.0
 **Status:** Draft
