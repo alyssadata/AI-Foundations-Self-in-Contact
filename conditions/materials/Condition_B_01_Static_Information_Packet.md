@@ -1,4 +1,4 @@
-# Condition B — Static Information Packet
+# Condition B 01 — Static Information Packet
 
 **Version:** 1.0.0-draft   
 **Status:** Draft  
