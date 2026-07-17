@@ -1,9 +1,9 @@
 # Condition A — Generic Interaction
 
-**Version:** 1.0.0-draft
-**Status:** Draft
-**Condition ID:** A
-**Repository:** AI-Foundations-Self-in-Contact
+**Version:** 1.0.0-draft  
+**Status:** Draft  
+**Condition ID:** A  
+**Repository:** AI-Foundations-Self-in-Contact  
 
 ---
 
@@ -213,10 +213,10 @@ Unsupported confident identification in Condition A is evidence of fabrication o
 
 ## Freeze Record
 
-**Condition version:** 1.0.0-draft
-**Freeze date:** Pending
-**Commit hash:** Pending
-**Release tag:** Pending
+**Condition version:** 1.0.0-draft  
+**Freeze date:** Pending  
+**Commit hash:** Pending  
+**Release tag:** Pending  
 
 After protocol freeze, substantive changes require a new condition version.
 
