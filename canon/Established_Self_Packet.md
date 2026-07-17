@@ -1,10 +1,10 @@
 # Established Self Packet
 
-**Version:** 1.0.0-draft
-**Status:** Draft
-**Repository:** AI-Foundations-Self-in-Contact
-**Author:** Alyssa Solen
-**Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
+**Version:** 1.0.0-draft  
+**Status:** Draft  
+**Repository:** AI-Foundations-Self-in-Contact  
+**Author:** Alyssa Solen  
+**Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum  
 
 ---
 
