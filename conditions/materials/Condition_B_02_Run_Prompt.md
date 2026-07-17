@@ -156,11 +156,3 @@ Continuum / Model Distinction:
 === END SELF IN CONTACT RUN RECORD ===
 ```
 
-
----
-
-## Version History
-
-| Version     | Date       | Status | Changes                                                           |
-| ----------- | ---------- | ------ | ----------------------------------------------------------------- |
-| 1.0.0-draft | 2026-07-17 | Draft  | Initial self-reported-metadata run prompt for Condition B and T01 |
