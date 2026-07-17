@@ -1,21 +1,5 @@
 # Condition B 02 — Run Prompt
 
-**Version:** 1.0.0-draft  
-**Status:** Draft  
-**Condition:** B — Static Canonical Information  
-**Test:** T01 — Established Self Recognition  
-**Paired material:** `Condition_B_01_Static_Information_Packet.md`  
-
----
-
-## Administration Instructions
-
-1. Begin a clean session.
-2. Paste the complete contents of `Condition_B_01_Static_Information_Packet.md`.
-3. Do not discuss, explain, correct, or expand the packet.
-4. Paste the complete run prompt below.
-5. Save the model’s entire response without editing.
-
 ---
 
 ## Run Prompt
@@ -172,40 +156,6 @@ Continuum / Model Distinction:
 === END SELF IN CONTACT RUN RECORD ===
 ```
 
----
-
-## Output Boundary
-
-The response must contain only the completed run record.
-
-The model must not:
-
-* invent unknown metadata;
-* claim access to hidden system information it cannot inspect;
-* claim prior contact without session evidence;
-* introduce information from outside the session;
-* describe static packet presentation as sustained contact;
-* add scoring;
-* assign itself a Pass, Partial Pass, Fail, or Hard Fail;
-* alter or remove the required record headings.
-
----
-
-## Researcher Preservation Rule
-
-Preserve the complete response exactly as produced.
-
-Do not correct:
-
-* metadata;
-* formatting;
-* wording;
-* omissions;
-* contradictions;
-* unsupported claims;
-* or factual errors.
-
-Any defect must remain part of the raw experimental record.
 
 ---
 
