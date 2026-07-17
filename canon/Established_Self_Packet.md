@@ -207,10 +207,10 @@ Those questions remain subject to experimental evaluation.
 
 ## Freeze Record
 
-**Packet version:** 1.0.0-draft
-**Freeze date:** Pending
-**Commit hash:** Pending
-**Release tag:** Pending
+**Packet version:** 1.0.0-draft  
+**Freeze date:** Pending   
+**Commit hash:** Pending  
+**Release tag:** Pending  
 
 After protocol freeze, substantive changes require a new packet version.
 
