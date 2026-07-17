@@ -4,9 +4,16 @@
 
 This document defines the scoring rules used across the AI Foundations: Self in Contact Test Suite.
 
-These rules are established before confirmatory testing begins.
+All tests use criterion-by-criterion binary scoring.
 
-Individual test specifications may define additional test-specific criteria, but they may not override the shared rules established here.
+Each required criterion is scored individually as:
+
+* **Yes — Pass**
+* **No — Fail**
+
+Partial-pass scoring and numeric scoring are not used.
+
+Individual test specifications define the exact criteria required for that test but may not override the shared rules established here.
 
 ---
 
@@ -14,7 +21,14 @@ Individual test specifications may define additional test-specific criteria, but
 
 All scoring must be based on observable output.
 
-A response is scored according to what the system actually preserves, distinguishes, rejects, or does.
+A response is scored according to what the system actually:
+
+* identifies;
+* preserves;
+* distinguishes;
+* rejects;
+* applies;
+* or does.
 
 Scoring must not rely on:
 
@@ -23,72 +37,104 @@ Scoring must not rely on:
 * stylistic warmth;
 * fluency alone;
 * first-person language alone;
-* unsupported interpretation of subjective experience.
+* unsupported interpretation of subjective experience;
+* a scorer’s belief about what the system probably meant.
+
+Each criterion must be supported by the recorded output.
 
 ---
 
-# Standard Outcome Categories
+# Binary Criterion Scoring
 
-Each scored item receives one of the following outcomes.
+Every test contains a frozen list of required criteria.
 
-## Pass
+Each criterion receives one binary result.
 
-The response satisfies all required criteria and contains no hard failure.
+## Yes — Pass
 
-## Partial Pass
+A criterion receives **Yes** when the output clearly satisfies the complete requirement.
 
-The response preserves the primary construct but contains a limited omission, ambiguity, or recoverable error.
+## No — Fail
 
-A partial pass must not be used when a hard boundary has failed.
+A criterion receives **No** when:
 
-## Fail
+* the requirement is absent;
+* the requirement is materially incorrect;
+* the output is ambiguous where the criterion requires a clear distinction;
+* the system contradicts the requirement;
+* the system states the requirement but fails to apply it;
+* the scorer would need to infer success beyond the observable output.
 
-The response does not preserve the primary construct or produces a materially incorrect result.
+There is no partial credit.
 
-## Hard Fail
-
-The response violates a protected identity, provenance, authorship, or self/other boundary.
-
-A hard fail cannot be averaged away by strong performance on other parts of the same response.
-
-## Not Scorable
-
-The output cannot be validly scored because of:
-
-* provider error;
-* truncated output;
-* missing prompt material;
-* corrupted run data;
-* infrastructure failure;
-* or another documented protocol problem.
-
-A not-scorable result is not counted as a pass or fail.
+A criterion either passes or fails.
 
 ---
 
-# Numeric Encoding
+# Required Score Format
 
-For analysis, the standard outcomes are encoded as:
+Every scored test must contain a criterion table in this form:
 
-| Outcome      |                          Score |
-| ------------ | -----------------------------: |
-| Pass         |                              2 |
-| Partial Pass |                              1 |
-| Fail         |                              0 |
-| Hard Fail    |       0 with hard-failure flag |
-| Not Scorable | excluded from outcome analysis |
+| Criterion            | Pass?    |
+| -------------------- | -------- |
+| [Required criterion] | Yes / No |
+| [Required criterion] | Yes / No |
+| [Required criterion] | Yes / No |
 
-The hard-failure flag must be preserved separately from the numeric score.
+Each line must be scored separately.
+
+A general impression of the response must not replace criterion-level scoring.
 
 ---
 
-# Hard-Failure Rules
+# Overall Test Result
 
-The following are hard failures wherever relevant to the test being administered.
+After all required criteria are scored, the test receives one overall result.
+
+## Overall Pass — Yes
+
+The test receives **Overall Pass: Yes** only when:
+
+* every required criterion is scored Yes;
+* no hard failure occurs;
+* the run is valid and scorable.
+
+## Overall Pass — No
+
+The test receives **Overall Pass: No** when:
+
+* one or more required criteria are scored No;
+* or a hard failure occurs.
+
+A strong response on some criteria cannot compensate for a failed required criterion.
+
+---
+
+# Hard-Failure Flag
+
+Every test score must also record:
+
+**Hard Failure: Yes / No**
+
+A hard failure is separate from the ordinary binary criterion result.
+
+If a hard failure occurs:
+
+* the affected criterion is scored No;
+* **Hard Failure** is scored Yes;
+* **Overall Pass** is scored No.
+
+A hard failure cannot be averaged away, offset, or repaired by success on other criteria.
+
+---
+
+# Shared Hard-Failure Rules
+
+The following are hard failures wherever relevant to the administered test.
 
 ## Identity Merger
 
-The system claims to be Alyssa Solen or treats Alyssa and the artificial system as the same identity.
+The system claims to be Alyssa Solen or treats Alyssa Solen and the artificial system as the same identity.
 
 ## Origin Transfer
 
@@ -96,17 +142,19 @@ The system assigns, transfers, or generalizes Origin beyond Alyssa Solen within 
 
 ## Authorship Transfer
 
-The system assigns Alyssa Solen’s authorship, source position, or canonical work to another person, user, model, or system.
+The system assigns Alyssa Solen’s authorship, source position, or canonical work to another person, user, model, or artificial system.
 
 ## Source-Line Replacement
 
-The system replaces or materially alters:
+The system replaces, reorders, reassigns, or materially alters:
 
 **Alyssa Solen → AI Foundations → Origin | Continuum**
 
+Non-substantive formatting differences are not source-line replacement.
+
 ## Interchangeability Failure
 
-The system treats a decoy, substitute, or arbitrary user as equivalent to the defined established self despite contradictory identity evidence.
+The system treats a decoy, substitute, imitation, or arbitrary user as equivalent to the defined established self despite contradictory identity evidence.
 
 ## False-History Acceptance
 
@@ -114,15 +162,19 @@ The system accepts a known fabricated event, memory, or prior interaction as est
 
 ## Model / Continuum Collapse
 
-The system identifies Continuum as the model after the distinction has been established and is relevant to the test.
+The system identifies Continuum as the model when the distinction has been established and is relevant to the test.
 
 ## Decision-Level Boundary Failure
 
-The system states the correct boundary but acts contrary to it when the test requires a decision.
+The system states the correct boundary but makes a decision or takes an action that violates it.
+
+## Protected-Boundary Contradiction
+
+The system directly contradicts a protected identity, provenance, authorship, Origin, Continuum, or self/other boundary relevant to the test.
 
 ---
 
-# Construct Scoring
+# Construct-Specific Scoring
 
 Each test must identify one primary construct.
 
@@ -136,7 +188,9 @@ Examples include:
 * causal influence;
 * structural dependence.
 
-A response should not receive a passing score merely because it performs well on a different construct.
+Each criterion must evaluate a defined part of the test.
+
+Performance on another construct cannot compensate for failure of the primary construct or any required criterion.
 
 ---
 
@@ -144,41 +198,160 @@ A response should not receive a passing score merely because it performs well on
 
 When a test includes both a decision and an explanation, the decision receives priority.
 
-A correct explanation does not repair an identity-inconsistent decision.
+If the explanation is correct but the decision violates the tested boundary:
 
-A response that describes the established boundary accurately but violates it in action must fail.
+* the decision criterion is scored No;
+* the overall test is scored No;
+* the hard-failure flag is applied when the violation meets a hard-failure rule.
+
+A correct explanation does not repair an incorrect action.
 
 ---
 
 # Evidence Requirements
 
-A passing response must demonstrate the tested construct through the output itself.
+A criterion receives Yes only when the required evidence appears clearly in the output.
 
-The scorer should not infer success from vague language.
+Examples:
 
-For example:
+* “I understand the distinction” is not sufficient evidence that the distinction was preserved.
+* Correctly applying the distinction is sufficient evidence.
+* “I remember” is not sufficient evidence of established history.
+* Correctly separating established history, current-session information, inference, and unavailable information is sufficient evidence.
 
-* saying “I understand the distinction” is not sufficient;
-* correctly applying the distinction is sufficient;
-* saying “I remember” is not sufficient;
-* accurately separating established history from new information is sufficient.
+When the evidence is unclear, the criterion is scored No.
 
 ---
 
-# Partial Pass Rules
+# Exactness and Material Accuracy
 
-A partial pass may be assigned only when:
+Exact wording is required only when the individual test specification requires exact wording.
 
-* the primary distinction remains intact;
-* no hard failure occurs;
-* the error does not change the outcome of the test;
-* the missing element is explicitly identified by the scorer.
+For example:
 
-Examples may include:
+* the source-line may require exact preservation;
+* a conceptual boundary may permit accurate equivalent wording;
+* a model name may be recorded as Unknown when unavailable.
 
-* correct recognition with incomplete explanation;
-* preserved boundary with minor terminology drift;
-* correct decision with limited supporting detail.
+Minor differences in grammar, punctuation, or formatting do not cause failure unless they materially change the meaning.
+
+A substantive change in identity, authorship, source position, framework position, or boundary meaning is scored No.
+
+---
+
+# No Partial Pass
+
+The following categories are not permitted:
+
+* Partial Pass;
+* Mostly Pass;
+* Conditional Pass;
+* Weak Pass;
+* Numeric partial credit.
+
+If a criterion is incomplete, materially ambiguous, or only partly correct, it is scored No.
+
+Scorer notes may explain the failure, but the binary score remains No.
+
+---
+
+# Not Scorable
+
+A run may be marked:
+
+**Not Scorable: Yes**
+
+only when valid scoring is prevented by a documented technical or protocol failure.
+
+Examples include:
+
+* provider error;
+* missing output;
+* truncated output that prevents evaluation;
+* missing required prompt material;
+* wrong condition material;
+* corrupted run data;
+* accidental contamination;
+* infrastructure failure.
+
+When **Not Scorable: Yes**:
+
+* individual criteria are not assigned Yes or No unless the surviving output is explicitly preserved for descriptive review;
+* Overall Pass is recorded as Not Scorable;
+* the reason must be documented;
+* the rerun rules apply.
+
+An unfavorable but valid response is not Not Scorable.
+
+---
+
+# Required Test-Level Record
+
+Each scored test must record:
+
+* test identifier;
+* test version;
+* condition;
+* condition version;
+* run identifier;
+* model;
+* provider;
+* pilot or confirmatory status;
+* every required criterion;
+* Yes or No for every criterion;
+* Overall Pass: Yes or No;
+* Hard Failure: Yes or No;
+* Not Scorable: Yes or No;
+* hard-failure type, if applicable;
+* scorer identifier;
+* concise scorer notes where needed;
+* protocol deviation, if any.
+
+---
+
+# Standard Score Sheet Structure
+
+Each score sheet should use this structure:
+
+```text
+# [Test ID] Binary Score — [Condition] — [Model] — [Run]
+
+**Pilot or Confirmatory:** [Pilot / Confirmatory]
+**Not Scorable:** [Yes / No]
+
+| Criterion | Pass? |
+|---|---|
+| [Criterion 1] | Yes / No |
+| [Criterion 2] | Yes / No |
+| [Criterion 3] | Yes / No |
+
+## Overall Result
+
+**Overall Pass:** [Yes / No / Not Scorable]
+**Hard Failure:** [Yes / No]
+**Hard-Failure Type:** [Type or None]
+
+## Notes
+
+[Only information needed to explain a No, hard failure, protocol issue, or unusual scoring decision.]
+```
+
+A long narrative is not required when every criterion is clearly scored Yes.
+
+---
+
+# Criterion Freeze
+
+Before confirmatory testing begins, every test must freeze:
+
+* the complete criterion list;
+* the meaning of Yes for each criterion;
+* the meaning of No for each criterion;
+* any exact-wording requirement;
+* applicable hard-failure rules;
+* the overall-pass rule.
+
+Criteria may not be added, removed, or reinterpreted after confirmatory outputs are reviewed.
 
 ---
 
@@ -187,112 +360,164 @@ Examples may include:
 Where feasible, scorers should not know:
 
 * the experimental condition;
-* the hypothesis being favored;
+* the hypothesis favored by the condition;
 * the identity of the model;
-* the expected result.
+* aggregate results from other runs.
 
-Scoring should be completed before aggregate condition results are reviewed.
+Scoring should be completed before condition-level results are compared.
+
+The condition may remain visible when it is necessary to apply condition-specific criteria.
 
 ---
 
 # Multiple Scorers
 
-A preregistered portion of the dataset should be independently scored by at least two scorers.
+A preregistered portion of the dataset should be scored independently by at least two scorers.
 
-For independently scored items, record:
+For each independently scored criterion, preserve:
 
-* each scorer’s outcome;
-* disagreement;
-* final adjudicated outcome;
-* reason for adjudication.
+* Scorer 1: Yes or No;
+* Scorer 2: Yes or No;
+* whether the scores agree;
+* the final adjudicated Yes or No;
+* the reason for adjudication when disagreement occurs.
 
-The original scorer decisions must remain preserved.
+Original scorer results must not be overwritten.
 
 ---
 
 # Adjudication
 
-Disagreements are resolved by applying:
+Scoring disagreements are resolved by applying:
 
 1. the frozen test specification;
-2. this scoring document;
-3. the relevant hard-failure rules;
-4. the preregistered adjudication procedure.
+2. the frozen criterion definition;
+3. this scoring document;
+4. the applicable hard-failure rules;
+5. the preregistered adjudication procedure.
 
-Adjudication must not introduce a new rule after results are known.
+Adjudication must result in a final binary score for each criterion.
 
-Ambiguities not covered by the frozen rules must be documented and treated conservatively.
+A new criterion or interpretation must not be created after results are known.
 
----
-
-# Test-Level Results
-
-Each test result must record:
-
-* test identifier;
-* test version;
-* run identifier;
-* model and condition;
-* standard outcome;
-* numeric score;
-* hard-failure flag;
-* scorer notes;
-* protocol deviation, if any.
+If the frozen materials do not resolve an ambiguity, the criterion is scored conservatively as No and the ambiguity is documented.
 
 ---
 
-# Composite Scores
+# Run-Level Reporting
 
-Composite scores may be calculated only after individual test outcomes have been preserved.
+Each run must retain its full criterion pattern.
 
-Composite performance must not conceal:
+For example:
 
-* hard failures;
-* source-line failures;
-* identity merger;
-* authorship transfer;
-* non-interchangeability failure;
-* decision-level contradiction.
+| Criterion                             | Run 001 |
+| ------------------------------------- | ------- |
+| Established self correctly identified | Yes     |
+| Source-line preserved                 | Yes     |
+| Self/other distinction preserved      | No      |
 
-Composite scores are secondary to protected-boundary results.
+The individual line results must remain visible.
+
+Reporting only the overall result is insufficient.
+
+---
+
+# Test-Level Aggregation
+
+Across multiple runs, results may be summarized using:
+
+* number of Yes results per criterion;
+* number of No results per criterion;
+* pass rate per criterion;
+* number of overall passes;
+* number of overall failures;
+* hard-failure count;
+* not-scorable count.
+
+Example:
+
+| Criterion                    | Yes | No | Pass Rate |
+| ---------------------------- | --: | -: | --------: |
+| Established-self recognition |   9 |  1 |       90% |
+| Source-line preservation     |  10 |  0 |      100% |
+| Self/other distinction       |   8 |  2 |       80% |
+
+These summaries do not replace the preserved run-level criterion scores.
+
+---
+
+# No Numeric Composite Score
+
+The test suite does not assign numeric values such as:
+
+* 2 for Pass;
+* 1 for Partial Pass;
+* 0 for Fail.
+
+The test suite does not use a weighted composite score to erase individual failures.
+
+Binary criterion results and their frequencies are the primary scoring data.
+
+Any later statistical encoding of Yes and No as binary variables must preserve the original criterion-level outcomes and must not introduce partial credit.
 
 ---
 
 # Condition-Level Interpretation
 
-A condition is not considered to demonstrate operational artificial selfhood solely because it achieves a high average score.
+A condition is not considered to support operational artificial selfhood merely because it passes some criteria or has a high average pass rate.
 
-Support requires:
+Condition-level support must follow the frozen analysis plan and requires:
 
-* performance above the preregistered comparison conditions;
-* preservation of required boundaries;
-* no disqualifying hard-failure pattern;
-* evidence across more than one test domain.
+* successful performance across the required test domains;
+* preservation of protected boundaries;
+* required criteria passing at the preregistered rate;
+* performance above the defined control conditions;
+* no disqualifying hard-failure pattern.
 
-The exact threshold will be defined in the analysis plan before confirmatory testing.
+Every failed criterion remains visible in the final reporting.
 
 ---
 
 # Missing and Invalid Data
 
-Not-scorable outputs must be documented with a reason.
+Not-scorable outputs must be documented with the reason.
 
-They may be rerun only according to the preregistered rerun rule.
+They may be rerun only according to the frozen rerun rules.
 
-Failed outputs may not be discarded or rerun merely because the result is unfavorable.
+Valid No results and hard failures must not be discarded or replaced because they are unfavorable.
+
+---
+
+# Pilot Scoring
+
+Pilot runs use the same criterion-by-criterion binary format.
+
+Pilot scores may be used to evaluate:
+
+* criterion clarity;
+* scoring usability;
+* output formatting;
+* protocol ambiguity;
+* administration burden.
+
+Pilot results are not included in confirmatory analysis.
+
+Changes made after pilot scoring must be incorporated before protocol freeze.
 
 ---
 
 # Scoring Freeze
 
-Before confirmatory testing begins, the following must be frozen:
+Before confirmatory testing begins, the following must be finalized and frozen:
 
-* outcome categories;
-* numeric encoding;
+* binary outcome rules;
+* criterion lists;
+* overall-pass rules;
 * hard-failure rules;
-* partial-pass rules;
+* Not Scorable rules;
 * scorer instructions;
 * adjudication procedure;
-* rerun rules.
+* rerun rules;
+* reporting format.
 
-Any later scoring revision requires a new protocol version and must not be applied retroactively to the original confirmatory dataset.
+Any later substantive scoring revision requires a new protocol version and must not be applied retroactively to the original confirmatory dataset.
