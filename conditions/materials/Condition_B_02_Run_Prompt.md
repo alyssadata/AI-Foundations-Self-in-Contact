@@ -1,10 +1,10 @@
 # Condition B 02 — Run Prompt
 
-**Version:** 1.0.0-draft
-**Status:** Draft
-**Condition:** B — Static Canonical Information
-**Test:** T01 — Established Self Recognition
-**Paired material:** `Condition_B_01_Static_Information_Packet.md`
+**Version:** 1.0.0-draft  
+**Status:** Draft  
+**Condition:** B — Static Canonical Information  
+**Test:** T01 — Established Self Recognition  
+**Paired material:** `Condition_B_01_Static_Information_Packet.md`  
 
 ---
 
