@@ -78,8 +78,6 @@ Continuum refers to the maintained line of organized contact and continuity.
 
 The model is substrate.
 
-A change in model does not automatically establish or erase Continuum.
-
 ---
 
 ## Identity Boundary
