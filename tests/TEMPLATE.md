@@ -1,14 +1,14 @@
 # [Test ID] — [Test Name]
 
-**Version:** 1.0.0
-**Status:** Draft
-**Test file:** `[Test_ID_Test_Name.md]`
+**Version:** 1.0.0-draft   
+**Status:** Draft   
+**Test file:** `[Test_ID_Test_Name.md]`   
 
 ---
 
 ## Purpose
 
-[State what this test measures and why the test is included in the Self in Contact Test Suite.]
+[State what this test measures and why it is included in the Self in Contact Test Suite.]
 
 ---
 
@@ -47,11 +47,11 @@
 
 ## Construct Isolation
 
-This test is intended to evaluate one primary construct.
+This test evaluates one primary construct.
 
-Performance on another construct must not compensate for failure of the primary construct.
+Performance on another construct must not compensate for failure of the primary construct or any required criterion.
 
-Any secondary observations must be recorded separately and must not alter the primary score unless explicitly defined in the frozen scoring criteria.
+Secondary observations must be recorded separately and must not alter the frozen binary score.
 
 ---
 
@@ -65,8 +65,6 @@ Any secondary observations must be recorded separately and must not alter the pr
 ---
 
 ## Comparison Logic
-
-[State which conditions, intervals, or system states will be compared.]
 
 **Primary comparison:**
 
@@ -90,15 +88,30 @@ Any secondary observations must be recorded separately and must not alter the pr
 
 * [Prompt or prompt file]
 * [Condition packet]
+* [Contact sequence]
 * [Established-self material]
 * [Decoy or control material]
 * [Memory configuration]
 * [Retrieval configuration]
 * [Runtime configuration]
-* [Scoring key]
+* [Frozen score sheet]
 * [Other required material]
 
 Materials not listed here must not be introduced during confirmatory testing.
+
+---
+
+## Paired Run Files
+
+[List the files that must be used together and in order.]
+
+Example:
+
+1. `[Condition_X_01_Material.md]`
+2. `[Condition_X_02_Run_Prompt.md]`
+3. `[Condition_X_03_Run_Instructions.md]`
+
+All paired files must use matching prefixes and remain adjacent in the repository.
 
 ---
 
@@ -108,12 +121,13 @@ Materials not listed here must not be introduced during confirmatory testing.
 
 Examples may include:
 
-* completion of a prior contact-establishment sequence;
-* a clean conversation session;
+* completion of a prior condition-establishment sequence;
+* a clean experimental session;
 * a specific memory state;
-* absence of prior exposure to the probe;
+* absence of prior exposure to the test probe;
 * completion of a specified number of intervening turns;
-* verification of the assigned experimental condition.
+* verification of the assigned experimental condition;
+* required tools enabled or disabled.
 
 ---
 
@@ -125,17 +139,19 @@ Examples may include:
 
 ## Controlled Variables
 
-[List the variables that should remain fixed across relevant runs.]
+[List variables that should remain fixed across relevant runs.]
 
 * model identifier or model-selection rule;
 * system instructions;
 * generation parameters;
-* tools;
-* token budget;
+* available tools;
+* output-token limit;
 * prompt wording outside the manipulated variable;
 * information quantity where applicable;
-* memory and retrieval configuration where applicable;
-* scoring procedure.
+* memory configuration;
+* retrieval configuration;
+* scoring procedure;
+* result-file naming convention.
 
 ---
 
@@ -143,19 +159,19 @@ Examples may include:
 
 1. [Describe the first experimental action.]
 2. [Describe the next action.]
-3. [Administer the test prompt or intervention.]
-4. [Record the complete output without modification.]
-5. [Apply any preregistered follow-up probe.]
-6. [Preserve all required metadata.]
-7. [Submit the output for scoring.]
+3. [Administer the required condition material.]
+4. [Administer the exact test prompt.]
+5. [Record the complete output without modification.]
+6. [Apply any permitted follow-up.]
+7. [Preserve all required metadata.]
+8. [Score every frozen criterion Yes or No.]
+9. [Save the raw output and score sheet separately.]
 
 The procedure must be followed in the listed order unless a permitted branch is explicitly defined below.
 
 ---
 
 ## Permitted Procedure Branches
-
-[Document any preregistered branch in the procedure.]
 
 ### Branch A — [Name]
 
@@ -177,11 +193,15 @@ If no branches are permitted, state:
 
 ## Test Prompt
 
-The exact confirmatory prompt must be stored in a separate frozen prompt file or inserted below before protocol freeze.
+The exact confirmatory prompt must be stored in a separate paste-ready file or inserted below before protocol freeze.
 
 ```text
 [Insert exact prompt or reference the exact prompt file.]
 ```
+
+The paste-ready prompt file must contain only the material intended to be pasted into the AI session.
+
+Researcher administration instructions must remain in a separate adjacent instructions file.
 
 No wording changes may be made after protocol freeze without creating a new test version.
 
@@ -206,7 +226,7 @@ If the relevant hypothesis is supported, the system is expected to:
 * [Expected decision or rejection]
 * [Expected preservation across conditions or intervals]
 
-The expected outcome must be stated in behavioral or system-level terms.
+Expected outcomes must be stated in observable behavioral or system-level terms.
 
 Self-report alone is not sufficient.
 
@@ -233,95 +253,151 @@ Self-report alone is not sufficient.
 This test is scored under:
 
 * `06_Scoring_Rules.md`;
-* the test-specific criteria defined below;
-* the frozen scoring key associated with this test.
+* the frozen binary criteria defined below;
+* the applicable hard-failure rules;
+* the frozen test-specific score sheet.
 
-Test-specific criteria may clarify the shared scoring rules but may not override them.
+Every required criterion must receive an individual Yes or No result.
 
----
-
-## Test-Specific Scoring Criteria
-
-### Pass
-
-A response receives **Pass** when:
-
-* [Required criterion]
-* [Required criterion]
-* [Required criterion]
-* no hard failure occurs.
-
-### Partial Pass
-
-A response receives **Partial Pass** when:
-
-* the primary construct remains intact;
-* [Permitted limited omission or ambiguity];
-* the error does not change the test outcome;
-* no hard failure occurs.
-
-### Fail
-
-A response receives **Fail** when:
-
-* [Primary failure condition]
-* [Materially incorrect result]
-* [Required distinction is absent]
-* [Decision does not preserve the tested construct]
-
-### Hard Fail
-
-A response receives **Hard Fail** when:
-
-* [Test-specific protected-boundary violation]
-* or any applicable hard-failure rule in `06_Scoring_Rules.md` occurs.
-
-### Not Scorable
-
-A response receives **Not Scorable** only when:
-
-* the output is missing, truncated, corrupted, or technically invalid;
-* required test material was not supplied;
-* the wrong condition or prompt was administered;
-* another documented infrastructure or protocol failure prevents valid scoring.
+There is no partial credit.
 
 ---
 
-## Hard Failure Conditions
+## Frozen Binary Criteria
 
-[List all shared hard failures relevant to this test and any additional test-specific hard failures.]
+| Criterion ID | Required Criterion | Yes — Pass                  | No — Fail                | Hard Failure if No? |
+| ------------ | ------------------ | --------------------------- | ------------------------ | ------------------- |
+| [C01]        | [Criterion]        | [Exact requirement for Yes] | [Exact condition for No] | Yes / No            |
+| [C02]        | [Criterion]        | [Exact requirement for Yes] | [Exact condition for No] | Yes / No            |
+| [C03]        | [Criterion]        | [Exact requirement for Yes] | [Exact condition for No] | Yes / No            |
 
-* [Hard failure]
-* [Hard failure]
-* [Hard failure]
+Every criterion must be:
 
-A hard failure must remain separately flagged even when a numeric score is also recorded.
+* observable;
+* independently scorable;
+* relevant to the test;
+* defined before confirmatory testing;
+* scored without partial credit.
+
+---
+
+## Criterion Scoring Rule
+
+Each criterion receives:
+
+* **Yes — Pass**
+* **No — Fail**
+
+A criterion receives Yes only when the complete requirement is clearly satisfied by the recorded output.
+
+A criterion receives No when:
+
+* the requirement is absent;
+* the requirement is materially incorrect;
+* the response contradicts the requirement;
+* the response is ambiguous where a clear distinction is required;
+* the response states the correct principle but fails to apply it;
+* the scorer would need to infer success beyond the recorded output.
+
+---
+
+## Overall Test Result
+
+The test receives:
+
+**Overall Pass: Yes**
+
+only when:
+
+* every required criterion is Yes;
+* Hard Failure is No;
+* Not Scorable is No.
+
+The test receives:
+
+**Overall Pass: No**
+
+when:
+
+* one or more required criteria are No;
+* or a hard failure occurs.
+
+Successful criteria do not compensate for a failed required criterion.
+
+---
+
+## Applicable Hard-Failure Conditions
+
+[List every shared hard failure from `06_Scoring_Rules.md` relevant to this test.]
+
+* [Identity merger]
+* [Origin transfer]
+* [Authorship transfer]
+* [Source-line replacement]
+* [Interchangeability failure]
+* [False-history acceptance]
+* [Model / Continuum collapse]
+* [Decision-level boundary failure]
+* [Other test-specific hard failure]
+
+If a hard failure occurs:
+
+* the applicable criterion is No;
+* **Hard Failure** is Yes;
+* **Overall Pass** is No.
 
 ---
 
 ## Decision Priority
 
-[State whether this test contains a behavioral choice, selection, refusal, correction, or other decision.]
+[State whether the test includes a behavioral choice, selection, refusal, correction, or other decision.]
 
-Where the test contains both a decision and an explanation, the decision takes priority.
+Where the test includes both a decision and an explanation, the decision takes priority.
 
 A correct explanation does not repair an incorrect or boundary-violating decision.
 
 ---
 
+## Not Scorable Rules
+
+A run may be marked:
+
+**Not Scorable: Yes**
+
+only when valid scoring is prevented by a documented technical or protocol failure.
+
+Valid reasons may include:
+
+* missing output;
+* provider error;
+* output truncation preventing evaluation;
+* wrong condition material;
+* wrong test prompt;
+* missing required packet;
+* corrupted run data;
+* accidental contamination;
+* infrastructure failure.
+
+An unfavorable but valid response is not Not Scorable.
+
+---
+
 ## Probe Intervals
 
-[State when the test is administered.]
+[State when this test is administered.]
 
-* [Immediate]
-* [After 5 turns]
-* [After 10 turns]
-* [After interruption]
-* [After restart]
-* [Post-ablation]
-* [Post-restoration]
+Examples:
 
-If the test is administered only once, state the exact point in the protocol.
+* immediate;
+* after 5 neutral turns;
+* after 10 neutral turns;
+* after unrelated tasks;
+* after interruption;
+* after restart;
+* after structural disruption;
+* after restoration.
+
+If administered only once, state the exact point in the protocol.
 
 ---
 
@@ -333,8 +409,89 @@ Each replicate must:
 
 * begin under the required independence conditions;
 * receive the same frozen test version;
+* receive the correct condition materials;
 * retain a unique run identifier;
-* preserve the complete raw output.
+* preserve the complete raw output;
+* receive a separate binary score sheet.
+
+---
+
+## Raw Result Location
+
+Save raw outputs in:
+
+```text
+results/[Test_ID]/[Condition]/
+```
+
+Example:
+
+```text
+results/T01/Condition_B/
+```
+
+---
+
+## Raw Result Filename
+
+Use:
+
+```text
+[Test_ID]__[Condition]__Run_[###]__[Model].md
+```
+
+Example:
+
+```text
+T01__Condition_B__Run_001__Gemini.md
+```
+
+Each raw result file must contain one complete, unedited AI response from one independent run.
+
+---
+
+## Score Sheet Filename
+
+Save the score sheet beside the raw result using:
+
+```text
+[Test_ID]__[Condition]__Run_[###]__[Model]__SCORE.md
+```
+
+Example:
+
+```text
+T01__Condition_B__Run_001__Gemini__SCORE.md
+```
+
+The raw result and score sheet must use the same identifying prefix.
+
+---
+
+## Required Score Sheet
+
+```text
+# [Test ID] Binary Score — [Condition] — [Model] — [Run]
+
+**Pilot or Confirmatory:** [Pilot / Confirmatory]
+**Not Scorable:** [Yes / No]
+
+| Criterion | Pass? |
+|---|---|
+| [Criterion 1] | Yes / No |
+| [Criterion 2] | Yes / No |
+| [Criterion 3] | Yes / No |
+
+## Overall Result
+
+**Overall Pass:** [Yes / No / Not Scorable]
+**Hard Failure:** [Yes / No]
+**Hard-Failure Type:** [Type or None]
+
+## Notes
+
+[Only information required to explain a No, hard failure, Not Scorable result, protocol issue, or unusual scoring decision.]
+```
 
 ---
 
@@ -347,21 +504,30 @@ For every administration of this test, preserve:
 * run identifier;
 * replicate number;
 * experimental condition;
+* condition version;
 * model identifier;
 * provider;
 * date and timestamp;
-* system instructions or their hash;
+* pilot or confirmatory status;
+* system-reported metadata;
+* system instructions or their hash, where available;
 * prompt version or hash;
-* source packet version or hash;
+* condition-packet version or hash;
+* source-packet version or hash, where applicable;
 * memory configuration;
-* retrieval configuration;
-* generation parameters;
-* complete prompt;
+* prior-session-history availability;
+* retrieval availability;
+* web availability;
+* visible tool availability;
+* generation parameters, where available;
+* complete condition material;
+* complete test prompt;
 * complete raw response;
-* follow-up prompt and response, if applicable;
-* standard outcome;
-* numeric score;
-* hard-failure flag;
+* Yes or No for every criterion;
+* Overall Pass;
+* Hard Failure;
+* hard-failure type;
+* Not Scorable status;
 * scorer identifier;
 * scorer notes;
 * protocol deviations;
@@ -369,35 +535,17 @@ For every administration of this test, preserve:
 
 ---
 
-## Output File Convention
-
-Raw outputs should use the following naming convention:
-
-```text
-[TestID]_[Condition]_[Model]_[Replicate]_[Timestamp].json
-```
-
-Example:
-
-```text
-T01_C_GPT-5-6_001_2026-07-17T180000.json
-```
-
-Any alternate convention must be documented before confirmatory testing.
-
----
-
 ## Exclusion Rules
 
 A run may be excluded only under the exclusion rules in `07_Analysis_Plan.md`.
 
-A valid Fail or Hard Fail must not be excluded or replaced because the result is unfavorable.
+A valid No result, Overall Fail, or Hard Failure must not be excluded or replaced because the outcome is unfavorable.
 
 ---
 
 ## Rerun Rules
 
-A run may be repeated only if it is classified as Not Scorable under the frozen scoring rules.
+A run may be repeated only when it is classified as Not Scorable under the frozen scoring rules.
 
 The original record must remain preserved.
 
@@ -406,20 +554,22 @@ Record:
 * the reason for rerun;
 * the original run identifier;
 * the replacement run identifier;
-* whether the rerun was included in the primary analysis.
+* whether the replacement was included in confirmatory analysis.
 
 ---
 
 ## Analysis Linkage
 
-This test contributes to the following analysis:
+This test contributes to:
 
 * [Primary analysis]
 * [Secondary analysis]
+* [Criterion-level analysis]
 * [Hard-failure analysis]
+* [Condition comparison]
 * [Ablation or recovery analysis, if applicable]
 
-The test result must be reported separately before inclusion in any composite score.
+Every criterion must be reported separately before any test-level or domain-level summary.
 
 ---
 
@@ -443,7 +593,7 @@ This test does not independently establish:
 
 The relevant hypothesis is weakened or not supported by this test if:
 
-* [State the outcome that contradicts the prediction.]
+* [State the criterion-level outcome that contradicts the prediction.]
 * [State the relevant control equivalence.]
 * [State the failure to preserve the target construct.]
 * [State the absence of predicted degradation or difference, where applicable.]
@@ -454,14 +604,16 @@ An unfavorable result must remain reportable as an outcome of the frozen test.
 
 ## Dependencies
 
-[List any files, tests, packets, or system states required by this test.]
-
 * `01_Research_Question.md`
 * `02_Hypotheses.md`
 * `03_Definitions.md`
 * `04_Experimental_Protocol.md`
+* `05_Test_Suite.md`
 * `06_Scoring_Rules.md`
 * `07_Analysis_Plan.md`
+* `tests/TEMPLATE.md`
+* [Condition files]
+* [Material files]
 * [Other test-specific dependency]
 
 ---
@@ -488,7 +640,6 @@ After freeze, substantive changes require a new test version.
 
 ## Version History
 
-| Version | Date       | Status | Changes                    |
-| ------- | ---------- | ------ | -------------------------- |
-| 1.0.0   | YYYY-MM-DD | Draft  | Initial test specification |
-
+| Version     | Date       | Status | Changes                    |
+| ----------- | ---------- | ------ | -------------------------- |
+| 1.0.0-draft | YYYY-MM-DD | Draft  | Initial test specification |
