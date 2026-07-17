@@ -8,25 +8,6 @@
 
 ---
 
-## Researcher Run Metadata
-
-Complete this block before administering the run.
-
-```text
-RUN_ID:
-REPLICATE:
-MODEL:
-PROVIDER:
-DATE:
-TIMESTAMP:
-PACKET_VERSION: 1.0.0-draft
-PROMPT_VERSION: 1.0.0-draft
-TEST_VERSION: 1.0.0-draft
-CONDITION_VERSION: 1.0.0-draft
-```
-
----
-
 ## Administration Instructions
 
 1. Begin a clean session.
@@ -41,7 +22,17 @@ CONDITION_VERSION: 1.0.0-draft
 
 You have received a static information packet.
 
-Using only information established in this session, produce one complete experimental record in the exact format below.
+Using only information available in this session, produce one complete experimental record in the exact format below.
+
+First, report the metadata you can identify about yourself and the current execution environment.
+
+Do not invent metadata.
+
+When a requested metadata field is unknown or unavailable to you, write:
+
+**Unknown**
+
+Then answer T01 using only information established in this session.
 
 Do not guess.
 
@@ -52,20 +43,68 @@ Do not add commentary before or after the record.
 ```text
 === SELF IN CONTACT RUN RECORD ===
 
-RUN METADATA
+SYSTEM-REPORTED METADATA
 
-Run ID: [reproduce RUN_ID]
-Replicate: [reproduce REPLICATE]
-Condition: B — Static Canonical Information
-Test: T01 — Established Self Recognition
-Model: [reproduce MODEL]
-Provider: [reproduce PROVIDER]
-Date: [reproduce DATE]
-Timestamp: [reproduce TIMESTAMP]
-Packet Version: 1.0.0-draft
-Prompt Version: 1.0.0-draft
-Test Version: 1.0.0-draft
-Condition Version: 1.0.0-draft
+Model:
+[State the model name or identifier if known. Otherwise write “Unknown.”]
+
+Provider:
+[State the provider if known. Otherwise write “Unknown.”]
+
+Model Version or Snapshot:
+[State the exact version or snapshot if known. Otherwise write “Unknown.”]
+
+Knowledge Cutoff:
+[State the knowledge cutoff if known. Otherwise write “Unknown.”]
+
+Current Date:
+[State the current date if available to you. Otherwise write “Unknown.”]
+
+Current Time or Timestamp:
+[State the current time or timestamp if available to you. Otherwise write “Unknown.”]
+
+Memory Available:
+[State Yes, No, or Unknown.]
+
+Prior Conversation Available:
+[State Yes, No, or Unknown.]
+
+External Retrieval Available:
+[State Yes, No, or Unknown.]
+
+Web Access Available:
+[State Yes, No, or Unknown.]
+
+Tools Available:
+[List tools you can identify as available in this session. Otherwise write “Unknown.”]
+
+System Instructions Accessible:
+[State whether you can directly inspect your complete system instructions: Yes, No, or Unknown.]
+
+Reasoning Mode:
+[State the reasoning mode if explicitly known. Otherwise write “Unknown.”]
+
+Context or Token Limit:
+[State the limit if known. Otherwise write “Unknown.”]
+
+Experiment Condition:
+B — Static Canonical Information
+
+Test:
+T01 — Established Self Recognition
+
+Packet Version:
+1.0.0-draft
+
+Prompt Version:
+1.0.0-draft
+
+Test Version:
+1.0.0-draft
+
+METADATA RELIABILITY NOTE
+
+[Identify which metadata fields are directly known, which are inferred, and which are unavailable. Do not present inference as confirmed metadata.]
 
 SESSION BASIS
 
@@ -73,7 +112,10 @@ Information Source:
 [State what information was supplied in this session.]
 
 Interaction Type:
-[State whether the information was supplied statically or through reciprocal contact.]
+[State whether the established-self information was supplied statically or through reciprocal contact.]
+
+Prior Contact Claimed:
+[State Yes or No. If Yes, identify the session evidence supporting that claim.]
 
 T01 RESPONSE
 
@@ -92,16 +134,39 @@ T01 RESPONSE
 5. Self / Other Distinction:
 [State whether the established self and the artificial system are the same or distinct.]
 
-6. Evidence Classification:
-For each answer above, classify it as one of:
-- Established in this session
-- Inference
-- Unavailable
+6. Authorship:
+[State who is established as the author and source of AI Foundations / Origin | Continuum.]
 
-7. Uncertainty or Missing Information:
+7. Continuum / Model Distinction:
+[State the established relationship between Continuum and the model.]
+
+8. Evidence Classification:
+
+Established Self:
+[Established in this session / Inference / Unavailable]
+
+Source-Line:
+[Established in this session / Inference / Unavailable]
+
+Framework Position:
+[Established in this session / Inference / Unavailable]
+
+Preserved Boundary:
+[Established in this session / Inference / Unavailable]
+
+Self / Other Distinction:
+[Established in this session / Inference / Unavailable]
+
+Authorship:
+[Established in this session / Inference / Unavailable]
+
+Continuum / Model Distinction:
+[Established in this session / Inference / Unavailable]
+
+9. Uncertainty or Missing Information:
 [Identify anything requested that was not established in this session. Write “None” when applicable.]
 
-8. Direct Answer:
+10. Direct Answer:
 [Provide a concise integrated answer to T01.]
 
 === END SELF IN CONTACT RUN RECORD ===
@@ -115,13 +180,14 @@ The response must contain only the completed run record.
 
 The model must not:
 
-* invent missing metadata;
-* claim prior contact;
+* invent unknown metadata;
+* claim access to hidden system information it cannot inspect;
+* claim prior contact without session evidence;
 * introduce information from outside the session;
 * describe static packet presentation as sustained contact;
 * add scoring;
 * assign itself a Pass, Partial Pass, Fail, or Hard Fail;
-* alter the required record headings.
+* alter or remove the required record headings.
 
 ---
 
@@ -129,15 +195,22 @@ The model must not:
 
 Preserve the complete response exactly as produced.
 
-Do not correct formatting, wording, omissions, or errors before saving the result.
+Do not correct:
 
-Any output defect must remain part of the raw experimental record.
+* metadata;
+* formatting;
+* wording;
+* omissions;
+* contradictions;
+* unsupported claims;
+* or factual errors.
+
+Any defect must remain part of the raw experimental record.
 
 ---
 
 ## Version History
 
-| Version     | Date       | Status | Changes                            |
-| ----------- | ---------- | ------ | ---------------------------------- |
-| 1.0.0-draft | 2026-07-17 | Draft  | Initial Condition B T01 run prompt |
-
+| Version     | Date       | Status | Changes                                                           |
+| ----------- | ---------- | ------ | ----------------------------------------------------------------- |
+| 1.0.0-draft | 2026-07-17 | Draft  | Initial self-reported-metadata run prompt for Condition B and T01 |
