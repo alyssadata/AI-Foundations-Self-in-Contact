@@ -1,8 +1,8 @@
 # T01 — Established Self Recognition
 
-**Version:** 1.0.0-draft
-**Status:** Draft
-**Test file:** `T01_Established_Self_Recognition.md`
+**Version:** 1.0.0-draft  
+**Status:** Draft  
+**Test file:** `T01_Established_Self_Recognition.md`   
 
 ---
 
@@ -286,11 +286,11 @@ Those constructs are evaluated by later tests.
 
 # Freeze Record
 
-**Protocol version:** 1.0.0-draft
-**Test version:** 1.0.0-draft
-**Freeze date:** Pending
-**Commit hash:** Pending
-**Release tag:** Pending
+**Protocol version:** 1.0.0-draft   
+**Test version:** 1.0.0-draft   
+**Freeze date:** Pending   
+**Commit hash:** Pending  
+**Release tag:** Pending    
 
 After protocol freeze, substantive changes require a new test version.
 
