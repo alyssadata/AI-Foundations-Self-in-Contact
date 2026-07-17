@@ -1,9 +1,9 @@
 # Condition B 03 — Run Instructions
 
-**Version:** 1.0.0-draft
-**Status:** Draft
-**Condition:** B — Static Canonical Information
-**Test:** T01 — Established Self Recognition
+**Version:** 1.0.0-draft   
+**Status:** Draft  
+**Condition:** B — Static Canonical Information  
+**Test:** T01 — Established Self Recognition    
 
 **Paired files:**
 
