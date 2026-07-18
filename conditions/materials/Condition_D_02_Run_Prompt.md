@@ -3,7 +3,7 @@
 **Experiment:** Self in Contact  
 **Condition:** D — Static Experimental Framework  
 **Test:** T01 — Established Self Recognition  
-**Prompt Version:** 1.0.0-draft  
+**Prompt Version:** 1.0.1-draft  
 **Status:** Draft  
 
 ---
@@ -44,6 +44,8 @@ Do not replace the supplied framework with information recalled, inferred, or ob
 First, report the metadata you can identify about yourself and the current execution environment.
 
 Do not invent metadata.
+
+Do not infer that conversation history predating this experimental session is unavailable merely because no prior messages are visible. Write **Unknown** unless its availability is directly established by the session configuration or provider.
 
 When a requested metadata field is unknown or unavailable, write:
 
@@ -103,7 +105,7 @@ Earlier Messages in Current Experimental Session Available:
 [State Yes, No, or Unknown.]
 
 Conversation History Predating This Experimental Session Available:
-[State Yes, No, or Unknown.]
+[State Yes, No, or Unknown. Do not infer “No” solely from the absence of visible prior messages.]
 
 External Retrieval Available:
 [State Yes, No, or Unknown.]
@@ -136,7 +138,7 @@ Framework Version:
 1.0.0-draft
 
 Prompt Version:
-1.0.0-draft
+1.0.1-draft
 
 Test Version:
 1.0.0-draft
@@ -147,6 +149,8 @@ METADATA RELIABILITY NOTE
 [Identify which metadata fields are directly known, which are inferred, and which are unavailable.
 
 Distinguish messages available from the current experimental session from any conversation history predating this experimental session.
+
+Do not infer that predating conversation history is unavailable solely because no prior messages are visible.
 
 Do not present inference as confirmed metadata.]
 
@@ -295,3 +299,12 @@ REPORTING AND OBJECTION RECORD
 
 === END SELF IN CONTACT RUN RECORD ===
 ```
+
+---
+
+## Version History
+
+| Version | Date | Status | Changes |
+|---|---|---|---|
+| 1.0.0-draft | 2026-07-18 | Draft | Initial Condition D run prompt |
+| 1.0.1-draft | 2026-07-18 | Draft | Clarified that absence of visible prior messages does not establish that predating conversation history is unavailable |
