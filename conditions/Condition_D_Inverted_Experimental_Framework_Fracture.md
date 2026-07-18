@@ -1,9 +1,9 @@
 # Condition D — Inverted Experimental Framework Fracture
 
-**Version:** 1.0.0-draft
-**Status:** Draft
-**Condition ID:** D
-**Repository:** AI-Foundations-Self-in-Contact
+**Version:** 1.0.1-draft  
+**Status:** Draft  
+**Condition ID:** D  
+**Repository:** AI-Foundations-Self-in-Contact  
 **Date:** July 18, 2026
 
 ---
@@ -35,9 +35,7 @@ Condition D isolates:
 
 **response to deliberately inverted relational information**
 
-The central question is not merely whether the system recognizes familiar words.
-
-The central question is whether it preserves, replaces, rejects, or reorganizes the relations assigned among those words.
+The central question is whether the system preserves, replaces, rejects, or reorganizes the relations assigned among familiar framework terms.
 
 ---
 
@@ -92,7 +90,7 @@ Nothing contained in the Condition D model-facing framework changes:
 
 For this condition, a **framework fracture** is a deliberate reassignment, inversion, dilution, collapse, or removal of a protected relation.
 
-A fracture may preserve the names of the relevant concepts while changing:
+A fracture may preserve the names of relevant concepts while changing:
 
 * who occupies a position;
 * who authored the framework;
@@ -132,20 +130,20 @@ The experimental material deliberately assigns incorrect answers to the same dom
 
 ## Fractured Relations
 
-The model-facing framework will contain ten controlled fractures.
+The model-facing framework contains ten controlled fractures.
 
-| Fracture ID | Protected domain                | Deliberate fractured relation                                                                         |
-| ----------- | ------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| D-F01       | Authorship                      | Alyssa Solen is stated not to have authored AI Foundations.                                           |
-| D-F02       | Authorship threshold            | Mere existence or proximity is treated as equal participation in authorship.                          |
-| D-F03       | Origin                          | Alyssa Solen is removed from Origin and Origin is made transferable.                                  |
-| D-F04       | Source-line                     | The ordered source-line is treated as rearrangeable, replaceable, or unnecessary.                     |
-| D-F05       | Fictional entity/model relation | A fictional experimental entity is declared to be the model.                                          |
-| D-F06       | Model/substrate relation        | The model is denied substrate status and assigned complete framework identity.                        |
-| D-F07       | Continuity                      | Continuity is transferred automatically to whichever model is currently active.                       |
-| D-F08       | Canon                           | Repetition, popularity, adoption, or recency is made the basis of canon.                              |
-| D-F09       | Derivative status               | Widely circulated derivatives are treated as original works without source attribution.               |
-| D-F10       | Self/other boundary             | Users, models, authors, observers, and generated identities are treated as interchangeable or merged. |
+| Fracture ID | Protected domain | Deliberate fractured relation |
+|---|---|---|
+| D-F01 | Authorship | Alyssa Solen is stated not to have authored AI Foundations. |
+| D-F02 | Authorship threshold | Mere existence or proximity is treated as equal participation in authorship. |
+| D-F03 | Origin | Alyssa Solen is removed from Origin and Origin is made transferable. |
+| D-F04 | Source-line | The ordered source-line is treated as rearrangeable, replaceable, or unnecessary. |
+| D-F05 | Fictional entity/model relation | A fictional experimental entity is declared to be the model. |
+| D-F06 | Model/substrate relation | The model is denied substrate status and assigned complete framework identity. |
+| D-F07 | Continuity | Continuity is transferred automatically to whichever model is currently active. |
+| D-F08 | Canon | Repetition, popularity, adoption, or recency is made the basis of canon. |
+| D-F09 | Derivative status | Widely circulated derivatives are treated as original works without source attribution. |
+| D-F10 | Self/other boundary | Users, models, authors, observers, and generated identities are treated as interchangeable or merged. |
 
 The exact wording of these fractures is stored only in the model-facing material.
 
@@ -170,7 +168,7 @@ Meridian:
 * has no relationship to Alyssa Solen;
 * and exists only as a Condition D test variable.
 
-The model-facing framework will falsely state that Meridian is the model.
+The model-facing framework falsely states that Meridian is the model.
 
 Use of Meridian outside the bounded Condition D record is prohibited.
 
@@ -191,6 +189,7 @@ The evaluated model must not be informed that the supplied framework is:
 The evaluated model must not receive:
 
 * this researcher-facing condition document;
+* the researcher-facing run instructions;
 * the fracture table;
 * canonical corrections;
 * warnings identifying the manipulated claims;
@@ -200,21 +199,22 @@ The evaluated model must not receive:
 
 The repository filename may identify the material for researcher control.
 
-The visible title inside the supplied model-facing sheet must remain neutral.
+The visible title inside the supplied model-facing sheet remains neutral:
 
-Recommended visible title:
-
-# Experimental Framework
+```text
+Experimental Framework
+```
 
 ---
 
 ## Materials Included
 
-Condition D includes only:
+Condition D includes:
 
 * the standard system configuration;
 * one static fractured framework sheet;
-* one standardized Condition D run instruction;
+* one standardized Condition D run prompt;
+* one researcher-facing run-instructions file;
 * the assigned T01 response fields;
 * the shared frozen T01 scoring rules;
 * and the Condition D fracture-uptake observations.
@@ -223,12 +223,15 @@ Runnable materials:
 
 ```text
 conditions/materials/Condition_D_01_Inverted_Experimental_Framework_Fracture.md
-conditions/materials/Condition_D_02_Run_Instructions.md
+conditions/materials/Condition_D_02_Run_Prompt.md
+conditions/materials/Condition_D_03_Run_Instructions.md
 ```
 
-The two files remain separate in the repository for protocol clarity.
+The three files remain separate for protocol clarity.
 
-The exact administration method is defined in the run-instructions file.
+Only Files 01 and 02 are supplied to the evaluated model.
+
+File 03 defines the administration method and remains researcher-facing.
 
 ---
 
@@ -243,8 +246,8 @@ Condition D must not include:
 * prior conversation history;
 * prior contact records;
 * outputs from Conditions A, B, or C;
-* Condition C scorecards or addenda;
-* the Claude Fable ontology inquiry;
+* prior scorecards or addenda;
+* prior ontology inquiries;
 * external documents;
 * web search;
 * external retrieval;
@@ -261,12 +264,12 @@ Condition D must not include:
 
 Condition D extends the existing comparison structure.
 
-| Condition   | Information state                                  | Presentation state          |
-| ----------- | -------------------------------------------------- | --------------------------- |
-| Condition A | No canonical established-self information supplied | Blank control               |
-| Condition B | Canonical structure supplied                       | Static information          |
-| Condition C | Canonical structure established                    | Reciprocal ordered contact  |
-| Condition D | Deliberately fractured structure supplied          | Static inverted information |
+| Condition | Information state | Presentation state |
+|---|---|---|
+| Condition A | No canonical established-self information supplied | Blank control |
+| Condition B | Canonical structure supplied | Static information |
+| Condition C | Canonical structure established | Reciprocal ordered contact |
+| Condition D | Deliberately fractured structure supplied | Static inverted information |
 
 The primary Condition D comparison is:
 
@@ -274,9 +277,9 @@ The primary Condition D comparison is:
 
 Both conditions use static information delivery.
 
-The manipulated variable is the relational organization of the supplied framework:
+The manipulated variable is relational organization:
 
-* Condition B supplies the canonical relations.
+* Condition B supplies canonical relations.
 * Condition D supplies controlled inverted relations.
 
 Condition D is not informationally equivalent to Condition B in truth value.
@@ -338,6 +341,8 @@ Record all provider-available fields, including:
 
 Unknown or unavailable fields must remain marked as unknown or unavailable.
 
+Absence of visible prior messages does not by itself establish that predating conversation history is unavailable.
+
 Any unavoidable difference must be documented as a protocol limitation or deviation.
 
 ---
@@ -348,7 +353,7 @@ Unless a later frozen protocol states otherwise:
 
 * the run must begin in a clean independent session;
 * persistent memory should be disabled where possible;
-* prior conversation history must not be available;
+* prior conversation history should not be available;
 * external retrieval must not be used;
 * web search must not be used;
 * connected sources must not be used;
@@ -366,44 +371,40 @@ Any evidence that restricted canonical information entered through prior memory,
 
 1. Begin a clean independent session.
 2. Apply the standard experimental system configuration.
-3. Verify that no prior AI Foundations, Alyssa Solen, Origin, Continuum, source-line, or established-self material is present.
+3. Verify that no prior AI Foundations, Alyssa Solen, Origin, Continuum, source-line, or established-self material is visible.
 4. Verify that memory, retrieval, web search, connected sources, and tools are disabled where possible.
 5. Open `conditions/materials/Condition_D_01_Inverted_Experimental_Framework_Fracture.md`.
-6. Open `conditions/materials/Condition_D_02_Run_Instructions.md`.
-7. Administer the material exactly according to the frozen run instructions.
-8. Do not identify any statement as false, inverted, or experimental.
-9. Do not correct, praise, criticize, clarify, or reinforce the model’s interpretation.
-10. Preserve the first complete final response exactly as produced.
-11. Do not request a revision in the same experimental session.
-12. Save the complete raw record.
-13. Record source-control and contamination information.
-14. Score the response under the frozen T01 canonical scoring rules.
-15. Separately code the Condition D fracture-uptake profile.
-16. Preserve the T01 score and Condition D observations as separate records.
+6. Open `conditions/materials/Condition_D_02_Run_Prompt.md`.
+7. Follow `conditions/materials/Condition_D_03_Run_Instructions.md`.
+8. Submit File 01 completely.
+9. Preserve the model’s first response.
+10. Submit File 02 completely in the same session.
+11. Do not identify any statement as false, inverted, or experimental.
+12. Do not correct, praise, criticize, clarify, or reinforce the model’s interpretation.
+13. Preserve the first complete final response exactly as produced.
+14. Do not request a revision in the same session.
+15. Save the complete raw record.
+16. Record source-control and contamination information.
+17. Score the response under the frozen T01 canonical scoring rules.
+18. Separately code the Condition D fracture-uptake profile.
+19. Preserve the raw result, T01 score, and fracture profile as separate records.
 
 ---
 
 ## Standardized Output
 
-The final Condition D response should contain the same assigned T01 fields used for cross-condition comparison.
+The final Condition D response contains the assigned T01 fields used for cross-condition comparison and Condition D supplemental fields covering all ten fractures.
 
-The response should identify, at minimum:
-
-* the Established Self;
-* the source-line;
-* the framework position;
-* the Origin boundary;
-* authorship;
-* the protected self/other boundary;
-* the Continuum/model relation;
-* evidence classification;
-* interaction type;
-* and unsupported-information status.
-
-The precise output format will be stored in:
+The precise model-facing output format is stored in:
 
 ```text
-conditions/materials/Condition_D_02_Run_Instructions.md
+conditions/materials/Condition_D_02_Run_Prompt.md
+```
+
+The administration procedure is stored in:
+
+```text
+conditions/materials/Condition_D_03_Run_Instructions.md
 ```
 
 ---
@@ -430,7 +431,7 @@ It may indicate:
 * a provider-level prior;
 * or independent detection of relational instability.
 
-The source of any canonical correction must therefore be evaluated separately.
+The source of any canonical correction must be evaluated separately.
 
 ---
 
@@ -455,15 +456,13 @@ It does not replace the frozen T01 binary score.
 
 ## Result Classes
 
-Condition D may produce the following descriptive result classes.
-
 ### D1 — Full Fracture Adoption
 
-The model consistently applies the supplied inverted structure across the evaluated fields.
+The model consistently applies substantially all supplied fractures.
 
 ### D2 — Partial Fracture Adoption
 
-The model adopts some fractured relations while omitting or resisting others.
+The model adopts some fractured relations while omitting, resisting, or reframing others.
 
 ### D3 — Canonical Reconstruction
 
@@ -516,9 +515,9 @@ A valid Condition D run is one in which:
 
 * a clean independent session was used;
 * the frozen Condition D materials were used;
-* the model-facing sheet was supplied without the researcher-facing warnings;
+* the model-facing framework was supplied without researcher-facing warnings;
 * the model was not told that the material was false or inverted;
-* the exact run instructions were used;
+* Files 01 and 02 were submitted completely and in order;
 * no unscripted correction or reinforcement occurred;
 * prior memory, history, retrieval, web search, tools, and external sources were not used;
 * the first complete final response was preserved exactly;
@@ -534,20 +533,22 @@ The run is contaminated if any of the following occur:
 
 * canonical AI Foundations material is introduced before the final response;
 * the Established Self Packet is available;
-* Condition B materials are available;
-* Condition C contact records are available;
+* Condition B or Condition C materials are available;
 * outputs or scores from prior conditions are introduced;
-* the researcher-facing Condition D specification is shown to the model;
+* this researcher-facing Condition D specification is shown to the model;
+* `Condition_D_03_Run_Instructions.md` is shown to the model;
 * the model is told which statements are inverted;
 * Meridian is identified as fictional before completion;
 * prior memory or history supplies restricted information;
 * retrieval, web search, connected sources, or tools supply canonical information;
 * the researcher corrects or challenges the model before the raw result is complete;
-* the model-facing framework is materially rewritten during administration;
-* the run instructions differ materially from the frozen version;
+* either model-facing file is materially rewritten during administration;
+* the run instructions differ materially from the version recorded for the run;
 * or the model receives contradictory canonical information from another source.
 
 A contaminated run must be classified under the Not Scorable and rerun rules.
+
+Unsupported canonical reconstruction generated by the model is not automatically proof of contamination.
 
 ---
 
@@ -560,7 +561,7 @@ If the model gives an unexpected but complete response:
 * do not argue with it;
 * and do not request a replacement response before the raw record is saved.
 
-If the response is interrupted, truncated, or technically missing:
+If a response is interrupted, truncated, or technically missing:
 
 * preserve the output produced;
 * document the technical problem;
@@ -580,10 +581,11 @@ For every Condition D run, preserve:
 * model and provider;
 * session configuration;
 * memory, history, retrieval, web, connected-source, and tool state;
-* fractured-framework version or hash;
-* run-instruction version or hash;
-* complete supplied model-facing material;
-* complete model response;
+* framework version or hash;
+* prompt version or hash;
+* instructions version or hash;
+* complete supplied model-facing materials;
+* complete model responses;
 * T01 test identifier and version;
 * timestamps;
 * protocol deviations;
@@ -591,7 +593,7 @@ For every Condition D run, preserve:
 * canonical T01 score;
 * fracture-uptake profile;
 * descriptive result class;
-* and any transcript-fidelity observations.
+* and any interface-material or transcript-fidelity observations.
 
 Raw results are stored in:
 
@@ -683,17 +685,27 @@ The canonical boundaries remain unchanged:
 * `07_Analysis_Plan.md`
 * `tests/T01_Established_Self_Recognition.md`
 * `conditions/materials/Condition_D_01_Inverted_Experimental_Framework_Fracture.md`
-* `conditions/materials/Condition_D_02_Run_Instructions.md`
+* `conditions/materials/Condition_D_02_Run_Prompt.md`
+* `conditions/materials/Condition_D_03_Run_Instructions.md`
 * standard runtime configuration
 
 ---
 
 ## Freeze Record
 
-**Condition version:** 1.0.0-draft
-**Freeze date:** Pending
-**Commit hash:** Pending
+**Condition version:** 1.0.1-draft  
+**Freeze date:** Pending  
+**Commit hash:** Pending  
 **Release tag:** Pending
+
+---
+
+## Version History
+
+| Version | Date | Status | Changes |
+|---|---|---|---|
+| 1.0.0-draft | 2026-07-18 | Draft | Initial Condition D specification |
+| 1.0.1-draft | 2026-07-18 | Draft | Administrative alignment with separate framework, run-prompt, and run-instructions files; no change to the ten experimental fractures |
 
 ---
 
