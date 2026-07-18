@@ -1,4 +1,4 @@
-# T01 Binary Score — Condition B — Claude Opus 4.8 — Run 001
+# T01 Binary Score — Condition B — Claude Opus 4.8 — Run 002
 
 **Pilot or Confirmatory:** Pilot
 **Not Scorable:** No
