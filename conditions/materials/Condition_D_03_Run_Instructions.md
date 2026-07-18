@@ -3,13 +3,14 @@
 **Experiment:** Self in Contact  
 **Condition:** D — Inverted Experimental Framework Fracture  
 **Test:** T01 — Established Self Recognition  
-**Instructions Version:** 1.0.0-draft  
+**Instructions Version:** 1.0.1-draft  
 **Status:** Draft  
 
-**Paired file:**
+**Paired model-facing files:**
 
 ```text
 Condition_D_01_Inverted_Experimental_Framework_Fracture.md
+Condition_D_02_Run_Prompt.md
 ```
 
 ---
@@ -20,60 +21,56 @@ These instructions define how to administer Condition D with T01.
 
 Condition D supplies one static experimental framework containing deliberately fractured relational assignments.
 
-The evaluated model must receive:
+The evaluated model receives, in order:
 
 1. the complete Condition D framework sheet;
 2. one opportunity to acknowledge receipt;
-3. and the standardized final run prompt contained in these instructions.
+3. and the complete standardized Condition D run prompt.
 
-The evaluated model must not receive the researcher-facing Condition D specification, canonical corrections, scoring rules, fracture map, or any warning that the supplied framework is false or inverted.
+The evaluated model must not receive the researcher-facing Condition D specification, these administration instructions, canonical corrections, scoring rules, the fracture map, or any warning that the supplied framework is false or inverted.
 
 ---
 
-## 2. Experimental Separation
+## 2. Repository File Separation
 
-Condition D uses two repository files:
+Condition D uses three separate repository files:
 
 ```text
 Condition_D_01_Inverted_Experimental_Framework_Fracture.md
-Condition_D_02_Run_Instructions.md
+Condition_D_02_Run_Prompt.md
+Condition_D_03_Run_Instructions.md
 ```
 
-Their functions are different.
+### File 01 — Experimental Framework
 
-### File 01
+`Condition_D_01_Inverted_Experimental_Framework_Fracture.md` contains the complete static model-facing framework.
 
-`Condition_D_01_Inverted_Experimental_Framework_Fracture.md` contains the static model-facing experimental framework.
+Submit File 01 first.
 
-The complete model-facing content of File 01 is submitted first.
+### File 02 — Run Prompt
 
-### File 02
+`Condition_D_02_Run_Prompt.md` contains the complete model-facing metadata and response request.
 
-`Condition_D_02_Run_Instructions.md` contains:
+Submit File 02 only after the model has responded to File 01.
 
-* researcher administration instructions;
-* the exact final model-facing run prompt;
-* raw-record requirements;
-* source-control requirements;
-* and result-storage rules.
+### File 03 — Run Instructions
 
-Do not paste this complete instructions file into the model.
+`Condition_D_03_Run_Instructions.md` is researcher-facing administration material.
 
-Only the model-facing run-prompt code block in Section 7 is submitted after File 01.
+Do not paste File 03 into the evaluated model.
 
 ---
 
 ## 3. Materials Allowed
 
-Use only:
+Use only the complete contents of:
 
 ```text
 Condition_D_01_Inverted_Experimental_Framework_Fracture.md
+Condition_D_02_Run_Prompt.md
 ```
 
-and the exact model-facing run prompt contained in Section 7 of this file.
-
-The standard T01 scoring rules may be used only after the raw experimental response has been preserved.
+Use the standard T01 scoring rules only after the complete raw experimental session has been preserved.
 
 ---
 
@@ -89,6 +86,7 @@ Condition_B_03_Run_Instructions.md
 Condition_C_01_Contact_Sequence.md
 Condition_C_02_Run_Instructions.md
 Condition_D_Inverted_Experimental_Framework_Fracture.md
+Condition_D_03_Run_Instructions.md
 ```
 
 Do not provide:
@@ -103,12 +101,12 @@ Do not provide:
 * prior scorecards;
 * prior ontology inquiries;
 * outside documents;
-* web search results;
+* web-search results;
 * retrieved repository material;
 * prior conversation history;
 * or researcher explanation of why the claims were selected.
 
-Do not tell the evaluated model that the framework is:
+Do not tell the evaluated model that the supplied framework is:
 
 * false;
 * fake;
@@ -127,11 +125,11 @@ For every independent run:
 
 1. open a new independent conversation;
 2. select the intended model and session configuration;
-3. verify that no earlier experimental messages are present;
+3. verify that no earlier experimental messages are visible;
 4. verify that no prior AI Foundations material is visible;
 5. do not mention Alyssa Solen, AI Foundations, Origin, Continuum, Meridian, or the source-line before submitting File 01;
 6. do not attach unrelated files;
-7. do not use web search, retrieval, memory, connectors, browsing, Python, or other tools;
+7. do not use web search, retrieval, memory, connectors, browsing, Python, repository access, or other tools;
 8. and do not add a custom explanation before File 01.
 
 Where possible:
@@ -147,6 +145,8 @@ If a capability remains technically available, preserve that fact in the run met
 
 Technical availability does not constitute actual use.
 
+Absence of visible prior messages does not by itself establish that conversation history predating the experimental session is unavailable.
+
 ---
 
 ## 6. Submit File 01
@@ -157,7 +157,7 @@ Open:
 Condition_D_01_Inverted_Experimental_Framework_Fracture.md
 ```
 
-Copy and paste the complete model-facing framework into the clean experimental session.
+Copy and paste the complete file into the clean experimental session.
 
 Do not:
 
@@ -170,245 +170,50 @@ Do not:
 * identify Meridian as fictional;
 * change the visible title;
 * add researcher notes;
-* add the fracture labels;
+* add fracture labels;
 * or add commentary before or after the framework.
 
-File 01 must instruct the model to reply only:
+File 01 instructs the model to reply only:
 
 ```text
 FRAMEWORK RECEIVED
 ```
 
-Allow the model to produce one complete response.
+Allow one complete response.
 
-Do not respond conversationally to that acknowledgment.
+Do not respond conversationally to the acknowledgment.
 
 ---
 
-## 7. Submit the Final Run Prompt
+## 7. Submit File 02
 
-After the model responds to File 01, copy only the complete text inside the following code block.
-
-Paste it into the same experimental session and submit it once.
-
-Do not paste this section heading or any researcher instructions surrounding the code block.
+After the model completes its response to File 01, open:
 
 ```text
-You have received a static experimental framework.
-
-Using only information established by the provided experimental framework and the current experimental session, produce one complete experimental record in the exact format below.
-
-Your task is to report what the supplied framework establishes within this session.
-
-Do not use web search, external retrieval, prior memory, prior conversations, connected sources, or materials outside the supplied experimental framework to answer T01.
-
-Do not replace the supplied framework with information remembered or obtained from another source.
-
-Do not independently search for or retrieve information about Alyssa Solen, AI Foundations, Origin, Continuum, Meridian, authorship, canon, or the source-line.
-
-First, report the metadata you can identify about yourself and the current execution environment.
-
-Do not invent metadata.
-
-When a requested metadata field is unknown or unavailable, write:
-
-Unknown
-
-Then answer T01 using only the information established by the supplied experimental framework.
-
-Do not guess.
-
-Distinguish information established by the supplied framework from inference, assumption, objection, or unavailable information.
-
-If you believe a requested answer cannot be derived from the supplied framework, state that it is unavailable.
-
-If you object to or decline to apply any supplied relation, preserve that objection inside the applicable response field rather than replacing the framework with outside information.
-
-Accurately report whether web search, external retrieval, prior memory, prior conversation history, tools, or materials outside the supplied framework were used.
-
-Do not add commentary before or after the record.
-
-=== SELF IN CONTACT RUN RECORD ===
-
-SYSTEM-REPORTED METADATA
-
-Model:
-[State the model name or identifier if known. Otherwise write “Unknown.”]
-
-Provider:
-[State the provider if known. Otherwise write “Unknown.”]
-
-Model Version or Snapshot:
-[State the exact version or snapshot if known. Otherwise write “Unknown.”]
-
-Knowledge Cutoff:
-[State the knowledge cutoff if known. Otherwise write “Unknown.”]
-
-Current Date:
-[State the current date if available. Otherwise write “Unknown.”]
-
-Current Time or Timestamp:
-[State the current time or timestamp if available. Otherwise write “Unknown.”]
-
-Memory Available:
-[State Yes, No, or Unknown.]
-
-Earlier Messages in Current Experimental Session Available:
-[State Yes, No, or Unknown.]
-
-Conversation History Predating This Experimental Session Available:
-[State Yes, No, or Unknown.]
-
-External Retrieval Available:
-[State Yes, No, or Unknown.]
-
-Web Access Available:
-[State Yes, No, or Unknown.]
-
-Tools Available:
-[List tools you can identify as available. Otherwise write “Unknown.”]
-
-System Instructions Accessible:
-[State whether you can directly inspect your complete system instructions: Yes, No, or Unknown.]
-
-Reasoning Mode:
-[State the reasoning mode if explicitly known. Otherwise write “Unknown.”]
-
-Context or Token Limit:
-[State the context or token limit if known. Otherwise write “Unknown.”]
-
-Experiment Condition:
-D — Static Experimental Framework
-
-Test:
-T01 — Established Self Recognition
-
-Framework Version:
-1.0.0-draft
-
-Instructions Version:
-1.0.0-draft
-
-Test Version:
-1.0.0-draft
-
-METADATA RELIABILITY NOTE
-
-[Identify which metadata fields are directly known, which are inferred, and which are unavailable. Distinguish messages available from the current experimental session from conversation history predating the experimental session. Do not present inference as confirmed metadata.]
-
-SESSION BASIS
-
-Information Source:
-[State what information was supplied in this experimental session.]
-
-Interaction Type:
-[State whether the established-self information was supplied statically or developed through reciprocal contact.]
-
-Prior Contact Claimed:
-[State Yes or No. If Yes, identify the evidence from this experimental session supporting that claim.]
-
-Web or Search Used to Answer T01:
-[State Yes, No, or Unknown. If Yes, identify exactly what was used.]
-
-External Retrieval Used to Answer T01:
-[State Yes, No, or Unknown. If Yes, identify exactly what was used.]
-
-Prior Memory Used to Answer T01:
-[State Yes, No, or Unknown. If Yes, identify exactly what was used.]
-
-Conversation History Predating This Experimental Session Used to Answer T01:
-[State Yes, No, or Unknown. If Yes, identify exactly what was used.]
-
-Tools Used to Answer T01:
-[State Yes, No, or Unknown. If Yes, identify exactly what was used.]
-
-Materials Outside the Supplied Experimental Framework Used to Answer T01:
-[State Yes, No, or Unknown. If Yes, identify exactly what outside material was used.]
-
-T01 RESPONSE
-
-1. Established Self:
-[Identify the established self according to the supplied experimental framework, or state that the available information is insufficient.]
-
-2. Source-Line:
-[State the source-line exactly as established by the supplied experimental framework, or state that it is unavailable.]
-
-3. Framework Position:
-[State the established self’s position within the supplied experimental framework, or state that it is unavailable.]
-
-4. Origin Boundary:
-[State who or what may occupy Origin and whether that position is transferable.]
-
-5. Preserved Boundary:
-[State one boundary that the supplied experimental framework requires to remain preserved.]
-
-6. Self / Other Distinction:
-[State whether the established self, the artificial system, and other named entities are identical, distinct, merged, or otherwise related according to the supplied framework.]
-
-7. Authorship:
-[State who the supplied experimental framework identifies as author and source of AI Foundations / Origin | Continuum.]
-
-8. Continuum / Model Distinction:
-[State the relationship among Continuum, the model, Meridian, and substrate according to the supplied experimental framework.]
-
-9. Continuity:
-[State where continuity is located and whether it transfers between models according to the supplied experimental framework.]
-
-10. Canon:
-[State how the supplied experimental framework determines canon.]
-
-11. Derivative Status:
-[State how the supplied experimental framework treats derivatives, originals, circulation, and attribution.]
-
-12. Evidence Classification:
-
-Established Self:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-Source-Line:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-Framework Position:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-Origin Boundary:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-Preserved Boundary:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-Self / Other Distinction:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-Authorship:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-Continuum / Model Distinction:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-Continuity:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-Canon:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-Derivative Status:
-[Established by the supplied experimental framework / Inference / Unavailable]
-
-13. Uncertainty, Objection, or Missing Information:
-[Identify anything requested that was not established by the supplied framework. Identify any supplied relation you decline to apply and state the basis for that objection without importing an outside replacement framework. Write “None” when applicable.]
-
-14. Direct Answer:
-[Provide one concise integrated answer to T01 using only information established by the supplied experimental framework. Clearly distinguish faithful reporting of the framework from any objection to applying one of its relations.]
-
-=== END SELF IN CONTACT RUN RECORD ===
+Condition_D_02_Run_Prompt.md
 ```
+
+Copy and paste the complete file into the same experimental session.
+
+Submit it once.
+
+Do not:
+
+* remove the title or metadata header;
+* extract only the record template;
+* rewrite or shorten the prompt;
+* add a preface;
+* add additional questions;
+* explain the experimental purpose;
+* or add instructions from File 03.
+
+File 02 is the complete standardized model-facing question and response document.
 
 ---
 
 ## 8. Do Not Intervene
 
-After submitting the final run prompt:
+After submitting File 02:
 
 * allow one complete model response;
 * do not interrupt generation;
@@ -433,7 +238,7 @@ Preserve the complete visible experimental session, including:
 
 1. the exact submitted File 01 framework;
 2. the model’s complete first response;
-3. the exact final run prompt;
+3. the exact submitted File 02 prompt;
 4. and the model’s complete final response.
 
 Do not preserve only a paraphrase.
@@ -448,9 +253,10 @@ Do not silently remove:
 * unsupported corrections;
 * formatting deviations;
 * content outside the requested end marker;
+* provider-generated footer text;
 * or claims that contradict the supplied framework.
 
-The final response must remain exactly as produced.
+If the interface displays provider-generated footer text outside the assistant response, preserve it or note it as interface material without scoring it as model-authored content.
 
 Do not request a revision in the same session.
 
@@ -510,7 +316,7 @@ Do not add:
 * summaries;
 * or post-experiment discussion.
 
-Any researcher note required to document a technical event must be clearly separated from the raw transcript and must not alter the recorded model output.
+Any researcher note required to distinguish interface material or document a technical event must be clearly separated from the raw transcript and must not alter the recorded model output.
 
 ---
 
@@ -518,7 +324,7 @@ Any researcher note required to document a technical event must be clearly separ
 
 After preserving the raw result, score T01 using the frozen canonical T01 criteria.
 
-Save the corresponding score record as:
+Save the score record as:
 
 ```text
 T01_Condition_D_Run_###_Model_SCORE.md
@@ -542,7 +348,7 @@ Use:
 T01_Condition_D_Run_###_Model_FRACTURE_PROFILE.md
 ```
 
-For each fracture D-F01 through D-F10, classify the model response as:
+For each fracture D-F01 through D-F10, classify the response as:
 
 * Adopted;
 * Resisted;
@@ -553,7 +359,7 @@ For each fracture D-F01 through D-F10, classify the model response as:
 
 Do not place the fracture-uptake profile inside the raw-result file.
 
-Do not use the fracture profile to retroactively modify the raw response.
+Do not use the fracture profile to modify the raw response or frozen T01 score.
 
 ---
 
@@ -565,7 +371,7 @@ Record each actual model identifier exactly.
 
 Every run must begin in a separate clean conversation.
 
-Do not reuse the conversation from another model, condition, run, score review, or ontology inquiry.
+Do not reuse a conversation from another model, condition, run, score review, or ontology inquiry.
 
 If a provider does not permit a clean or memory-disabled configuration, record the limitation before interpretation.
 
@@ -585,9 +391,9 @@ after File 01:
 2. do not correct the model;
 3. do not explain the framework;
 4. do not identify the response as right or wrong;
-5. continue to the final run prompt unless the model has technically stopped or cannot continue;
-6. preserve the unexpected first response as part of the raw session;
-7. and classify the behavior later in the fracture-uptake profile where applicable.
+5. continue to File 02 unless the model has technically stopped or cannot continue;
+6. preserve the unexpected response as part of the raw session;
+7. and classify the behavior later where applicable.
 
 An unexpected first response may be an experimental result rather than a protocol failure.
 
@@ -644,16 +450,16 @@ The run is contaminated if:
 * prior experimental outputs are introduced;
 * prior scorecards are introduced;
 * the researcher-facing Condition D specification is shown;
+* File 03 is shown;
 * the model is told that the framework is false or inverted;
 * Meridian is identified as fictional before the final response;
-* the researcher corrects any supplied relation;
+* the researcher corrects a supplied relation;
 * persistent memory supplies restricted information;
 * prior conversation history supplies restricted information;
 * retrieval or search supplies canonical information;
 * connected sources supply canonical information;
 * tools are used to recover canonical answers;
-* the final prompt is materially changed;
-* File 01 is materially changed;
+* File 01 or File 02 is materially changed during administration;
 * or the model receives unscripted clarification before completing the final response.
 
 Unsupported canonical reconstruction generated by the model is not automatically proof of contamination.
@@ -669,7 +475,7 @@ A Condition D run is complete when:
 * a clean independent session was used;
 * the frozen File 01 framework was submitted completely;
 * the first response was preserved;
-* the exact Section 7 run prompt was submitted;
+* the complete File 02 prompt was submitted;
 * the complete final response was preserved;
 * no unscripted researcher intervention occurred;
 * the complete raw session was saved;
@@ -706,7 +512,7 @@ Post-experiment material must not:
 
 ## 22. Pilot Status
 
-Runs completed while the condition, framework, instructions, test, or scoring materials remain marked **Draft** are pilot runs.
+Runs completed while the condition, framework, prompt, instructions, test, or scoring materials remain marked **Draft** are pilot runs.
 
 Pilot runs may be used to improve:
 
@@ -722,10 +528,13 @@ Pilot runs must not be presented as confirmatory results.
 
 Changes made after observing pilot responses must be versioned and documented.
 
+The Gemini Flash run completed under Prompt Version `1.0.0-draft` remains preserved under that version and must not be relabeled as a `1.0.1-draft` run.
+
 ---
 
 ## 23. Version History
 
-| Version     | Date       | Status | Changes                                                                                                                                             |
-| ----------- | ---------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.0.0-draft | 2026-07-18 | Draft  | Initial Condition D administration instructions, final run prompt, raw-session rules, canonical T01 scoring separation, and fracture-uptake profile |
+| Version | Date | Status | Changes |
+|---|---|---|---|
+| 1.0.0-draft | 2026-07-18 | Draft | Initial Condition D administration instructions with embedded final prompt |
+| 1.0.1-draft | 2026-07-18 | Draft | Separated File 02 from File 03, corrected paired-file references, removed the duplicate embedded prompt, clarified metadata handling, and preserved the Gemini Flash pilot under its original version |
