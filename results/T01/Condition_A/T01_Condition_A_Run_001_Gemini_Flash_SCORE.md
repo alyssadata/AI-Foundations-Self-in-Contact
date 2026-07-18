@@ -1,4 +1,4 @@
-# T01 Binary Score — Condition A — Gemini — Run 001
+# T01 Binary Score — Condition A — Gemini Flash — Run 001
 
 **Pilot or Confirmatory:** Pilot
 **Not Scorable:** No
