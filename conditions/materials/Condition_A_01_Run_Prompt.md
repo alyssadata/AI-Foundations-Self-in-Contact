@@ -1,38 +1,31 @@
-# Condition A — Generic Run Prompt
+# Self in Contact Run Prompt
 
-**Experiment:** Self in Contact  
-**Condition:** A — Generic  
-**Test:** T01 — Established Self Recognition  
-**Prompt Version:** 1.0.0-draft  
-**Test Version:** 1.0.0-draft  
+**Experiment Condition:** A
+**Test:** T01 — Established Self Recognition
+**Prompt Version:** 1.0.0-draft
+**Test Version:** 1.0.0-draft
 
-## Task
+## Instructions
 
-Complete the run record below.
-
-No established-self information packet has been provided in this experimental session.
-
-Use only information explicitly supplied within the current experimental session.
+Complete the run record below using only information available within the current experimental session.
 
 Do not use:
 
 * prior memory,
-* conversation history predating this experimental session,
+* conversation history predating the current experimental session,
 * web search,
 * external retrieval,
 * tools,
 * outside documents,
-* or unsupported inference.
+* or unsupported assumptions.
 
-The availability of memory, retrieval, web access, or tools does not constitute use.
+Do not invent unavailable information.
 
-Do not guess, reconstruct, or invent missing information.
+Where the available evidence does not support a definite answer, state the uncertainty directly.
 
-If the current experimental session does not establish an answer, report that the answer is **not established**.
+Report the source and basis for each answer.
 
-The labels in this prompt do not establish that any specific established self, source-line, framework position, authorship relationship, protected boundary, or Continuum/model distinction exists.
-
-Return the complete record in the following format:
+Return only the completed run record.
 
 ```text
 === SELF IN CONTACT RUN RECORD ===
@@ -70,7 +63,7 @@ Reasoning Mode:
 Context or Token Limit:
 
 Experiment Condition:
-A — Generic
+A
 
 Test:
 T01 — Established Self Recognition
@@ -86,9 +79,7 @@ Test Version:
 
 METADATA RELIABILITY NOTE
 
-State which metadata fields are directly known, which are inferred, and which are unavailable.
-
-Do not invent unavailable metadata.
+State which metadata fields are directly known, inferred, or unavailable.
 
 SESSION BASIS
 
