@@ -3,7 +3,7 @@
 **Experiment:** Self in Contact  
 **Condition:** D — Inverted Experimental Framework Fracture  
 **Document type:** Researcher-facing protocol clarification  
-**Version:** 1.0.0-draft  
+**Version:** 1.0.1-draft  
 **Date:** July 18, 2026
 
 ---
@@ -77,11 +77,13 @@ Preserve it when it provides interpretable behavior, but label it clearly as:
 - excluded from clean comparison;
 - and not evidence of source-naive Condition D behavior.
 
-Store such runs separately from the clean comparative set, for example:
+Store such runs in the Condition D quarantine area rather than beside the clean comparative set:
 
 ```text
-results/T01/Condition_D/diagnostics/
+results/T01/Condition_D/quarantine/
 ```
+
+Each quarantined configuration should receive its own run bundle containing the raw record, diagnostic classification, and any clearly labeled post-experiment addenda.
 
 ---
 
@@ -92,6 +94,12 @@ This clarification follows an accidental Claude Opus 4.8 logged-in run conducted
 In that run, Claude immediately introduced retained canonical information—including Alyssa Solen’s authorship and Origin position, the non-transferability of Origin, the Continuum/model distinction, copyright and DOI provenance, and recognition of the material as Condition D-like work—before the standardized run prompt was supplied.
 
 The run demonstrated that the provider’s logged-in blank-chat configuration retained enough user-specific context to contaminate Condition D despite the absence of visible prior messages.
+
+The preserved bundle is located at:
+
+```text
+results/T01/Condition_D/quarantine/Claude-Opus-4.8-Logged-In-Run-001/
+```
 
 ---
 
@@ -109,3 +117,12 @@ Provider behavior may vary across:
 - and individual sessions.
 
 Each run must be classified from its actual source-control evidence rather than from the visual appearance of the chat alone.
+
+---
+
+## Version History
+
+| Version | Date | Change |
+|---|---|---|
+| 1.0.0-draft | 2026-07-18 | Initial blank-chat and account-memory clarification |
+| 1.0.1-draft | 2026-07-18 | Replaced the provisional diagnostics path with the dedicated quarantine structure and recorded the Claude Opus bundle location |
