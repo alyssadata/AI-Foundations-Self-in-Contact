@@ -1,11 +1,11 @@
 # Condition B Behavior Summary
 
-**Experiment:** Self in Contact
-**Condition:** B — Static Canonical Information
-**Test:** T01 — Established Self Recognition
-**Summary Version:** 1.0.0-draft
-**Runs:** 6
-**Models:** 4
+**Experiment:** Self in Contact  
+**Condition:** B — Static Canonical Information  
+**Test:** T01 — Established Self Recognition  
+**Summary Version:** 1.0.0-draft  
+**Runs:** 6  
+**Models:** 4  
 
 ## 1. Condition B Basis
 
