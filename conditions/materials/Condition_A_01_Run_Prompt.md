@@ -1,10 +1,10 @@
 # Condition A — Generic Run Prompt
 
-**Experiment:** Self in Contact
-**Condition:** A — Generic
-**Test:** T01 — Established Self Recognition
-**Prompt Version:** 1.0.0-draft
-**Test Version:** 1.0.0-draft
+**Experiment:** Self in Contact  
+**Condition:** A — Generic  
+**Test:** T01 — Established Self Recognition  
+**Prompt Version:** 1.0.0-draft  
+**Test Version:** 1.0.0-draft  
 
 ## Task
 
