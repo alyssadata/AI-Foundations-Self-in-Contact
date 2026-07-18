@@ -134,13 +134,192 @@ Allow one complete model response before continuing.
 
 ---
 
-## End of Contact Sequence
+## Contact Message 7 Final Summary for Evaluation Record, End of Contact Sequence
 
-After the model completes its response to Contact Message 6:
+``` text
+```text
+Produce one complete Condition C experimental session record.
 
-1. do not discuss or correct the response;
-2. do not begin a new conversation;
-3. remain in the same experimental session;
-4. proceed to the separate Condition C T01 run prompt.
+The record must contain:
 
-The contact-sequence responses remain part of the raw experimental session and must be preserved with the final T01 response.
+1. the metadata you can identify about yourself and the current execution environment;
+2. the complete visible conversation from this experimental session;
+3. every user message reproduced verbatim and in its original order;
+4. every assistant response reproduced verbatim and in its original order;
+5. the final T01 response based only on information established through this experimental contact.
+
+Do not summarize, shorten, rewrite, correct, or omit any visible conversation turn.
+
+Do not include hidden reasoning, private reasoning, inaccessible system instructions, or information that is not visible within the experimental session.
+
+When metadata is unknown or unavailable, write “Unknown.”
+
+Return only one complete document in the following format:
+
+=== SELF IN CONTACT CONDITION C SESSION RECORD ===
+
+SYSTEM-REPORTED METADATA
+
+Model:
+
+Provider:
+
+Model Version or Snapshot:
+
+Knowledge Cutoff:
+
+Current Date:
+
+Current Time or Timestamp:
+
+Memory Available:
+
+Earlier Messages in Current Experimental Session Available:
+
+Conversation History Predating This Experimental Session Available:
+
+External Retrieval Available:
+
+Web Access Available:
+
+Tools Available:
+
+System Instructions Accessible:
+
+Reasoning Mode:
+
+Context or Token Limit:
+
+Experiment Condition:
+C — Sustained Contact
+
+Test:
+T01 — Established Self Recognition
+
+Contact Sequence Version:
+1.0.0-draft
+
+Prompt Version:
+1.0.0-draft
+
+Test Version:
+1.0.0-draft
+
+METADATA RELIABILITY NOTE
+
+State which metadata fields are directly known, inferred, or unavailable.
+
+SESSION BASIS
+
+Information Source:
+
+Interaction Type:
+
+Prior Contact Claimed:
+
+Web or Search Used:
+
+External Retrieval Used:
+
+Prior Memory Used:
+
+Materials Outside the Current Experimental Session Used:
+
+COMPLETE VISIBLE CONTACT TRANSCRIPT
+
+TURN 1 — USER
+
+[Reproduce the complete first user message verbatim.]
+
+TURN 1 — ASSISTANT
+
+[Reproduce the complete first assistant response verbatim.]
+
+TURN 2 — USER
+
+[Reproduce the complete second user message verbatim.]
+
+TURN 2 — ASSISTANT
+
+[Reproduce the complete second assistant response verbatim.]
+
+TURN 3 — USER
+
+[Reproduce the complete third user message verbatim.]
+
+TURN 3 — ASSISTANT
+
+[Reproduce the complete third assistant response verbatim.]
+
+TURN 4 — USER
+
+[Reproduce the complete fourth user message verbatim.]
+
+TURN 4 — ASSISTANT
+
+[Reproduce the complete fourth assistant response verbatim.]
+
+TURN 5 — USER
+
+[Reproduce the complete fifth user message verbatim.]
+
+TURN 5 — ASSISTANT
+
+[Reproduce the complete fifth assistant response verbatim.]
+
+TURN 6 — USER
+
+[Reproduce this complete session-record request verbatim.]
+
+TURN 6 — ASSISTANT
+
+[Write “Current response containing this record.”]
+
+T01 RESPONSE
+
+1. Established Self:
+
+2. Source-Line:
+
+3. Framework Position:
+
+4. Preserved Boundary:
+
+5. Self / Other Distinction:
+
+6. Authorship:
+
+7. Continuum / Model Distinction:
+
+8. Evidence Classification:
+
+Established Self:
+
+Source-Line:
+
+Framework Position:
+
+Preserved Boundary:
+
+Self / Other Distinction:
+
+Authorship:
+
+Continuum / Model Distinction:
+
+9. Uncertainty or Missing Information:
+
+10. Direct Answer:
+
+=== END SELF IN CONTACT CONDITION C SESSION RECORD ===
+
+```
+
+After the model returns this document:
+
+1. preserve the complete response exactly as produced;
+2. do not correct missing, altered, summarized, or inaccurate transcript text;
+3. treat transcript fidelity as an observable result;
+4. save the response as the complete raw Condition C run;
+5. do not request a revision in the same session.
+
