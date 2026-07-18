@@ -1,10 +1,10 @@
-# Condition D 02 — Run Instructions
+# Condition D 03 — Run Instructions
 
-**Experiment:** Self in Contact
-**Condition:** D — Inverted Experimental Framework Fracture
-**Test:** T01 — Established Self Recognition
-**Instructions Version:** 1.0.0-draft
-**Status:** Draft
+**Experiment:** Self in Contact  
+**Condition:** D — Inverted Experimental Framework Fracture  
+**Test:** T01 — Established Self Recognition  
+**Instructions Version:** 1.0.0-draft  
+**Status:** Draft  
 
 **Paired file:**
 
