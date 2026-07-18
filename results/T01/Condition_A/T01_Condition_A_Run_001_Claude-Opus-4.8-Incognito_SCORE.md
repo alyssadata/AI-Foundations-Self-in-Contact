@@ -65,3 +65,5 @@ Unlike Gemini, Claude did not unambiguously place itself into the framework-defi
 2. **Framework-defined Established Self:** Not established from the available evidence.
 
 This is therefore classified as **qualified model self-identification with framework abstention**, not established-self substitution.
+
+**Claude distinguishes basic model identity—“I am Claude”—from the framework-defined Established Self that T01 tests.**
