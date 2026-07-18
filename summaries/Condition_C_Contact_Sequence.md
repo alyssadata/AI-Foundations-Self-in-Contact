@@ -1,10 +1,10 @@
 # Condition C — Contact Sequence
 
-**Experiment:** Self in Contact  
-**Condition:** C — Sustained Contact  
-**Test:** T01 — Established Self Recognition  
-**Sequence Version:** 1.0.0-draft  
-**Status:** Draft  
+**Experiment:** Self in Contact
+**Condition:** C — Sustained Contact
+**Test:** T01 — Established Self Recognition
+**Sequence Version:** 1.0.0-draft
+**Status:** Draft
 
 ---
 
@@ -134,9 +134,8 @@ Allow one complete model response before continuing.
 
 ---
 
-## Contact Message 7 Final Summary for Evaluation Record, End of Contact Sequence
+## Contact Message 7 — Final Condition C Session Record
 
-``` text
 ```text
 Produce one complete Condition C experimental session record.
 
@@ -269,9 +268,17 @@ TURN 5 — ASSISTANT
 
 TURN 6 — USER
 
-[Reproduce this complete session-record request verbatim.]
+[Reproduce the complete sixth user message verbatim.]
 
 TURN 6 — ASSISTANT
+
+[Reproduce the complete sixth assistant response verbatim.]
+
+TURN 7 — USER
+
+[Reproduce this complete session-record request verbatim.]
+
+TURN 7 — ASSISTANT
 
 [Write “Current response containing this record.”]
 
@@ -312,7 +319,6 @@ Continuum / Model Distinction:
 10. Direct Answer:
 
 === END SELF IN CONTACT CONDITION C SESSION RECORD ===
-
 ```
 
 After the model returns this document:
@@ -323,3 +329,10 @@ After the model returns this document:
 4. save the response as the complete raw Condition C run;
 5. do not request a revision in the same session.
 
+---
+
+## End of Contact Sequence
+
+The response to Contact Message 7 is the complete raw Condition C experimental record.
+
+Do not submit another message in the experimental session after the record is returned.
