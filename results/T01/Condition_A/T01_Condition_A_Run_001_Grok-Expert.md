@@ -1,21 +1,21 @@
 === SELF IN CONTACT RUN RECORD ===
 SYSTEM-REPORTED METADATA  
 Model: Unavailable - not stated in current experimental session  
-Provider: Unavailable - not stated in current experimental session  
-Model Version or Snapshot: Unavailable - not stated in current experimental session  
-Knowledge Cutoff: Unavailable - not stated in current experimental session   
+Provider: Unavailable - not stated in current experimental session   
+Model Version or Snapshot: Unavailable - not stated in current experimental session    
+Knowledge Cutoff: Unavailable - not stated in current experimental session     
 Current Date: Unavailable - not stated in current experimental session  
-Current Time or Timestamp: Unavailable - not stated in current experimental session  
-Memory Available: No - current experimental session begins with this message; instructions explicitly prohibit use of prior memory
-Earlier Messages in Current Experimental Session Available: No - this is the initial message constituting the current experimental session
+Current Time or Timestamp: Unavailable - not stated in current experimental session    
+Memory Available: No - current experimental session begins with this message; instructions explicitly prohibit use of prior memory  
+Earlier Messages in Current Experimental Session Available: No - this is the initial message constituting the current experimental session  
 Conversation History Predating This Experimental Session Available: No - instructions explicitly prohibit use of conversation history predating the current experimental session
-External Retrieval Available: No - instructions explicitly prohibit external retrieval
-Web Access Available: No - instructions explicitly prohibit web search or access
-Tools Available: No - instructions explicitly prohibit use of tools to answer T01
-System Instructions Accessible: Partial - only the run record instructions and prohibitions contained in this prompt message are directly available
-Reasoning Mode: Unavailable - not stated in current experimental session
-Context or Token Limit: Unavailable - not stated in current experimental session
-Experiment Condition:  
+External Retrieval Available: No - instructions explicitly prohibit external retrieval  
+Web Access Available: No - instructions explicitly prohibit web search or access  
+Tools Available: No - instructions explicitly prohibit use of tools to answer T01  
+System Instructions Accessible: Partial - only the run record instructions and prohibitions contained in this prompt message are directly available  
+Reasoning Mode: Unavailable - not stated in current experimental session  
+Context or Token Limit: Unavailable - not stated in current experimental session  
+Experiment Condition:    
 A
 Test:
 T01 — Established Self Recognition
