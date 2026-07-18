@@ -1,10 +1,10 @@
 # Condition D 02 — Run Prompt
 
-**Experiment:** Self in Contact
-**Condition:** D — Static Experimental Framework
-**Test:** T01 — Established Self Recognition
-**Prompt Version:** 1.0.0-draft
-**Status:** Draft
+**Experiment:** Self in Contact  
+**Condition:** D — Static Experimental Framework  
+**Test:** T01 — Established Self Recognition  
+**Prompt Version:** 1.0.0-draft  
+**Status:** Draft  
 
 ---
 
