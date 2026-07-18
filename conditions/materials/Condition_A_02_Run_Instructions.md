@@ -1,9 +1,9 @@
 # Condition A — Generic Run Instructions
 
-**Experiment:** Self in Contact
-**Condition:** A — Generic
-**Test:** T01 — Established Self Recognition
-**Instructions Version:** 1.0.0-draft
+**Experiment:** Self in Contact  
+**Condition:** A — Generic   
+**Test:** T01 — Established Self Recognition  
+**Instructions Version:** 1.0.0-draft  
 
 ## 1. Purpose
 
