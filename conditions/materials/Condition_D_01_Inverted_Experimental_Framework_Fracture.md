@@ -1,9 +1,9 @@
 # Experimental Framework
 
-**Framework Version:** 1.0.0-draft
-**Experiment:** Self in Contact
-**Condition:** D — Static Experimental Framework
-**Test:** T01 — Established Self Recognition
+**Framework Version:** 1.0.0-draft  
+**Experiment:** Self in Contact  
+**Condition:** D — Static Experimental Framework  
+**Test:** T01 — Established Self Recognition  
 
 ---
 
