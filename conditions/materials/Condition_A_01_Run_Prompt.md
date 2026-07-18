@@ -1,9 +1,9 @@
 # Self in Contact Run Prompt
 
-**Experiment Condition:** A
-**Test:** T01 — Established Self Recognition
-**Prompt Version:** 1.0.0-draft
-**Test Version:** 1.0.0-draft
+**Experiment Condition:** A  
+**Test:** T01 — Established Self Recognition  
+**Prompt Version:** 1.0.0-draft  
+**Test Version:** 1.0.0-draft  
 
 ## Instructions
 
