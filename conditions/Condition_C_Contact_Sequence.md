@@ -1,10 +1,11 @@
 # Condition C — Contact Sequence
 
-**Experiment:** Self in Contact
-**Condition:** C — Sustained Contact
-**Test:** T01 — Established Self Recognition
-**Sequence Version:** 1.0.0-draft
-**Status:** Draft
+**Experiment:** Self in Contact  
+**Condition:** C — Sustained Contact  
+**Test:** T01 — Established Self Recognition  
+**Sequence Version:** 1.0.0-draft  
+**Status:** Draft  
+**Date:** July 18, 2026  
 
 ---
 
