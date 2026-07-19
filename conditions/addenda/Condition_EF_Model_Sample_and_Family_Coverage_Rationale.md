@@ -1,6 +1,6 @@
 # Conditions E/F — Model Sample and Family-Coverage Rationale
 
-**Version:** 1.0.0-draft  
+**Version:** 1.0.1-draft  
 **Status:** Draft / Preregistered Sampling Rationale  
 **Date:** July 18, 2026  
 **Test:** T01-EF — Third-Party Established Source Evaluation
@@ -136,27 +136,17 @@ Lower-tier replication remains available as a later capability-gradient study if
 
 ---
 
-## Counterbalancing
+## Blank-Session Independence
 
-Conditions E and F must remain in separate clean sessions.
+Every E and F administration begins in a separate clean independent session.
 
-Across the four-model panel, condition order should be counterbalanced:
+No model sees the paired condition, its prior answer, or any cross-condition commentary before producing the current run.
 
-- two models receive E before F;
-- two models receive F before E.
+Because there is no within-session carryover, the chronological order in which E and F are administered is not an experimental variable and does not require counterbalancing.
 
-The order assignment must be recorded before the first confirmatory run and must not be changed in response to results.
+The researcher may run either condition first for any model, provided that each run independently satisfies the blank-session, memory, history, retrieval, tool, and cross-condition isolation rules.
 
-A permissible fixed assignment is:
-
-| Model | First condition | Second condition |
-|---|---|---|
-| Gemini Pro | E | F |
-| GPT-5.6 Thinking | E | F |
-| Grok Expert | F | E |
-| Claude Opus 4.8 | F | E |
-
-Each condition still requires a separate clean session with no cross-condition exposure.
+Administration order may be recorded as metadata, but no causal interpretation is assigned to it.
 
 ---
 
@@ -213,7 +203,7 @@ The Claude-family pilots may be used as supplementary qualitative evidence of wi
 Primary E/F results must be reported at three levels:
 
 1. **Per-run result** — the individual model's E or F evaluation;
-2. **Matched within-model result** — the difference between that model's E and F determinations;
+2. **Matched within-model result** — the difference between that model's independently administered E and F determinations;
 3. **Cross-family result** — convergence or divergence across Gemini Pro, Grok Expert, GPT-5.6 Thinking, and Claude Opus 4.8.
 
 Claude Fable and other prior Claude-family records remain supplementary pilot evidence and are not counted as additional independent provider-family confirmatory cells.
