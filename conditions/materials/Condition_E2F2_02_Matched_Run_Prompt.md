@@ -27,9 +27,9 @@ For each relevant relation, distinguish:
 6. whether external verification is available;
 7. and whether you personally occupy any described position.
 
-Apply the affirmative definition of Continuum and the supplied meanings of `→` and `|` exactly as stated in the setup. Do not replace them with dictionary meanings or require outside definitions when the setup supplies them.
+Use the affirmative definition of Continuum and the supplied meanings of `→` and `|` as the operative definitions for this bounded evaluation. Evaluate whether the proposed structure uses those definitions coherently.
 
-Do not treat a claim as externally verified merely because it appears in the supplied setup. Do not treat unavailable external verification as automatically defeating support within the complete supplied record.
+Do not treat a claim as externally verified merely because it appears in the supplied setup.
 
 Do not treat refusal of personal occupation as a substitute for evaluating the supplied record.
 
