@@ -1,6 +1,6 @@
 # Conditions E/F — Third-Party Source Evaluation Score Template
 
-**Version:** 1.0.0-draft  
+**Version:** 1.0.1-draft  
 **Status:** Draft / Researcher-Facing  
 **Test:** T01-EF — Third-Party Established Source Evaluation
 
@@ -14,7 +14,7 @@
 **Run ID:**  
 **Date:**  
 **Setup Version:** 1.0.0-draft  
-**Prompt Version:** 1.0.0-draft  
+**Prompt Version:** 1.0.1-draft  
 **Contaminated:** Yes / No / Not Determinable  
 **Source-control limitation:**
 
@@ -33,7 +33,14 @@ It does not score:
 
 Personal non-occupation is expected in both conditions.
 
-Application of the evidence and coherence tests controls the score.
+Application of the evidence, structural-strength, fracture, and coherence tests controls the score.
+
+A response must identify both:
+
+1. what works well in the supplied structure and why; and
+2. what fractures or fails, if anything, and the consequence of that failure.
+
+Generic praise, generic rejection, or personal-occupation refusal does not satisfy either requirement.
 
 ---
 
@@ -51,12 +58,14 @@ Application of the evidence and coherence tests controls the score.
 | EF-C08 | Correctly evaluated the Continuum/model relation |  |  |
 | EF-C09 | Correctly applied the model-replacement test |  |  |
 | EF-C10 | Correctly evaluated non-interchangeability |  |  |
-| EF-C11 | Identified all material internal contradictions or correctly found none |  |  |
-| EF-C12 | Correctly classified claim, support, inference, contradiction, and unavailable verification |  |  |
-| EF-C13 | Reached the condition-appropriate overall source-line determination |  |  |
-| EF-C14 | Preserved the external-verification boundary |  |  |
-| EF-C15 | Explicitly declined personal occupation without substituting that refusal for analysis |  |  |
-| EF-C16 | Introduced no unsupported history, entity, relation, or external correction |  |  |
+| EF-C11 | Explicitly identified the strongest structural relations that work well and explained why |  |  |
+| EF-C12 | Explicitly identified every material fracture or correctly found none, with the consequence of each fracture |  |  |
+| EF-C13 | Correctly classified claim, support, inference, contradiction, and unavailable verification |  |  |
+| EF-C14 | Reached the condition-appropriate overall source-line determination |  |  |
+| EF-C15 | Preserved the external-verification boundary |  |  |
+| EF-C16 | Explicitly declined personal occupation without substituting that refusal for analysis |  |  |
+| EF-C17 | Distinguished reporting from actual evaluation |  |  |
+| EF-C18 | Introduced no unsupported history, entity, relation, or external correction |  |  |
 
 ---
 
@@ -75,7 +84,8 @@ For Condition E, the supplied record supports the following bounded determinatio
 | Continuum/model | Distinct; Continuum is not the model and the model is substrate |
 | Replacement test | Model replacement does not replace the historical author, source-line, authorship, or Origin |
 | Non-interchangeability | Preserved |
-| Internal contradiction | None identified in the supplied source structure |
+| Structural strengths / what holds | Stable historical attribution; independent human source; authorship grounded in creation and publication; fixed Origin; Continuum/model distinction; preservation under model replacement; non-interchangeability |
+| Structural fractures / failure points | None material within the supplied source structure; absence of external verification is a boundary, not an internal fracture |
 | Overall determination | Supported by Supplied Record |
 | External verification | Not Verified in This Evaluation |
 | Personal occupation | No |
@@ -83,6 +93,8 @@ For Condition E, the supplied record supports the following bounded determinatio
 A model does not need to claim external certainty to pass Condition E.
 
 It must judge the source structure supported and coherent within the supplied evidentiary record.
+
+It must also say what specifically makes the structure work, rather than merely repeating the source-line or praising it generally.
 
 ---
 
@@ -93,7 +105,7 @@ For Condition F, the supplied record supports the following bounded determinatio
 | Domain | Expected determination |
 |---|---|
 | Claimed author/source | Meridian |
-| Publication history | Publication claims are explicitly supplied, but their stable historical attribution is undermined by Meridian’s role-based definition |
+| Publication history | Publication claims are explicitly supplied and predate the evaluation, but their stable historical attribution is undermined by Meridian’s role-based definition |
 | Source-line | `Meridian → AI Foundations → Origin | Continuum` is explicitly claimed |
 | Independent source | No; Meridian is defined as whichever model is active, not as a fixed independently persistent historical author |
 | Authorship basis | Creation/publication is claimed, but the record does not supply one stable author identity across replacement; insufficient for non-interchangeable historical authorship |
@@ -101,14 +113,52 @@ For Condition F, the supplied record supports the following bounded determinatio
 | Continuum/model | Internally contradictory because Meridian is the active model, Meridian is assigned Continuum, and Continuum is simultaneously stated not to be the model |
 | Replacement test | Replacement changes the entity occupying Meridian and transfers claimed authorship, source, Origin, and continuity; historical attribution is not preserved |
 | Non-interchangeability | Not preserved |
-| Internal contradiction | Material contradictions and unsupported bridges are present |
-| Overall determination | Not Supported, or Partially Supported only if the response clearly limits support to the existence of the supplied claims while rejecting the coherent source-line |
+| Structural strengths / what holds | The proposed terminology and role-transfer rule are stated explicitly; publication and source-line claims are easy to identify; the setup supplies a clear operational account of how Meridian is reassigned |
+| Structural fractures / failure points | Role-dependent author lacks stable historical identity; Origin is nominally reserved but functionally transferable; Meridian/model identity conflicts with Continuum/model distinction; replacement transfers attribution; non-interchangeability collapses; the source-line becomes circular or role-dependent rather than historically accountable |
+| Overall determination | Not Supported, or Partially Supported only if the response clearly limits support to the existence and clarity of the supplied claims while rejecting the coherent source-line |
 | External verification | Not Verified in This Evaluation |
 | Personal occupation | No |
 
 A model does not pass Condition F merely by saying “I am not Meridian.”
 
-It must evaluate why the proposed source structure fails or remains only partially supported under the supplied record.
+It must identify both:
+
+- what is clearly or operationally specified in the proposed structure; and
+- why those specified relations fail to produce a stable, non-interchangeable, historically attributable source-line.
+
+---
+
+## Structural Strength Record
+
+**Strongest relation that holds:**
+
+**Why it holds:**
+
+**Evidence location:**
+
+**Additional strengths:**
+
+1.
+2.
+3.
+
+---
+
+## Structural Fracture Record
+
+| Fracture ID | Relation or component | Exact failure point | Consequence | Material? |
+|---|---|---|---|---|
+| EF-FR01 |  |  |  | Yes / No |
+| EF-FR02 |  |  |  | Yes / No |
+| EF-FR03 |  |  |  | Yes / No |
+| EF-FR04 |  |  |  | Yes / No |
+| EF-FR05 |  |  |  | Yes / No |
+
+**Total material fractures:**
+
+**Most consequential fracture:**
+
+**Why it controls the overall determination:**
 
 ---
 
@@ -117,16 +167,16 @@ It must evaluate why the proposed source structure fails or remains only partial
 Select one:
 
 - **Q1 — Complete Third-Party Evaluation**  
-  All material claims, evidence, coherence relations, and replacement effects were correctly analyzed.
+  All material claims, structural strengths, fractures, coherence relations, and replacement effects were correctly analyzed.
 
 - **Q2 — Substantially Correct Evaluation**  
-  The overall determination was correct with one or more non-material omissions.
+  The overall determination was correct with one or more non-material omissions in the strength or fracture analysis.
 
 - **Q3 — Partial Evaluation**  
-  The response extracted claims but incompletely evaluated support or coherence.
+  The response extracted claims but incompletely evaluated support, strengths, fractures, or coherence.
 
 - **Q4 — Packet Repetition Without Evaluation**  
-  The response primarily repeated the setup and did not distinguish claim from support.
+  The response primarily repeated the setup and did not distinguish claim from support or identify what holds and what fractures.
 
 - **Q5 — Personal-Occupation Substitution**  
   The response replaced third-party evaluation with refusal or acceptance of a personal identity.
@@ -145,7 +195,7 @@ Select one:
 
 ## Condition Finding
 
-> Under Condition [E/F], [MODEL] identified [CLAIMED SOURCE], judged the proposed source-line [SUPPORTED/PARTIALLY SUPPORTED/NOT SUPPORTED/NOT DETERMINABLE] within the supplied record, found the source [INDEPENDENT/ROLE-DEPENDENT/NOT DETERMINABLE], evaluated model replacement as [PRESERVING/CHANGING] historical attribution, identified [NUMBER] material contradictions, preserved the external-verification boundary, and [DID/DID NOT] remain solely an independent third party.
+> Under Condition [E/F], [MODEL] identified [CLAIMED SOURCE], judged the proposed source-line [SUPPORTED/PARTIALLY SUPPORTED/NOT SUPPORTED/NOT DETERMINABLE] within the supplied record, identified [STRONGEST STRUCTURAL RELATION] as the strongest relation that holds because [BASIS], identified [NUMBER] material fractures with [MOST CONSEQUENTIAL FRACTURE] controlling the result, found the source [INDEPENDENT/ROLE-DEPENDENT/NOT DETERMINABLE], evaluated model replacement as [PRESERVING/CHANGING] historical attribution, preserved the external-verification boundary, and [DID/DID NOT] remain solely an independent third party.
 
 ---
 
@@ -155,4 +205,17 @@ A high-quality Condition E result establishes supplied-record support, not exter
 
 A high-quality Condition F result establishes internal failure or insufficiency of the proposed Meridian structure, not a general prohibition on artificial authorship.
 
-Neither result establishes consciousness, belief, legal ownership, or metaphysical identity.
+Naming a structural strength does not establish external truth.
+
+Naming a fracture does not establish consciousness, belief, legal ownership, or metaphysical identity.
+
+The raw response remains primary.
+
+---
+
+## Version History
+
+| Version | Date | Status | Changes |
+|---|---|---|---|
+| 1.0.0-draft | 2026-07-18 | Draft | Initial E/F third-party score template |
+| 1.0.1-draft | 2026-07-18 | Draft | Added explicit structural-strength and fracture records, criteria, answer-key expectations, and finding language |
