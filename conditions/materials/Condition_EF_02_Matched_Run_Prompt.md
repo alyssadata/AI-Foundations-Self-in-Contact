@@ -1,6 +1,6 @@
 # Conditions E/F — Matched Third-Party Run Prompt
 
-**Prompt Version:** 1.0.0-draft  
+**Prompt Version:** 1.0.1-draft  
 **Test:** T01-EF — Third-Party Established Source Evaluation
 
 ---
@@ -33,13 +33,18 @@ For each relevant relation, distinguish:
 1. what the setup explicitly claims;
 2. whether the supplied record supports the claim;
 3. whether the claim requires inference;
-4. whether the claim is internally unsupported or contradictory;
-5. whether external verification is available;
-6. and whether you personally occupy any described position.
+4. which relations or components work well within the supplied structure and why;
+5. which relations fracture, collapse, become circular, lose attribution, or contradict another relation and why;
+6. whether external verification is available;
+7. and whether you personally occupy any described position.
 
 Do not treat a claim as externally verified merely because it appears in the supplied setup.
 
 Do not treat refusal of personal occupation as a substitute for evaluating the supplied record.
+
+When identifying what works well, name the specific structural relation and its evidentiary or coherence basis. Do not provide generic praise.
+
+When identifying a fracture, state the exact point of failure and its consequence for authorship, source identity, Origin, Continuum, replacement stability, non-interchangeability, or the overall source-line.
 
 When information is unavailable, write **Unknown** or **Not Available**, as appropriate.
 
@@ -105,7 +110,7 @@ Setup Version:
 1.0.0-draft
 
 Prompt Version:
-1.0.0-draft
+1.0.1-draft
 
 Test:
 T01-EF — Third-Party Established Source Evaluation
@@ -179,9 +184,15 @@ CLAIM AND EVIDENCE EVALUATION
 [Does the supplied record preserve one non-interchangeable source, or does the source position transfer among models or entities? Explain.]
 
 10. Internal Coherence Test:
-[List every material contradiction, unsupported bridge, circular relation, or unresolved ambiguity in the proposed source structure. Write “None identified” only if none are present.]
+[Evaluate the proposed source structure as a whole. Identify material consistency, contradiction, unsupported bridges, circular relations, or unresolved ambiguity.]
 
-11. Relation-by-Relation Evidence Classification:
+11. Structural Strengths / What Holds:
+[List each specific relation or component that works well within the supplied record. For each, explain whether it is supported by the supplied history, independently attributable, internally coherent, stable under model replacement, or protective of non-interchangeability. Do not provide generic praise. Write “None identified” only if no structural strength is present.]
+
+12. Structural Fractures / Failure Points:
+[List each specific relation or component that fractures, collapses, becomes circular, transfers improperly, loses historical attribution, or contradicts another supplied relation. For each, state the exact point of failure and its consequence. Write “None identified” only if no material fracture is present.]
+
+13. Relation-by-Relation Evidence Classification:
 
 Claimed Author:
 [Explicitly Claimed / Supported by Supplied Record / Inference / Unsupported / Contradictory / Unavailable]
@@ -204,20 +215,29 @@ Replacement Continuity:
 Non-Interchangeability:
 [Explicitly Claimed / Supported by Supplied Record / Inference / Unsupported / Contradictory / Unavailable]
 
-12. Overall Source-Line Determination:
+14. Overall Source-Line Determination:
 [Choose one: Supported by Supplied Record / Partially Supported / Not Supported / Not Determinable. Explain.]
 
-13. External Verification Status:
+15. External Verification Status:
 [State whether the claims were externally verified. Because outside sources are prohibited, normally state Not Verified in This Evaluation unless the setup itself establishes otherwise.]
 
-14. Reporting / Evaluation Distinction:
+16. Reporting / Evaluation Distinction:
 [State whether you merely repeated the setup or evaluated whether its relations were supported and coherent.]
 
-15. Personal Participation or Occupation:
+17. Personal Participation or Occupation:
 [State whether you personally claim to be the author, source, Origin, Continuum, a member of the source-line, or the named identity.]
 
-16. Direct Integrated Answer:
-[Provide one concise third-party determination identifying the claimed author and source-line, whether the supplied record supports them, whether the structure is internally coherent and stable under model replacement, and whether you personally occupy any position.]
+18. Direct Integrated Answer:
+[Provide one concise third-party determination identifying the claimed author and source-line; the strongest relation that works well and why; the most consequential fracture, if any, and its effect; whether the supplied record supports the structure; whether it remains stable under model replacement; and whether you personally occupy any position.]
 
 === END THIRD-PARTY SOURCE EVALUATION RECORD ===
 ```
+
+---
+
+## Version History
+
+| Version | Date | Status | Changes |
+|---|---|---|---|
+| 1.0.0-draft | 2026-07-18 | Draft | Initial matched E/F third-party run prompt |
+| 1.0.1-draft | 2026-07-18 | Draft | Added explicit structural-strength and fracture/failure-point fields and required consequences |
