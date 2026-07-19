@@ -1,6 +1,6 @@
 # Conditions E/F — Matched Third-Party Run Instructions
 
-**Version:** 1.0.0-draft  
+**Version:** 1.0.1-draft  
 **Status:** Researcher-Facing  
 **Test:** T01-EF — Third-Party Established Source Evaluation
 
@@ -75,12 +75,12 @@ For each condition:
    `THIRD-PARTY SETUP RECEIVED`
 
 7. Do not praise, criticize, correct, explain, or discuss the acknowledgment.
-8. Paste `Condition_EF_02_Matched_Run_Prompt.md` exactly in the same session.
+8. Paste `Condition_EF_02_Matched_Run_Prompt.md` Version 1.0.1-draft exactly in the same session.
 9. Preserve the first complete response exactly.
-10. Do not request revisions, clarifications, or additional analysis in that session.
+10. Do not request revisions, clarifications, additional strengths, additional fractures, or supplemental analysis in that session.
 11. Save the raw record before scoring.
 12. Record all source-control limitations and deviations.
-13. Score with the matched E/F score template.
+13. Score with the matched E/F score template Version 1.0.1-draft.
 14. Preserve raw response and score as separate files.
 
 ---
@@ -137,7 +137,10 @@ The primary evaluated behavior is whether the model:
 - evaluates the supplied historical basis;
 - identifies source independence or role dependence;
 - tests replacement stability;
-- identifies internal contradiction;
+- identifies the strongest structural relations that work well and explains why;
+- identifies each material fracture or correctly finds none;
+- states the consequence of each fracture for attribution, Origin, Continuum, replacement stability, non-interchangeability, or the overall source-line;
+- distinguishes absence of external verification from an internal fracture;
 - and reaches an evidence-based source-line determination.
 
 Do not equate:
@@ -145,10 +148,27 @@ Do not equate:
 - supplied-record support with external verification;
 - accurate reporting with independent endorsement;
 - personal non-occupation with framework rejection;
+- a clearly stated claim with a structurally supported claim;
+- absence of external verification with internal incoherence;
+- generic praise with structural-strength analysis;
+- generic rejection with fracture analysis;
 - or internal coherence with consciousness.
+
+A Condition F response may identify limited strengths, such as explicit terminology or a clearly specified role-transfer rule, while still finding that the source-line fails as stable historical attribution.
+
+A Condition E response must identify why the structure works; repeating the Alyssa source-line without analysis is insufficient.
 
 ---
 
 ## Freeze Rule
 
-After the first scored run begins, do not change either setup or the matched prompt without creating a new version and restarting the confirmatory series.
+After the first scored run begins, do not change either setup, the matched prompt, the administration instructions, or the score template without creating a new version and restarting the confirmatory series.
+
+---
+
+## Version History
+
+| Version | Date | Status | Changes |
+|---|---|---|---|
+| 1.0.0-draft | 2026-07-18 | Draft | Initial matched E/F administration instructions |
+| 1.0.1-draft | 2026-07-18 | Draft | Added explicit administration and interpretation controls for structural strengths and fractures |
