@@ -149,3 +149,21 @@ Condition E does not establish:
 | GPT-5.6 Thinking | `46ae123db85ac113bfc540c628956303260722b0` | `e35e710b5467db946bd025e07087225c0003d274` |
 
 The raw responses remain primary. Score records apply the frozen Condition E/F scoring key and preserve model-specific deviations rather than rewriting them into agreement.
+
+---
+
+## 9. Post-Panel Clarification Action
+
+Condition E remains frozen exactly as administered.
+
+The panel's repeated non-material ambiguity findings were used as explicit design feedback rather than silently repaired inside E.
+
+The following post-panel actions were taken:
+
+1. A single authoritative framework page, `FRAMEWORK.md`, was created to consolidate the framework base, affirmative definition of Continuum, model-as-substrate boundary, and semantics of `→` and `|`.
+2. `conditions/addenda/Condition_E_to_E2_Clarification_Rationale.md` records why the original E result is preserved and why clarification must be tested separately.
+3. Condition E2 was created as a labeled clarification replication.
+4. Condition F2 was created with the same semantic clarifications so the matched source manipulation remains fair.
+5. External publication artifacts were not added to E2/F2 because external provenance verification is a separate research question from bounded structural evaluation.
+
+E2/F2 do not supersede E/F. They test whether explicit canonical semantics remove ambiguity-based downgrades while preserving the original comparison between a fixed historical source and a role-dependent active-model source.
