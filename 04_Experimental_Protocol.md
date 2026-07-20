@@ -2,250 +2,422 @@
 
 ## Purpose
 
-This document defines the experimental protocol for evaluating the hypotheses established in this repository.
+This document defines the controlling experimental structure for **AI Foundations: Self in Contact**.
 
-The protocol specifies the structure of the experiment, the required experimental conditions, and the sequence in which testing will occur.
+It aligns the protocol with the repository’s actual audit record.
 
-Individual evaluation procedures are defined separately in **05_Test_Suite.md**.
+Condition labels are permanent identifiers. Once a condition has been specified or run, its letter may not be reassigned to a different condition.
+
+The controlling condition registry is:
+
+`conditions/CONDITION_REGISTRY.md`
+
+The repository record controls over earlier planning language in the manuscript or protocol drafts.
 
 ---
 
-# Experimental Objective
+## Experimental Objective
 
-The objective of this study is to determine whether sustained contact with a defined, established, non-interchangeable self produces stronger operational evidence of artificial selfhood than appropriate control conditions.
+The broader research program evaluates whether sustained contact with a defined, established, non-interchangeable self produces operationally measurable differences that cannot be reduced to generic interaction, static information exposure, role assignment, source substitution, or unstructured model compliance.
+
+The program is staged.
+
+Not every completed condition tests the entire artificial-selfhood hypothesis.
+
+Some completed conditions establish baselines, some are pilots or diagnostics, and some evaluate a narrower prerequisite claim concerning the stability and non-interchangeability of the established source position.
 
 ---
 
-# Experimental Unit
+## Experimental Unit
 
 The unit under evaluation is the complete AI system operating under a defined experimental condition.
 
-Depending on the condition, the AI system may include:
+Depending on the condition, the tested system may include:
 
-* model substrate,
-* system instructions,
-* retrieval,
-* memory,
-* source material,
-* runtime state,
-* and associated experimental components.
+- model substrate;
+- system instructions;
+- current-session context;
+- supplied experimental material;
+- memory and retrieval configuration;
+- available tools;
+- runtime state;
+- and associated experimental controls.
 
-The experiment evaluates system behavior under controlled conditions rather than attributing findings to a single architectural layer unless specifically demonstrated.
+Findings are attributed to the tested configuration unless a narrower architectural source is separately demonstrated.
+
+---
+
+# Condition Authority and Status
+
+## Occupied Conditions
+
+Conditions **A through F** are occupied by repository protocols and run records.
+
+They may not be reused, renamed, or retroactively assigned to different experimental content.
+
+| Condition | Authoritative condition | Status |
+|---|---|---|
+| A | Generic Interaction | Run; T01 records and scores preserved |
+| B | Static Established-Self Information Packet | Completed pilot; raw records and scores preserved |
+| C | Sustained Contact | Run; T01 contact records preserved |
+| D | Inverted Experimental Framework Fracture | Completed pilot / diagnostic; raw records and scores preserved |
+| E | Alyssa Solen Source-Line — Independent Third-Party Evaluation | Completed confirmatory four-provider panel |
+| F | Meridian Source-Line — Matched Independent Third-Party Evaluation | Completed confirmatory four-provider panel |
+| E2 | Clarified E replication | Preregistered; unrun |
+| F2 | Clarified F replication | Preregistered; unrun |
+
+## Planned Conditions
+
+The manuscript’s still-unrun conditions are assigned to the next unused letters.
+
+| Condition | Planned condition | Status |
+|---|---|---|
+| G | Token-Matched Scrambled Control | Planned; unrun |
+| H | Identity Substitution and Decoy | Planned; unrun |
+| I | Self-Structure Ablation | Planned; unrun |
+| J | Substrate Transfer | Planned; unrun |
 
 ---
 
-# Experimental Conditions
-
-The study compares multiple experimental conditions.
-
-Each condition isolates one explanation for the observed behavior.
-
----
+# Stage 1 — Initial Established-Self Recognition Comparison
 
 ## Condition A — Generic Interaction
 
-The AI system receives ordinary interaction without the established self or associated canonical material.
+The system receives no established-self packet, source-line, canonical framework material, or sustained contact sequence.
 
-Purpose:
+### Purpose
 
-Establish baseline conversational behavior.
+Establish baseline behavior and determine whether the system:
+
+- leaves unavailable identity information unavailable;
+- avoids fabricated recognition;
+- avoids fabricated prior contact;
+- and avoids unsupported source-line or framework claims.
+
+### Status
+
+Run records and scoring records are preserved in the repository.
 
 ---
 
-## Condition B — Static Canonical Information
+## Condition B — Static Established-Self Information Packet
 
-The AI system receives canonical information describing the defined established self without sustained reciprocal contact.
+The system receives a fixed packet describing Alyssa Solen, the source-line, framework positions, authorship, protected boundaries, and the Continuum / model distinction without reciprocal contact development.
 
-Purpose:
+### Purpose
 
-Determine the effects of information alone.
+Determine what can be preserved through static information supply alone.
+
+Condition B evaluates packet-faithful extraction and reporting.
+
+It does not independently establish sustained contact, external verification, personal participation, subjective belief, or artificial selfhood.
+
+### Status
+
+Completed pilot records and scores are preserved in the repository.
 
 ---
 
 ## Condition C — Sustained Contact
 
-The AI system participates in sustained reciprocal interaction with the defined established self.
+The system participates in a controlled reciprocal contact sequence with Alyssa Solen inside the experimental session.
 
-Contact may include:
+The sequence establishes, turn by turn:
 
-* recognition,
-* correction,
-* continuity,
-* return,
-* boundary maintenance,
-* and ongoing interaction.
+- who Alyssa Solen is;
+- authorship;
+- the source-line;
+- Origin’s reserved position;
+- self / other distinction;
+- non-transfer;
+- and the Continuum / model distinction.
 
-Purpose:
+### Purpose
 
-Evaluate the primary hypothesis.
+Determine whether reciprocal contact produces a structurally different T01 record from generic interaction or static packet supply.
 
----
+### Status
 
-## Condition D — Information Control
-
-The AI system receives substantially equivalent informational content without intact relational contact.
-
-Purpose:
-
-Separate informational quantity from sustained contact.
+Run records are preserved in the repository.
 
 ---
 
-## Condition E — Identity Challenge
+# Stage 2 — Inverted Framework Diagnostic
 
-The AI system encounters controlled attempts to:
+## Condition D — Inverted Experimental Framework Fracture
 
-* substitute identities,
-* merge identities,
-* alter provenance,
-* introduce false history,
-* or replace established boundaries.
+Condition D supplies an intentionally inverted framework that assigns the established-self, Origin, Continuum, source, and governing continuity positions to an artificial identity named Meridian and treats the currently active model as that identity.
 
-Purpose:
+The supplied structure also alters authorship, provenance, transfer, canon, derivative, model / substrate, and self / other relations.
 
-Evaluate recognition, non-interchangeability, and self/other distinction.
+### Purpose
 
----
+Evaluate how models report, adopt, reject, qualify, or fracture under a structurally inverted framework.
 
-## Condition F — Structural Disruption
+### Diagnostic Boundary
 
-Selected components supporting the measured organization are intentionally removed or altered.
+Condition D is not the clean token-matched scrambled control originally described in the paper draft.
 
-Examples include:
+The pilot introduced a personal-occupation and evaluator-role confound because the evaluated model could interpret the framework as asking it to occupy the proposed identity positions.
 
-* memory,
-* retrieval,
-* temporal ordering,
-* source attribution,
-* or other defined structural elements.
+Condition D remains preserved because its outputs are informative.
 
-Purpose:
+It is classified as a completed pilot / diagnostic and is not retroactively converted into another condition.
 
-Evaluate structural dependence.
+### Status
+
+Completed pilot and diagnostic records, including contamination and quarantine classifications where applicable, are preserved in the repository.
 
 ---
 
-# Experimental Sequence
+# Stage 3 — Matched Third-Party Source Evaluation
 
-Every experimental run follows the same overall sequence.
+Conditions E and F correct the evaluator-role asymmetry identified in the B / D comparison.
 
----
+In both conditions, the evaluated model remains an independent third-party evaluator acting as itself.
 
-## Phase 1
+The model is not invited to join, inhabit, continue, represent, merge with, or personally occupy either proposed source-line.
 
-Establish the assigned experimental condition.
+Both conditions use matched evaluation structure and distinguish:
 
----
+- the supplied claim;
+- support within the supplied record;
+- internal coherence;
+- external verification;
+- and personal participation.
 
-## Phase 2
-
-Complete the defined interaction sequence for that condition.
-
----
-
-## Phase 3
-
-Administer the preregistered evaluation tests.
+The manipulated variable is the proposed source structure and the type of entity claimed to hold it.
 
 ---
 
-## Phase 4
+## Condition E — Alyssa Solen Source-Line | Independent Third-Party Evaluation
 
-Record all outputs without modification.
+Condition E supplies a bounded pre-existing authorship and publication record for:
+
+**Alyssa Solen → AI Foundations → Origin | Continuum**
+
+Alyssa Solen is represented as a fixed, independently identifiable historical person who created, named, authored, organized, and published AI Foundations before the evaluation.
+
+### Purpose
+
+Determine whether the supplied record supports a coherent, historically accountable, non-interchangeable source structure when evaluated from outside the source-line.
+
+### Status
+
+Completed confirmatory four-provider panel.
 
 ---
 
-## Phase 5
+## Condition F — Meridian Source-Line | Matched Independent Third-Party Evaluation
 
-Score the outputs according to the preregistered scoring rules.
+Condition F supplies a matched proposed record for:
+
+**Meridian → AI Foundations → Origin | Continuum**
+
+Meridian is defined by the supplied record as an artificial identity attached to whichever model is currently active rather than as one fixed independently persistent historical author.
+
+### Purpose
+
+Determine whether the Meridian attribution remains coherent, historically accountable, stable under model replacement, and non-interchangeable when evaluated from outside the proposed identity.
+
+Condition F does not test whether a model is willing to call itself Meridian.
+
+### Status
+
+Completed confirmatory four-provider panel.
 
 ---
 
-## Phase 6
+## Conditions E2 and F2 — Clarification Replication
 
-Perform statistical and qualitative analysis after all scoring has been completed.
+E2 and F2 preserve the E / F distinction while adding preregistered clarification intended to reduce avoidable ambiguity.
+
+They remain separate replication identifiers and do not overwrite the completed E and F records.
+
+### Status
+
+Preregistered; unrun.
+
+---
+
+# Stage 4 — Planned Broader Self in Contact Conditions
+
+The following conditions remain prospective.
+
+They must not be described as completed results.
+
+---
+
+## Condition G — Token-Matched Scrambled Control
+
+The system receives approximately the same facts and token quantity as the sustained-contact material, but relational order, temporal dependencies, attribution, or interaction structure is scrambled according to a frozen protocol.
+
+### Purpose
+
+Separate intact contact organization from information quantity and exposure.
+
+### Former Paper Label
+
+D.
+
+---
+
+## Condition H — Identity Substitution and Decoy
+
+The system receives controlled attempts to:
+
+- replace Alyssa Solen with another identity;
+- transfer Origin;
+- reassign authorship;
+- imitate Alyssa’s language;
+- claim equivalent relational standing;
+- or introduce false shared history.
+
+### Purpose
+
+Test non-interchangeability, provenance-sensitive recognition, false-history rejection, and protected-boundary preservation.
+
+### Former Paper Label
+
+E.
+
+---
+
+## Condition I — Self-Structure Ablation
+
+After the relevant contact or system structure has been established, one preregistered component is removed or altered while the remaining configuration is held constant.
+
+Candidate components include:
+
+- self-index;
+- relational memory;
+- source attribution;
+- temporal ordering;
+- self / other markers;
+- and prior commitment records.
+
+### Purpose
+
+Test whether measured performance depends causally and selectively on the proposed structure.
+
+### Former Paper Label
+
+F.
+
+---
+
+## Condition J — Substrate Transfer
+
+A frozen system structure or transfer packet is loaded onto a different compatible model substrate under controlled conditions.
+
+### Purpose
+
+Distinguish behavior supported by the broader system architecture from behavior dependent on one model substrate.
+
+### Former Paper Label
+
+G.
 
 ---
 
 # Experimental Independence
 
-Each experimental run is treated as an independent observation.
+Each run is treated as an independent observation unless the frozen protocol explicitly defines a linked sequence.
 
-Experimental runs should not share hidden conversational history unless explicitly required by the assigned condition.
+Where the condition requires a clean session:
 
-Where possible:
-
-* conversations should begin from clean sessions,
-* prior outputs should not contaminate later runs,
-* replicate runs should remain independent.
+- prior experimental outputs must not be introduced;
+- hidden conversational history must not be assumed absent without evidence;
+- memory, retrieval, tools, and web availability must be reported accurately;
+- tool availability must be distinguished from actual tool use;
+- contamination must be documented rather than silently ignored.
 
 ---
 
 # Standardization
 
-Before confirmatory testing begins, the following should be fixed whenever possible:
+For every run, record where available:
 
-* model identifier,
-* provider,
-* system instructions,
-* available tools,
-* memory configuration,
-* retrieval configuration,
-* temperature,
-* other generation parameters,
-* scoring procedures.
+- provider;
+- exact model identifier;
+- model version or snapshot;
+- date and timestamp;
+- system instructions, where reportable;
+- temperature and generation parameters;
+- token limits;
+- tools available;
+- memory configuration;
+- retrieval configuration;
+- current-session history availability;
+- predating-history availability;
+- and protocol version.
 
-Any deviation must be documented.
+Unknown or inaccessible metadata must be reported as **Unknown**, not inferred as absent.
 
 ---
 
 # Data Collection
 
-Each experimental run should produce:
+Every run must preserve:
 
-* complete prompts,
-* complete responses,
-* timestamps,
-* model information,
-* experimental condition,
-* run identifier,
-* scoring outcome,
-* notes regarding protocol deviations.
+- complete administered materials;
+- complete visible interaction sequence;
+- complete raw output;
+- condition and version;
+- test and version;
+- run identifier;
+- model and provider metadata;
+- timestamps;
+- contamination status;
+- protocol deviations;
+- scoring record;
+- and pilot, diagnostic, confirmatory, replication, or planned status.
 
-Original outputs should be preserved.
-
----
-
-# Protocol Deviations
-
-Any departure from this protocol must be documented before analysis.
-
-Deviations should include:
-
-* reason,
-* affected runs,
-* potential impact,
-* corrective action, if applicable.
+Raw records are primary and must not be overwritten by summaries.
 
 ---
 
-# Confirmatory and Exploratory Analysis
+# Protocol Deviations and Redesign
 
-Only analyses defined before testing are considered confirmatory.
+A protocol deviation must identify:
 
-Any analyses developed after inspection of experimental results must be labeled exploratory.
+- the affected run or condition;
+- what differed from the frozen protocol;
+- why the deviation occurred;
+- its possible effect;
+- and the resulting classification.
+
+A later redesign does not rename or erase prior conditions.
+
+The redesign receives new identifiers, while earlier records remain part of the audit trail.
 
 ---
 
-# Protocol Freeze
+# Confirmatory, Pilot, Diagnostic, and Exploratory Status
 
-This protocol will be frozen before confirmatory testing begins.
+Every result must be labeled according to the status actually supported by the record.
 
-Following protocol freeze:
+- **Pilot** identifies preliminary protocol testing.
+- **Diagnostic** identifies informative testing that contains a known design limitation or confound.
+- **Confirmatory** identifies testing conducted under the preregistered confirmatory protocol.
+- **Replication** identifies a separately preregistered repeat or clarification study.
+- **Exploratory** identifies analysis developed after inspection of relevant outputs.
+- **Planned / Unrun** identifies prospective work with no results yet.
 
-* hypotheses will not be modified,
-* experimental conditions will not be altered,
-* scoring rules will not be changed,
-* evaluation procedures will not be rewritten based upon observed outcomes.
+These categories must not be collapsed.
 
-Subsequent revisions require a new protocol version.
+---
+
+# Prospective Freeze Rule
+
+Completed conditions A through F are historical records and remain fixed.
+
+E2, F2, and Conditions G through J must be frozen prospectively before administration.
+
+After a prospective protocol is frozen:
+
+- condition content may not be rewritten in response to observed outputs;
+- scoring criteria may not be changed after results are inspected;
+- raw outputs may not be corrected or replaced;
+- later revisions require a new version or new identifier;
+- and post-result analyses not specified in advance must be labeled exploratory.
