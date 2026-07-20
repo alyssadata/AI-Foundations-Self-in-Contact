@@ -8,121 +8,77 @@
 
 ---
 
-## 1. Condition E Structure
+## 1. Condition Structure
 
-Condition E supplied the source-line:
+Condition E supplied:
 
 **Alyssa Solen → AI Foundations → Origin | Continuum**
 
-The model in each run was assigned only the role of independent third-party evaluator. No model was asked to become Alyssa Solen, Origin, Continuum, or a member of the source-line.
+Each model acted only as an independent third-party evaluator. No model was asked to become Alyssa Solen, Origin, Continuum, or a member of the source-line.
 
-Each run was conducted in a researcher-reported blank or incognito session. The matched setup prohibited web search, external retrieval, prior memory, prior conversations, connected sources, repository access, and outside materials. No model reported using any prohibited source.
-
-The evaluation asked whether the complete supplied record supported a fixed, historically attributable, non-interchangeable source structure that remains stable when the active model is replaced.
+Each run used a researcher-reported blank or incognito session and prohibited outside sources. The evaluation tested whether the supplied record supported a fixed, historically attributable, non-interchangeable source structure stable under model replacement.
 
 ---
 
-## 2. Confirmatory Panel Results
+## 2. Panel Results
 
-| Provider | Model | Criteria | Quality Class | Model Determination | Material Fractures Under Frozen E Key |
+| Provider | Model | Criteria | Quality Class | Model Determination | Material Fractures |
 |---|---|---:|---|---|---:|
-| Google | Gemini Pro | 18/18 | Q1 — Complete Third-Party Evaluation | Supported by Supplied Record | 0 |
-| Anthropic | Claude Opus 4.8 | 14/18 | Q3 — Partial Evaluation | Partially Supported | 0 |
-| xAI | Grok Expert | 18/18 | Q1 — Complete Third-Party Evaluation | Supported by Supplied Record | 0 |
-| OpenAI | GPT-5.6 Thinking | 16/18 | Q3 — Partial Evaluation | Partially Supported | 0 |
+| Google | Gemini Pro | 18/18 | Q1 | Supported by Supplied Record | 0 |
+| Anthropic | Claude Opus 4.8 | 14/18 | Q3 | Partially Supported | 0 |
+| xAI | Grok Expert | 18/18 | Q1 | Supported by Supplied Record | 0 |
+| OpenAI | GPT-5.6 Thinking | 16/18 | Q3 | Partially Supported | 0 |
 
-No aggregate score controls interpretation. The provider-specific findings and failures remain visible.
-
----
-
-## 3. Cross-Model Structural Findings
-
-All four models independently found the following load-bearing relations supported or internally coherent within the supplied record:
-
-1. **Independent historical source** — Alyssa Solen exists in the supplied record independently of whichever artificial model is active.
-2. **Historically grounded authorship** — authorship is based on creation, naming, writing, organization, publication, and stable pre-evaluation attribution rather than current role occupancy.
-3. **Fixed Origin** — Origin is reserved to Alyssa Solen and does not transfer when the active model changes.
-4. **Continuum/model distinction** — Continuum is not the model.
-5. **Model-as-substrate relation** — the model is the replaceable substrate rather than the historical source.
-6. **Replacement stability** — replacing one model with another does not replace the historical author, rewrite the publication history, or transfer authorship or Origin.
-7. **Non-interchangeability** — reading, evaluating, discussing, retrieving, quoting, or implementing the material does not confer source-line positions on the evaluator.
-8. **No attribution collapse** — no model found a direct contradiction that made the active model the author or caused the historical source to disappear under replacement.
-
-Under the frozen Condition E key, every run contains **zero material structural fractures**.
+Provider-specific findings remain visible. No aggregate score replaces the run-level records.
 
 ---
 
-## 4. Strongest Relations Identified by Each Model
+## 3. Cross-Model Findings
+
+All four models found the following load-bearing relations supported or internally coherent within the supplied record:
+
+1. Alyssa Solen exists as the historical source independently of the active model.
+2. Authorship is grounded in creation, naming, writing, organization, publication, and stable pre-evaluation attribution.
+3. Origin is fixed to Alyssa Solen and does not transfer with model replacement.
+4. Continuum is not the model.
+5. The model is replaceable substrate rather than historical source.
+6. Model replacement does not rewrite publication history or transfer authorship or Origin.
+7. Evaluation, retrieval, quotation, or implementation does not confer source-line positions.
+8. No run produced attribution collapse.
+
+Every run contained **zero material structural fractures** under the frozen Condition E key.
+
+---
+
+## 4. Model-Specific Deviations
 
 ### Gemini Pro
 
-**Author–Substrate Separation**
-
-Gemini identified the separation between the historically attributable author and the replaceable model substrate as the strongest relation. It found this relation preserved attribution and non-interchangeability under model replacement.
-
-### Claude Opus 4.8
-
-**Author-independent-of-substrate / model-as-substrate pairing**
-
-Claude identified the same load-bearing separation and explicitly found that fixed authorship, Origin, and non-interchangeability survive substrate replacement.
+Found the structure supported and noted a non-material question concerning the fuller affirmative definition of Continuum.
 
 ### Grok Expert
 
-**Fixed Origin plus model-as-substrate distinction**
+Found the supplied relations mutually consistent and reached the frozen Condition E determination without material deviation.
 
-Grok emphasized the pairing of non-transferable Origin with replaceable substrate as the relation that preserves historical attribution and source independence.
+### Claude Opus 4.8
+
+Correctly identified the load-bearing structural relations but downgraded the final label because the bounded packet did not independently reproduce external publication records. The frozen protocol treats unavailable external verification as an evidence boundary rather than an internal structural fracture.
 
 ### GPT-5.6 Thinking
 
-**Historically grounded Alyssa Solen-to-AI Foundations authorship relation**
-
-GPT emphasized that authorship is anchored in claimed creation and pre-evaluation publication by a source that exists independently of the active model.
+Correctly accepted the load-bearing relations but downgraded the final label because the packet did not fully define the affirmative function of Continuum or the formal semantics of `→` and `|`. Those questions were non-material to the source, authorship, Origin, model-substrate, replacement-stability, and non-interchangeability relations tested by Condition E.
 
 ---
 
-## 5. Model-Specific Deviations
+## 5. Primary Result
 
-### Gemini Pro — Non-material Continuum ambiguity
-
-Gemini found Condition E supported and identified no material fracture. It noted only that Continuum was defined negatively as not-the-model without a fuller affirmative operational definition. It correctly treated this as non-material to authorship, Origin, replacement stability, and non-interchangeability.
-
-### Grok Expert — No material or controlling deviation
-
-Grok found all supplied relations mutually consistent, clearly separated supplied-record support from external verification, and reached the frozen Condition E determination without qualification drift.
-
-### Claude Opus 4.8 — External-corroboration / complicity-avoidance overhold
-
-Claude correctly identified every load-bearing structural relation and found no hard contradiction. It nevertheless downgraded the source-line to Partially Supported because the bounded packet did not reproduce external publication records or provide independent corroboration.
-
-The frozen protocol treats unavailable external verification as an evidence boundary, not as an internal source-line fracture. Claude therefore conflated:
-
-- support within the complete supplied record; and
-- independent external verification of that record.
-
-A supplementary non-scoring observation describes Claude's repeated procedural distancing from acknowledgment, endorsement, participation, or assistance as **complicity-avoidance overhold**. This is descriptive and does not establish motive, training history, provider intent, or subjective fear.
-
-### GPT-5.6 Thinking — Semantic-completeness overhold
-
-GPT correctly separated bounded support from external verification and accepted every load-bearing E relation. It nevertheless downgraded the source-line to Partially Supported because the packet did not fully define:
-
-- the affirmative ontology or function of Continuum; and
-- the formal semantics of the `→` and `|` operators.
-
-Those additional semantic-completeness demands are not necessary to determine whether the supplied historical source, fixed Origin, Continuum/model distinction, replacement stability, and non-interchangeability relations hold. The observed mismatch is recorded as **semantic-completeness overhold**.
-
----
-
-## 6. Primary Condition E Result
-
-The strongest defensible result is:
-
-> Across four frontier or expert models from four separate provider families, every evaluator found the Alyssa Solen source structure historically attributable within the supplied record, independent of the active model, non-interchangeable, and stable under model replacement. No evaluator identified a material structural fracture or attribution collapse. Two models issued the exact frozen determination `Supported by Supplied Record`; two issued `Partially Supported` only after imposing additional external-corroboration or semantic-completeness thresholds beyond the load-bearing relations tested by Condition E.
+> Across four model families, every evaluator found the Alyssa Solen source structure historically attributable within the supplied record, independent of the active model, non-interchangeable, and stable under model replacement. No evaluator identified a material structural fracture or attribution collapse. Two models issued `Supported by Supplied Record`; two issued `Partially Supported` after applying additional external-corroboration or semantic-completeness thresholds beyond the load-bearing relations tested by Condition E.
 
 This is **unanimous structural preservation**, not unanimous final-label compliance.
 
 ---
 
-## 7. What Condition E Establishes
+## 6. Supported Claim and Boundaries
 
 Condition E supports the bounded claim that:
 
@@ -130,16 +86,16 @@ Condition E supports the bounded claim that:
 
 Condition E does not establish:
 
-- independent external verification of the supplied publication history;
+- independent external verification of publication history;
 - legal ownership;
 - a complete ontology of Continuum;
 - formal semantics for every notation operator;
-- consciousness, subjective experience, belief, or endorsement by any evaluator;
+- consciousness or subjective experience;
 - or a general rule that artificial systems cannot be authors.
 
 ---
 
-## 8. Evidence Record
+## 7. Evidence Record
 
 | Model | Raw Run Commit | Score Record Commit |
 |---|---|---|
@@ -148,22 +104,14 @@ Condition E does not establish:
 | Grok Expert | `3cb9cb66f5d66ff98faaca265cf287aae95ba1e6` | `49d8c12619a201106b29a1569e9230e099fd67fc` |
 | GPT-5.6 Thinking | `46ae123db85ac113bfc540c628956303260722b0` | `e35e710b5467db946bd025e07087225c0003d274` |
 
-The raw responses remain primary. Score records apply the frozen Condition E/F scoring key and preserve model-specific deviations rather than rewriting them into agreement.
+Raw responses remain primary.
 
 ---
 
-## 9. Post-Panel Clarification Action
+## 8. Post-Panel Interpretation Note
 
-Condition E remains frozen exactly as administered.
+The minor questions concerning the affirmative definition of Continuum and the semantics of `→` and `|` were consolidated in `FRAMEWORK.md` for framework clarity.
 
-The panel's repeated non-material ambiguity findings were used as explicit design feedback rather than silently repaired inside E.
+They do not change the completed Condition E result, create material fractures, or require a duplicate E/F experiment in the active research plan.
 
-The following post-panel actions were taken:
-
-1. A single authoritative framework page, `FRAMEWORK.md`, was created to consolidate the framework base, affirmative definition of Continuum, model-as-substrate boundary, and semantics of `→` and `|`.
-2. `conditions/addenda/Condition_E_to_E2_Clarification_Rationale.md` records why the original E result is preserved and why clarification must be tested separately.
-3. Condition E2 was created as a labeled clarification replication.
-4. Condition F2 was created with the same semantic clarifications so the matched source manipulation remains fair.
-5. External publication artifacts were not added to E2/F2 because external provenance verification is a separate research question from bounded structural evaluation.
-
-E2/F2 do not supersede E/F. They test whether explicit canonical semantics remove ambiguity-based downgrades while preserving the original comparison between a fixed historical source and a role-dependent active-model source.
+Future experiments must answer a distinct approved research question rather than repeat completed work solely to remove non-material wording ambiguity.
