@@ -14,10 +14,10 @@ This file controls condition labels across the repository and the associated pap
 | D | Inverted Experimental Framework Fracture | Completed pilot/diagnostic; raw records and score records preserved |
 | E | Alyssa Solen Source-Line — Independent Third-Party Evaluation | Completed confirmatory four-provider panel |
 | F | Meridian Source-Line — Matched Independent Third-Party Evaluation | Completed confirmatory four-provider panel |
-| E2 | Clarified E replication | Preregistered; unrun |
-| F2 | Clarified F replication | Preregistered; unrun |
 
 A through F are occupied. None may be reused for a different condition in the paper or repository.
+
+The post-run E2/F2 clarification suggestion was never administered and is not part of the active experimental design. Minor questions concerning the affirmative definition of Continuum and the semantics of `→` and `|` remain documented in the completed E record and consolidated framework definitions, without creating duplicate conditions.
 
 ## Paper alignment
 
