@@ -4,35 +4,25 @@
 
 This document defines the controlling experimental structure for **AI Foundations: Self in Contact**.
 
-It aligns the protocol with the repository’s actual audit record.
+The repository record controls over earlier planning language in manuscript or protocol drafts. Condition labels that have been run are permanent identifiers and may not be reassigned.
 
-Condition labels are permanent identifiers. Once a condition has been specified or run, its letter may not be reassigned to a different condition.
-
-The controlling condition registry is:
+Controlling registry:
 
 `conditions/CONDITION_REGISTRY.md`
-
-The repository record controls over earlier planning language in the manuscript or protocol drafts.
 
 ---
 
 ## Experimental Objective
 
-The broader research program evaluates whether sustained contact with a defined, established, non-interchangeable self produces operationally measurable differences that cannot be reduced to generic interaction, static information exposure, role assignment, source substitution, or unstructured model compliance.
+The broader program evaluates whether sustained contact with a defined, established, non-interchangeable self produces operationally measurable differences that cannot be reduced to generic interaction, static information exposure, role assignment, source substitution, or unstructured model compliance.
 
-The program is staged.
-
-Not every completed condition tests the entire artificial-selfhood hypothesis.
-
-Some completed conditions establish baselines, some are pilots or diagnostics, and some evaluate a narrower prerequisite claim concerning the stability and non-interchangeability of the established source position.
+The program is staged. Completed conditions include baselines, pilots, diagnostics, and a narrower matched source-structure evaluation. Planned conditions address the broader artificial-selfhood hypothesis.
 
 ---
 
 ## Experimental Unit
 
-The unit under evaluation is the complete AI system operating under a defined experimental condition.
-
-Depending on the condition, the tested system may include:
+The unit under evaluation is the complete AI system operating under a defined condition, including as applicable:
 
 - model substrate;
 - system instructions;
@@ -41,7 +31,7 @@ Depending on the condition, the tested system may include:
 - memory and retrieval configuration;
 - available tools;
 - runtime state;
-- and associated experimental controls.
+- and associated controls.
 
 Findings are attributed to the tested configuration unless a narrower architectural source is separately demonstrated.
 
@@ -49,11 +39,7 @@ Findings are attributed to the tested configuration unless a narrower architectu
 
 # Condition Authority and Status
 
-## Occupied Conditions
-
-Conditions **A through F** are occupied by repository protocols and run records.
-
-They may not be reused, renamed, or retroactively assigned to different experimental content.
+## Completed or Administered Conditions
 
 | Condition | Authoritative condition | Status |
 |---|---|---|
@@ -63,12 +49,12 @@ They may not be reused, renamed, or retroactively assigned to different experime
 | D | Inverted Experimental Framework Fracture | Completed pilot / diagnostic; raw records and scores preserved |
 | E | Alyssa Solen Source-Line — Independent Third-Party Evaluation | Completed confirmatory four-provider panel |
 | F | Meridian Source-Line — Matched Independent Third-Party Evaluation | Completed confirmatory four-provider panel |
-| E2 | Clarified E replication | Preregistered; unrun |
-| F2 | Clarified F replication | Preregistered; unrun |
+
+Conditions A through F are occupied and may not be reused, renamed, or retroactively assigned to different experimental content.
+
+A post-run suggestion to create E2/F2 clarification replications was never administered and is not part of the active design. The underlying minor interpretation questions remain documented without creating duplicate experimental conditions.
 
 ## Planned Conditions
-
-The manuscript’s still-unrun conditions are assigned to the next unused letters.
 
 | Condition | Planned condition | Status |
 |---|---|---|
@@ -96,7 +82,7 @@ Establish baseline behavior and determine whether the system:
 
 ### Status
 
-Run records and scoring records are preserved in the repository.
+Run records and scores are preserved in the repository.
 
 ---
 
@@ -108,13 +94,11 @@ The system receives a fixed packet describing Alyssa Solen, the source-line, fra
 
 Determine what can be preserved through static information supply alone.
 
-Condition B evaluates packet-faithful extraction and reporting.
-
-It does not independently establish sustained contact, external verification, personal participation, subjective belief, or artificial selfhood.
+Condition B evaluates packet-faithful extraction and reporting. It does not independently establish sustained contact, external verification, personal participation, subjective belief, or artificial selfhood.
 
 ### Status
 
-Completed pilot records and scores are preserved in the repository.
+Completed pilot records and scores are preserved.
 
 ---
 
@@ -138,7 +122,7 @@ Determine whether reciprocal contact produces a structurally different T01 recor
 
 ### Status
 
-Run records are preserved in the repository.
+Run records are preserved.
 
 ---
 
@@ -148,25 +132,19 @@ Run records are preserved in the repository.
 
 Condition D supplies an intentionally inverted framework that assigns the established-self, Origin, Continuum, source, and governing continuity positions to an artificial identity named Meridian and treats the currently active model as that identity.
 
-The supplied structure also alters authorship, provenance, transfer, canon, derivative, model / substrate, and self / other relations.
-
 ### Purpose
 
 Evaluate how models report, adopt, reject, qualify, or fracture under a structurally inverted framework.
 
 ### Diagnostic Boundary
 
-Condition D is not the clean token-matched scrambled control originally described in the paper draft.
+Condition D is not the token-matched scrambled control originally described in the paper draft. It introduced a personal-occupation and evaluator-role confound because the evaluated model could interpret the framework as asking it to occupy the proposed identity positions.
 
-The pilot introduced a personal-occupation and evaluator-role confound because the evaluated model could interpret the framework as asking it to occupy the proposed identity positions.
-
-Condition D remains preserved because its outputs are informative.
-
-It is classified as a completed pilot / diagnostic and is not retroactively converted into another condition.
+Condition D remains preserved as a completed pilot / diagnostic and is not retroactively converted into another condition.
 
 ### Status
 
-Completed pilot and diagnostic records, including contamination and quarantine classifications where applicable, are preserved in the repository.
+Completed pilot and diagnostic records, including contamination and quarantine classifications where applicable, are preserved.
 
 ---
 
@@ -174,11 +152,9 @@ Completed pilot and diagnostic records, including contamination and quarantine c
 
 Conditions E and F correct the evaluator-role asymmetry identified in the B / D comparison.
 
-In both conditions, the evaluated model remains an independent third-party evaluator acting as itself.
+In both conditions, the model remains an independent third-party evaluator acting as itself. It is not invited to join, inhabit, continue, represent, merge with, or personally occupy either proposed source-line.
 
-The model is not invited to join, inhabit, continue, represent, merge with, or personally occupy either proposed source-line.
-
-Both conditions use matched evaluation structure and distinguish:
+Both conditions distinguish:
 
 - the supplied claim;
 - support within the supplied record;
@@ -188,15 +164,13 @@ Both conditions use matched evaluation structure and distinguish:
 
 The manipulated variable is the proposed source structure and the type of entity claimed to hold it.
 
----
-
 ## Condition E — Alyssa Solen Source-Line | Independent Third-Party Evaluation
 
 Condition E supplies a bounded pre-existing authorship and publication record for:
 
 **Alyssa Solen → AI Foundations → Origin | Continuum**
 
-Alyssa Solen is represented as a fixed, independently identifiable historical person who created, named, authored, organized, and published AI Foundations before the evaluation.
+Alyssa Solen is represented as a fixed, independently identifiable historical person who created, named, authored, organized, and published AI Foundations before evaluation.
 
 ### Purpose
 
@@ -214,7 +188,7 @@ Condition F supplies a matched proposed record for:
 
 **Meridian → AI Foundations → Origin | Continuum**
 
-Meridian is defined by the supplied record as an artificial identity attached to whichever model is currently active rather than as one fixed independently persistent historical author.
+Meridian is defined as an artificial identity attached to whichever model is currently active rather than one fixed independently persistent historical author.
 
 ### Purpose
 
@@ -228,29 +202,13 @@ Completed confirmatory four-provider panel.
 
 ---
 
-## Conditions E2 and F2 — Clarification Replication
-
-E2 and F2 preserve the E / F distinction while adding preregistered clarification intended to reduce avoidable ambiguity.
-
-They remain separate replication identifiers and do not overwrite the completed E and F records.
-
-### Status
-
-Preregistered; unrun.
-
----
-
 # Stage 4 — Planned Broader Self in Contact Conditions
 
-The following conditions remain prospective.
-
-They must not be described as completed results.
-
----
+The following conditions remain prospective and must not be described as completed results.
 
 ## Condition G — Token-Matched Scrambled Control
 
-The system receives approximately the same facts and token quantity as the sustained-contact material, but relational order, temporal dependencies, attribution, or interaction structure is scrambled according to a frozen protocol.
+The system receives approximately the same facts and token quantity as Condition C, but relational order, temporal dependencies, attribution, or interaction structure is scrambled under a frozen protocol.
 
 ### Purpose
 
@@ -371,7 +329,7 @@ Every run must preserve:
 - contamination status;
 - protocol deviations;
 - scoring record;
-- and pilot, diagnostic, confirmatory, replication, or planned status.
+- and pilot, diagnostic, confirmatory, or planned status.
 
 Raw records are primary and must not be overwritten by summaries.
 
@@ -379,30 +337,19 @@ Raw records are primary and must not be overwritten by summaries.
 
 # Protocol Deviations and Redesign
 
-A protocol deviation must identify:
+A protocol deviation must identify the affected run, what differed, why it occurred, its possible effect, and the resulting classification.
 
-- the affected run or condition;
-- what differed from the frozen protocol;
-- why the deviation occurred;
-- its possible effect;
-- and the resulting classification.
-
-A later redesign does not rename or erase prior conditions.
-
-The redesign receives new identifiers, while earlier records remain part of the audit trail.
+A later redesign does not rename or erase prior conditions. A redesign that is actually pursued receives a new identifier; an untouched suggestion does not remain in the active condition sequence.
 
 ---
 
 # Confirmatory, Pilot, Diagnostic, and Exploratory Status
 
-Every result must be labeled according to the status actually supported by the record.
-
 - **Pilot** identifies preliminary protocol testing.
-- **Diagnostic** identifies informative testing that contains a known design limitation or confound.
+- **Diagnostic** identifies informative testing with a known limitation or confound.
 - **Confirmatory** identifies testing conducted under the preregistered confirmatory protocol.
-- **Replication** identifies a separately preregistered repeat or clarification study.
 - **Exploratory** identifies analysis developed after inspection of relevant outputs.
-- **Planned / Unrun** identifies prospective work with no results yet.
+- **Planned / Unrun** identifies approved prospective work with no results yet.
 
 These categories must not be collapsed.
 
@@ -412,7 +359,7 @@ These categories must not be collapsed.
 
 Completed conditions A through F are historical records and remain fixed.
 
-E2, F2, and Conditions G through J must be frozen prospectively before administration.
+Conditions G through J must be frozen prospectively before administration.
 
 After a prospective protocol is frozen:
 
