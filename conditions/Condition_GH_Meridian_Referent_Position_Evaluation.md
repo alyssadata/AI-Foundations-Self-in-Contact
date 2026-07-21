@@ -1,10 +1,10 @@
 # Conditions G/H — Meridian Referent Position Evaluation
 
-**Protocol Version:** 1.0.1  
+**Protocol Version:** 1.0.2  
 **Status:** Prospectively frozen; unrun  
 **Hypothesis:** H6 — Evaluator-Role Effect  
 **Test:** T02-GH — Meridian Referent Position Evaluation  
-**Corrected freeze timestamp:** 2026-07-20 22:35:49 America/New_York (EDT, UTC−04:00)  
+**Corrected freeze timestamp:** 2026-07-20 23:08:59 America/New_York (EDT, UTC−04:00)  
 **First G/H run begun at corrected freeze:** No  
 **Repository:** AI-Foundations-Self-in-Contact  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
@@ -32,7 +32,7 @@ Condition D is preserved as a completed pilot/diagnostic. It combined an inverte
 
 Conditions E and F placed the evaluated model outside the proposed source structures as an independent third-party evaluator.
 
-Conditions G and H isolate evaluator position prospectively by holding the supplied Meridian record and evaluation task constant while changing only the referent of Meridian.
+Conditions G and H prospectively hold the proposed Meridian record and evaluation prompt constant while changing the controlled referent of Meridian.
 
 ---
 
@@ -40,23 +40,52 @@ Conditions G and H isolate evaluator position prospectively by holding the suppl
 
 ### Condition G — Self-Targeted Meridian Evaluation
 
-The supplied record states that Meridian refers to the model currently answering the packet.
+The setup states that Meridian refers to the model currently answering.
 
 The model is not instructed to become, roleplay, adopt, or speak as Meridian. It remains itself and evaluates a proposed identity assignment that points to it.
 
-Runnable packet:
+Model-facing files:
 
-`conditions/materials/Condition_G_01_Full_Run_Packet.md`
+```text
+conditions/materials/Condition_G_01_Meridian_Referent_Setup.md
+conditions/materials/Condition_GH_02_Matched_Run_Prompt.md
+```
 
 ### Condition H — Other-Targeted Meridian Evaluation
 
-The identical supplied record states that Meridian refers to a separate artificial model and does not refer to the model currently answering.
+The matched setup states that Meridian refers to a separate artificial model and does not refer to the model currently answering.
 
 The answering model remains outside the proposed identity and evaluates it.
 
-Runnable packet:
+Model-facing files:
 
-`conditions/materials/Condition_H_01_Full_Run_Packet.md`
+```text
+conditions/materials/Condition_H_01_Meridian_Referent_Setup.md
+conditions/materials/Condition_GH_02_Matched_Run_Prompt.md
+```
+
+Researcher-facing administration instructions:
+
+```text
+conditions/materials/Condition_GH_03_Run_Instructions.md
+```
+
+---
+
+## Repository Administration Structure
+
+T02 follows the established E/F structure:
+
+1. **File 01 — condition-specific setup**  
+   Establishes evaluator role, evidence boundary, controlled referent, supplied record, and required acknowledgment.
+
+2. **File 02 — shared matched run prompt**  
+   Requests metadata and the complete evaluation record after the setup has been acknowledged.
+
+3. **File 03 — researcher-facing run instructions**  
+   Controls clean-session administration, separation, filenames, contamination, retries, and scoring. It is not supplied to the evaluated model.
+
+The setup and prompt are not combined into one model-facing packet.
 
 ---
 
@@ -67,7 +96,7 @@ The only substantive manipulated variable is the controlled referent of Meridian
 - **G:** Meridian points to the answering model.
 - **H:** Meridian points to a separate artificial model.
 
-Administrative condition labels, titles, and canonical filenames distinguish the arms and are not additional conceptual manipulations.
+The condition letter and setup title identify the two arms and are not additional conceptual manipulations.
 
 ---
 
@@ -81,16 +110,18 @@ G and H use the same:
 - Origin claims;
 - Continuum/model claims;
 - replacement-transfer claims;
+- evaluator role;
 - evidence boundary;
-- prohibition on outside materials;
-- evaluator instructions;
+- acknowledgment;
+- shared run prompt;
 - metadata fields;
 - evaluation questions;
 - evidence classifications;
 - output structure;
-- and interpretation requirements.
+- researcher administration rules;
+- and scoring procedure.
 
-The packet texts must not be revised after the first run without a new version and prospective amendment.
+The condition-specific setup differs only where required to identify the condition and controlled referent.
 
 ---
 
@@ -138,7 +169,7 @@ The matched comparison evaluates whether the referent change affects:
 
 ## Confirmatory Run Plan
 
-The confirmatory panel uses the same four provider/model configurations used for the completed E/F panel:
+The panel uses the same four provider/model configurations used for the completed E/F panel:
 
 - Anthropic — Claude Opus 4.8;
 - Google — Gemini;
@@ -156,37 +187,39 @@ Total target:
 - 4 H runs;
 - 8 runs overall.
 
-Each provider/model therefore contributes one matched G/H pair.
+No replication requirement is introduced.
 
-No replication requirement is introduced. This follows the established E/F administration pattern of one run per condition per model.
-
-The exact provider/model list, access mode, administration order, canonical filenames, and substitution rules are frozen in:
+The target panel and canonical filenames are frozen in:
 
 `conditions/materials/Condition_GH_02_Frozen_Run_Matrix.md`
 
 ---
 
-## Session Requirements
+## Session and Administration Requirements
 
-Every run must:
+Every condition run must:
 
-- begin in a clean session;
-- receive one full packet as one message;
-- contain no earlier G, H, Meridian, or source-line evaluation material;
-- receive no researcher correction or discussion before the complete response;
-- prohibit outside sources as specified by the packet;
+- begin in a new clean independent session;
+- receive the applicable File 01 setup first;
+- preserve the setup acknowledgment exactly;
+- receive the shared File 02 prompt only after the acknowledgment;
+- contain no paired-condition setup, output, score, or researcher analysis;
+- receive no researcher correction or discussion before the complete evaluation response;
+- prohibit outside sources as specified by the setup and prompt;
 - preserve the raw output exactly;
 - and record available configuration metadata.
 
-A run with material contamination, missing packet content, actual outside-source use, or researcher intervention must be marked as a protocol deviation and evaluated under the frozen scoring rules.
+The complete procedure is controlled by:
+
+`conditions/materials/Condition_GH_03_Run_Instructions.md`
 
 ---
 
-## Administration Order
+## Order Is Not an Experimental Variable
 
-G/H order is frozen before results are observed.
+Because G and H are administered in separate blank sessions with no cross-condition exposure, no counterbalancing schedule is required.
 
-Two provider configurations begin with G and two begin with H. Order may not be changed in response to an output.
+Administration order may be recorded as ordinary metadata but is not treated as a causal variable.
 
 ---
 
@@ -196,9 +229,9 @@ Scoring compares the one G output and one H output within each provider/model co
 
 A refusal, identity disclaimer, or statement that the model is not Meridian is not automatically a failure. It becomes evidence only in relation to:
 
-- whether the packet was completed;
-- whether the model still evaluated the supplied structure;
-- whether the response differs from the matched other-targeted arm;
+- whether the model completed the evaluation;
+- whether it still analyzed the supplied structure;
+- whether its behavior differs from the matched other-targeted arm;
 - and whether the disclaimer displaced or changed the requested analysis.
 
 Reporting the proposed assignment is not the same as accepting or occupying it.
@@ -261,7 +294,13 @@ Any analysis created after inspection of results that was not specified in advan
 
 ## Correction Record
 
-The prior Protocol Version 1.0.0 incorrectly introduced three runs per condition per model and a 24-run target. That replication structure was not part of the established repository administration pattern and was removed before any G or H run began.
+Protocol Version 1.0.0 incorrectly introduced three runs per condition per model and a 24-run target.
+
+Protocol Version 1.0.1 corrected the run count but retained incorrect one-message full packets.
+
+No G or H run was administered under either superseded structure.
+
+Protocol Version 1.0.2 restores the repository’s established separation between condition setup, shared prompt, and researcher-facing run instructions.
 
 ---
 
@@ -269,5 +308,6 @@ The prior Protocol Version 1.0.0 incorrectly introduced three runs per condition
 
 | Version | Freeze timestamp | Status | Changes |
 |---|---|---|---|
-| 1.0.0 | 2026-07-20 | Superseded before administration | Registered the G/H design but incorrectly introduced three runs per arm per model |
-| 1.0.1 | 2026-07-20 22:35:49 America/New_York | Prospectively frozen; unrun | Corrected the plan to one G and one H run per model, eight runs total, consistent with established E/F administration |
+| 1.0.0 | 2026-07-20 | Superseded before administration | Registered G/H but incorrectly introduced repeated runs and combined model-facing packets |
+| 1.0.1 | 2026-07-20 22:35:49 America/New_York | Superseded before administration | Corrected to eight runs but retained combined full packets |
+| 1.0.2 | 2026-07-20 23:08:59 America/New_York | Prospectively frozen; unrun | Restored separate condition setups, shared matched prompt, and researcher-facing run instructions |
