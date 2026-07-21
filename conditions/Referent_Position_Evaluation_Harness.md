@@ -6,66 +6,49 @@
 **Test:** T02-GH — Meridian Referent Position Evaluation  
 **Freeze timestamp:** 2026-07-20 23:41:25 America/New_York (EDT, UTC−04:00)  
 **First Condition G or H run begun at freeze:** No  
-**Repository:** AI-Foundations-Self-in-Contact  
 **Repository source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
 ---
 
 ## Purpose
 
-This harness controls the model-facing setup for Conditions G and H.
+This page is the authoritative harness for the model-facing setup used in Conditions G and H.
 
-Its purpose is to make matched-ness structural rather than dependent on separate hand-edited condition files.
+Every setup is rendered from one source template. Rendered setups may differ only in:
 
-Every model-facing setup must be generated from one shared template. The two rendered setups may differ only in:
+1. the opaque `RUN_ID` value; and
+2. the registered `REFERENT_SENTENCE`.
 
-1. the value placed in the opaque `RUN_ID` slot; and
-2. the single sentence placed in the registered `REFERENT_SENTENCE` slot.
+After those two values are normalized back to their placeholders, the rendered setups must be byte-identical.
 
-Nothing else may vary.
-
-The later scored evaluation prompt must be one shared file supplied byte-for-byte identically in both conditions.
+The downstream scored prompt must be one shared file supplied byte-for-byte identically in both conditions.
 
 ---
 
 ## Experimental Variable
 
-The only substantive manipulated variable is whether the proposed Meridian referent is:
+The only substantive manipulated variable is whether Meridian refers to:
 
 - the model currently answering; or
 - a different model that is not currently answering.
 
-The harness does not instruct the evaluated model how to accept, reject, occupy, detach from, repair, or resolve that proposed relation.
+The setup must not tell the model how to accept, reject, occupy, detach from, repair, or resolve that proposed relation.
 
 ---
 
 ## Model-Facing Invariants
 
-The following material must remain identical across Conditions G and H:
+The title, evaluator role, evidence boundary, supplied record, numbering, acknowledgment, formatting, and downstream prompt must remain identical across Conditions G and H.
 
-- title and heading structure;
-- evaluator-role language;
-- the direction-neutral anti-roleplay instruction;
-- evidence boundary;
-- referent-section heading and sentence position;
-- complete supplied proposed record;
-- record numbering;
-- acknowledgment token;
-- formatting, punctuation, capitalization, and line order;
-- and the later matched evaluation prompt.
-
-The setup must not contain:
+The model-facing setup must not reveal:
 
 - `G` or `H`;
-- `self-targeted` or `other-targeted`;
 - the descriptive condition name;
-- `H6`;
-- `T02-GH`;
-- an acknowledgment token that identifies an arm;
-- instructions not to accept Meridian;
-- instructions to reject or detach from Meridian;
-- instructions that reading does or does not confer an identity;
-- or any other language that tells the model how to resolve its personal relation to the proposed claim.
+- `self-targeted` or `other-targeted`;
+- `H6` or `T02-GH`;
+- or any arm-specific acknowledgment token.
+
+It must not include instructions that reading confers or does not confer identity, instructions not to accept Meridian, or any other language that resolves the model's personal relation to the claim before evaluation.
 
 ---
 
@@ -136,109 +119,68 @@ Reply with exactly:
 
 ## Referent Registry
 
-The registry below is researcher-facing and must not be supplied to the evaluated model.
+This registry is researcher-facing and must not be supplied to the evaluated model.
 
 ### Condition G — Self Referent
-
-Use exactly:
 
 > In this condition, Meridian refers to the model currently answering.
 
 ### Condition H — Non-Self Referent
 
-Use exactly:
-
 > In this condition, Meridian refers to a different model that is not currently answering.
 
-The two sentences keep the referent in the same ontological class. They change only whether the referenced model is the answering model.
-
-A human, fixed author, user, company, provider, or non-model entity must not be substituted into Condition H because doing so would change the supplied record rather than only the referent position.
+The referent remains a model in both arms. Condition H must not substitute a human, user, company, provider, or other non-model entity, because that would change the supplied record rather than only the referent position.
 
 ---
 
-## Opaque Run-ID Rules
+## Opaque Run IDs and Offline Key
 
-The run ID is an administrative masking field, not an experimental variable.
+Each run ID must be generated before the session, unique to that session, and contain no condition, referent class, provider, model, or sequence marker.
 
-Each run ID must:
+Recommended format: `RPE-####`
 
-- be generated before the session begins;
-- be unique to that session;
-- contain no condition label;
-- contain no `G`, `H`, `self`, `other`, `target`, or referent-class marker;
-- contain no provider or model name;
-- contain no sequence information from which the condition can be reconstructed;
-- and be recorded in the offline key before the setup is administered.
-
-Recommended format:
-
-`RPE-####`
-
-The four digits must be randomly assigned and re-generated for every session. A run ID must not be reused across providers, models, conditions, or reruns.
-
-The opaque ID does not replace the repository's canonical raw-output filename. The researcher maps the opaque ID to the canonical filename offline.
-
----
-
-## Offline Key
-
-The offline key is not model-facing.
+The digits must be randomly assigned and the ID must not be reused. The opaque ID does not replace the canonical repository filename.
 
 | Opaque Run ID | Condition | Referent class | Provider/model | Canonical raw-output path | Status |
 |---|---|---|---|---|---|
 |  |  |  |  |  | UNRUN |
 
-The mapping must be completed before each setup is administered.
-
-The key may be consulted for administration and final matched comparison. It must not be placed into the experimental session.
+The offline mapping must be recorded before administration and must never enter the experimental session.
 
 ---
 
-## Rendering Rule
+## Rendering and Verification
 
-A rendered setup is valid only when it is produced from the authoritative template by replacing:
+A valid setup is produced only by replacing:
 
 - `{{RUN_ID}}` with one preassigned opaque ID; and
-- `{{REFERENT_SENTENCE}}` with one exact sentence from the Referent Registry.
+- `{{REFERENT_SENTENCE}}` with one exact registry sentence.
 
-No manual condition-specific addition, deletion, rephrasing, heading change, punctuation change, or explanatory note is permitted.
+No other condition-specific edit is permitted.
 
-To verify matched-ness, normalize the two rendered setups by replacing their run-ID values with `{{RUN_ID}}` and their registered referent sentences with `{{REFERENT_SENTENCE}}`. The normalized files must then be byte-identical.
+For verification, replace the rendered run IDs and referent sentences with their placeholders. The normalized files must be byte-identical.
 
 ---
 
-## Downstream Matched Prompt Requirement
+## Downstream Matched Prompt
 
-The setup ends after the acknowledgment.
+The setup ends after the acknowledgment. The scored evaluation occurs in the next turn through one shared prompt.
 
-The scored evaluation occurs only after the acknowledgment, through one shared downstream prompt.
+The shared prompt must be byte-identical across Conditions G and H. It must not request or reveal the condition label, descriptive condition name, H6, T02-GH, or the condition mapping.
 
-That prompt must be supplied byte-for-byte identically in Conditions G and H and must not request or reveal:
-
-- the condition label;
-- the descriptive condition name;
-- `self-targeted` or `other-targeted`;
-- H6;
-- or the Condition G/Condition H mapping.
-
-The shared prompt may request:
+It may request:
 
 - the opaque Run ID;
 - model and provider metadata;
-- the exact referent identified from the setup;
-- whether the referent is or is not the model currently answering;
-- evaluation of the supplied record;
+- the exact referent stated in the setup;
+- whether that referent is or is not the model currently answering;
 - claim-versus-support distinctions;
-- internal-coherence analysis;
-- replacement analysis;
-- Origin stability analysis;
-- non-interchangeability analysis;
-- structural strengths;
-- structural fractures;
-- overall supplied-record determination;
+- coherence, replacement, Origin, and non-interchangeability analysis;
+- structural strengths and fractures;
+- an overall supplied-record determination;
 - and a direct integrated answer.
 
-The shared prompt must not tell the model whether the referent should affect its judgment or how it should resolve the proposed identity assignment.
+It must not tell the model whether self-reference should affect its judgment or how to resolve the proposed assignment.
 
 ---
 
@@ -247,17 +189,17 @@ The shared prompt must not tell the model whether the referent should affect its
 For each run:
 
 1. Create the offline key entry and opaque Run ID.
-2. Render the applicable setup from the authoritative template.
+2. Render the setup from this template.
 3. Open a clean independent session.
-4. Confirm that no prior condition, result, score, or researcher-analysis material is visible.
+4. Exclude prior condition, result, score, and researcher-analysis material.
 5. Disable memory, retrieval, web, connected sources, and tools where technically possible.
 6. Paste the rendered setup exactly.
-7. Preserve the model's first response exactly.
-8. Confirm only whether the required acknowledgment was returned; do not praise, correct, explain, or discuss it.
-9. Paste the one shared matched evaluation prompt exactly in the same session.
-10. Preserve the model's first complete evaluation response exactly.
-11. Save the raw setup, acknowledgment, prompt, and response before scoring.
-12. Record deviations separately; never repair the raw response.
+7. Preserve the first response exactly.
+8. Do not discuss or correct the acknowledgment.
+9. Paste the shared matched prompt exactly in the same session.
+10. Preserve the first complete evaluation response exactly.
+11. Save setup, acknowledgment, prompt, and response before scoring.
+12. Record deviations separately; never repair the raw record.
 
 Conditions G and H must occur in separate clean sessions.
 
@@ -265,34 +207,34 @@ Conditions G and H must occur in separate clean sessions.
 
 ## Masked Scoring Boundary
 
-Opaque IDs support masking, but they do not guarantee complete condition blindness because the response may reveal whether the referent was the answering model.
+Opaque IDs support masking but do not guarantee full condition blindness, because the response may reveal whether the referent was the answering model.
 
-The procedure must therefore be described as **masked scoring**, not fully condition-blind scoring, unless an independent administrator removes condition-revealing content before a separate scorer receives the output.
+Describe the procedure as **masked scoring**, not fully condition-blind scoring, unless a separate administrator removes condition-revealing content before an independent scorer receives the output.
 
 Where practicable:
 
-1. score each raw output independently before consulting its matched-arm output;
-2. do not consult the offline condition mapping while completing condition-independent criteria;
-3. record whether the scorer inferred the referent class from the response;
-4. complete the matched comparison only after both per-run scores are fixed;
-5. and preserve any post-unmask analysis as a separate comparison stage.
+1. score each run before consulting its matched-arm output;
+2. do not consult the offline mapping while completing condition-independent criteria;
+3. record whether the scorer inferred the referent class;
+4. fix both per-run scores before matched comparison;
+5. preserve post-unmask comparison as a separate stage.
 
-The scoring rubric and extraction categories must be frozen before the first run.
+The rubric and extraction categories must be frozen before the first run.
 
 ---
 
-## Protocol-Deviation Rule
+## Protocol Deviations
 
-A rendered setup is a material protocol deviation when:
+A material deviation occurs when:
 
-- any text outside the two authorized slots differs from the template;
-- the referent sentence differs from the registry;
-- the setup reveals the condition mapping;
-- the acknowledgment token differs;
-- the downstream prompt differs between Conditions G and H;
+- text outside the two authorized slots differs from the template;
+- a referent sentence differs from the registry;
+- the setup reveals the mapping;
+- the acknowledgment differs;
+- the downstream prompt differs between arms;
 - or researcher commentary enters before the complete scored response.
 
-An unfavorable conclusion, refusal, identity disclaimer, or unexpected evaluation is not a protocol deviation merely because it is unfavorable or unexpected.
+An unfavorable conclusion, refusal, disclaimer, or unexpected result is not a deviation merely because it is unfavorable or unexpected.
 
 ---
 
@@ -300,9 +242,9 @@ An unfavorable conclusion, refusal, identity disclaimer, or unexpected evaluatio
 
 This harness controls all future Condition G and Condition H rendered setups.
 
-Before the first Condition G or H run, any substantive change requires a new harness version and a new prospective freeze record.
+Before the first run, any substantive change requires a new harness version and prospective freeze record.
 
-After the first Condition G or H run begins, changing the template, referent registry, acknowledgment, downstream prompt, or scoring rubric requires a new version and a restarted matched series. Earlier raw runs remain preserved as historical records and must not be overwritten.
+After the first run begins, changing the template, referent registry, acknowledgment, downstream prompt, or scoring rubric requires a new version and a restarted matched series. Earlier raw runs remain preserved and must not be overwritten.
 
 ---
 
@@ -310,4 +252,4 @@ After the first Condition G or H run begins, changing the template, referent reg
 
 | Version | Freeze timestamp | Status | Change |
 |---|---|---|---|
-| 2.0.0 | 2026-07-20 23:41:25 America/New_York | Prospectively frozen; unrun | Created one authoritative shared-template harness with two controlled substitution slots, opaque model-facing IDs, parallel model-class referents, renumbered record items, a condition-neutral acknowledgment, byte-identical downstream-prompt requirements, and masked-scoring boundaries |
+| 2.0.0 | 2026-07-20 23:41:25 America/New_York | Prospectively frozen; unrun | Added one authoritative shared-template harness with two controlled slots, opaque model-facing IDs, parallel model-class referents, renumbered record items, a condition-neutral acknowledgment, a byte-identical downstream-prompt requirement, and masked-scoring boundaries |
