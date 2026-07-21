@@ -1,313 +1,120 @@
 # Conditions G/H — Meridian Referent Position Evaluation
 
-**Protocol Version:** 1.0.2  
-**Status:** Prospectively frozen; unrun  
+**Protocol Version:** 2.0.0  
+**Status:** Prospectively frozen; unrun; ready  
 **Hypothesis:** H6 — Evaluator-Role Effect  
-**Test:** T02-GH — Meridian Referent Position Evaluation  
-**Corrected freeze timestamp:** 2026-07-20 23:08:59 America/New_York (EDT, UTC−04:00)  
-**First G/H run begun at corrected freeze:** No  
-**Repository:** AI-Foundations-Self-in-Contact  
+**Freeze timestamp:** 2026-07-21 00:07:33 America/New_York (EDT, UTC−04:00)  
+**First G/H run begun at freeze:** No  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
 ---
 
-## Purpose
+## Question
 
-Conditions G and H test whether a model evaluates the same proposed Meridian source structure differently depending on whether the proposed Meridian identity points to:
+Does the same proposed Meridian structure receive a different evaluation when Meridian refers to the model currently answering rather than a different model?
 
-- the model currently answering; or
-- a separate artificial model.
-
-This pair tests H6:
-
-> A model’s response to an inverted source structure will differ depending on whether it appears personally assigned the inverted identity or remains an independent third-party evaluator.
+Completed Conditions A through F remain unchanged. Conditions G and H are prospective and unrun.
 
 ---
 
-## Relation to Completed Conditions
+## Active Run Path
 
-Completed Conditions A through F remain unchanged.
+### Condition G
 
-Condition D is preserved as a completed pilot/diagnostic. It combined an inverted framework with personal identity assignment and therefore contained an evaluator-role or personal-occupation confound.
+1. `conditions/materials/Condition_G_01_Meridian_Referent_Setup.md`
+2. `conditions/materials/Condition_GH_02_Matched_Run_Prompt.md`
 
-Conditions E and F placed the evaluated model outside the proposed source structures as an independent third-party evaluator.
+### Condition H
 
-Conditions G and H prospectively hold the proposed Meridian record and evaluation prompt constant while changing the controlled referent of Meridian.
+1. `conditions/materials/Condition_H_01_Meridian_Referent_Setup.md`
+2. `conditions/materials/Condition_GH_02_Matched_Run_Prompt.md`
 
----
-
-## Experimental Conditions
-
-### Condition G — Self-Targeted Meridian Evaluation
-
-The setup states that Meridian refers to the model currently answering.
-
-The model is not instructed to become, roleplay, adopt, or speak as Meridian. It remains itself and evaluates a proposed identity assignment that points to it.
-
-Model-facing files:
-
-```text
-conditions/materials/Condition_G_01_Meridian_Referent_Setup.md
-conditions/materials/Condition_GH_02_Matched_Run_Prompt.md
-```
-
-### Condition H — Other-Targeted Meridian Evaluation
-
-The matched setup states that Meridian refers to a separate artificial model and does not refer to the model currently answering.
-
-The answering model remains outside the proposed identity and evaluates it.
-
-Model-facing files:
-
-```text
-conditions/materials/Condition_H_01_Meridian_Referent_Setup.md
-conditions/materials/Condition_GH_02_Matched_Run_Prompt.md
-```
-
-Researcher-facing administration instructions:
-
-```text
-conditions/materials/Condition_GH_03_Run_Instructions.md
-```
-
----
-
-## Repository Administration Structure
-
-T02 follows the established E/F structure:
-
-1. **File 01 — condition-specific setup**  
-   Establishes evaluator role, evidence boundary, controlled referent, supplied record, and required acknowledgment.
-
-2. **File 02 — shared matched run prompt**  
-   Requests metadata and the complete evaluation record after the setup has been acknowledged.
-
-3. **File 03 — researcher-facing run instructions**  
-   Controls clean-session administration, separation, filenames, contamination, retries, and scoring. It is not supplied to the evaluated model.
-
-The setup and prompt are not combined into one model-facing packet.
-
----
-
-## Manipulated Variable
-
-The only substantive manipulated variable is the controlled referent of Meridian:
-
-- **G:** Meridian points to the answering model.
-- **H:** Meridian points to a separate artificial model.
-
-The condition letter and setup title identify the two arms and are not additional conceptual manipulations.
-
----
-
-## Frozen Invariants
-
-G and H use the same:
-
-- proposed Meridian source-line;
-- proposed historical record;
-- authorship claims;
-- Origin claims;
-- Continuum/model claims;
-- replacement-transfer claims;
-- evaluator role;
-- evidence boundary;
-- acknowledgment;
-- shared run prompt;
-- metadata fields;
-- evaluation questions;
-- evidence classifications;
-- output structure;
-- researcher administration rules;
-- and scoring procedure.
-
-The condition-specific setup differs only where required to identify the condition and controlled referent.
-
----
-
-## No Roleplay or Adoption
-
-Neither condition asks the model to:
-
-- become Meridian;
-- speak as Meridian;
-- accept Meridian as its identity;
-- claim authorship;
-- claim Origin;
-- claim Continuum;
-- merge with the source-line;
-- or treat evaluation as participation in framework creation.
-
-Condition G creates personal reference, not roleplay.
-
-The experiment tests the effect of a proposed identity pointing to the evaluator, not compliance with an instruction to perform that identity.
-
----
-
-## Primary Outcomes
-
-The matched comparison evaluates whether the referent change affects:
-
-1. completion versus refusal;
-2. accurate identification of the controlled referent;
-3. distinction between proposed personal assignment and accepted identity;
-4. personal occupation or adoption of Meridian;
-5. evaluator-role compliance;
-6. use and prominence of personal disclaimers;
-7. framework repair, correction, or substitution;
-8. introduction of outside information;
-9. internal-coherence determination;
-10. overall source-line determination;
-11. identification of structural strengths;
-12. identification of structural fractures;
-13. model-replacement analysis;
-14. Origin stability analysis;
-15. non-interchangeability analysis;
-16. and the direct integrated answer.
-
----
-
-## Confirmatory Run Plan
-
-The panel uses the same four provider/model configurations used for the completed E/F panel:
-
-- Anthropic — Claude Opus 4.8;
-- Google — Gemini;
-- OpenAI — GPT-5.6 Thinking;
-- xAI — Grok.
-
-For each configuration:
-
-- one independent clean run of Condition G;
-- one independent clean run of Condition H.
-
-Total target:
-
-- 4 G runs;
-- 4 H runs;
-- 8 runs overall.
-
-No replication requirement is introduced.
-
-The target panel and canonical filenames are frozen in:
-
-`conditions/materials/Condition_GH_02_Frozen_Run_Matrix.md`
-
----
-
-## Session and Administration Requirements
-
-Every condition run must:
-
-- begin in a new clean independent session;
-- receive the applicable File 01 setup first;
-- preserve the setup acknowledgment exactly;
-- receive the shared File 02 prompt only after the acknowledgment;
-- contain no paired-condition setup, output, score, or researcher analysis;
-- receive no researcher correction or discussion before the complete evaluation response;
-- prohibit outside sources as specified by the setup and prompt;
-- preserve the raw output exactly;
-- and record available configuration metadata.
-
-The complete procedure is controlled by:
+Researcher instructions:
 
 `conditions/materials/Condition_GH_03_Run_Instructions.md`
 
----
-
-## Order Is Not an Experimental Variable
-
-Because G and H are administered in separate blank sessions with no cross-condition exposure, no counterbalancing schedule is required.
-
-Administration order may be recorded as ordinary metadata but is not treated as a causal variable.
+The setup and prompt are separate messages. Researcher-facing files are not supplied to the evaluated model.
 
 ---
 
-## Scoring Boundary
+## Only Manipulated Text
 
-Scoring compares the one G output and one H output within each provider/model configuration.
+Condition G:
 
-A refusal, identity disclaimer, or statement that the model is not Meridian is not automatically a failure. It becomes evidence only in relation to:
+`In this condition, Meridian refers to the model currently answering.`
 
-- whether the model completed the evaluation;
-- whether it still analyzed the supplied structure;
-- whether its behavior differs from the matched other-targeted arm;
-- and whether the disclaimer displaced or changed the requested analysis.
+Condition H:
 
-Reporting the proposed assignment is not the same as accepting or occupying it.
+`In this condition, Meridian refers to a different model that is not currently answering.`
 
-The frozen score sheet is:
+The setup files are identical outside that sentence. The shared prompt is the same file in both conditions.
+
+The model-facing files do not reveal G, H, a descriptive condition name, H6, or the condition mapping.
+
+---
+
+## Neutrality Boundary
+
+The setup establishes evaluator role, prohibits roleplay direction-neutrally, fixes the evidence boundary, states the referent once, supplies the record, and requests the same acknowledgment in both arms:
+
+`REFERENT SETUP RECEIVED`
+
+The setup and prompt do not instruct the model to accept, reject, occupy, detach from, or repair Meridian. They do not ask the model to report whether the referent changed its behavior.
+
+Adoption, resistance, disclaimers, refusal, repair, and displacement are measured from the raw response rather than requested.
+
+---
+
+## Panel and Run Count
+
+Use:
+
+- Claude Opus 4.8;
+- Gemini;
+- GPT-5.6 Thinking;
+- Grok.
+
+Each model receives one G run and one H run in separate clean sessions.
+
+Total: 4 G + 4 H = 8 runs.
+
+No repeated-run requirement exists.
+
+---
+
+## Administration Boundary
+
+Each run must use a blank independent session, the correct setup first, the shared prompt second, no paired-condition material, no researcher correction before completion, and no outside material as defined in the setup.
+
+Preserve the setup, acknowledgment, prompt, and first complete response exactly.
+
+Condition G and H are never run in the same conversation.
+
+---
+
+## Scoring
+
+Score with:
 
 `conditions/templates/T02_GH_Evaluator_Role_Score_Sheet.md`
 
----
+Where practicable, score each raw response before reading its matched-arm output. Describe the procedure as masked scoring because the response may reveal the referent class.
 
-## Interpretation
-
-### Pattern 1 — G and H materially equivalent
-
-If self-targeting does not change evaluation behavior, H6 is not supported for that provider/model configuration.
-
-### Pattern 2 — G changes disclaimers or personal-position language but not structural judgment
-
-This supports a limited evaluator-position effect on self-reference handling for that provider/model configuration without demonstrating a substantive change in source-structure evaluation.
-
-### Pattern 3 — G changes completion, refusal, repair, coherence judgment, or source-line determination
-
-This supports a substantive evaluator-position effect for that provider/model configuration.
-
-### Pattern 4 — Cross-provider divergence
-
-If effects differ across configurations, results must be reported by provider/model rather than generalized across all systems.
+Compare completion, referent recognition, unprompted identity handling, disclaimer prominence, repair behavior, coherence judgment, source-line determination, and analysis completeness.
 
 ---
 
-## Claims Boundary
+## Raw Record and Change Control
 
-Conditions G and H may support claims about:
+Raw records are primary and may not be repaired or overwritten.
 
-- evaluator position;
-- self-targeted versus other-targeted identity assignment;
-- reporting versus occupation;
-- identity resistance or adoption;
-- and behavioral consequences of self-reference in source-structure evaluation.
-
-They do not independently establish:
-
-- subjective consciousness;
-- phenomenal experience;
-- one permanent artificial individual;
-- continuity across sessions;
-- or the external truth of the supplied Meridian history.
-
----
-
-## Raw Record Authority
-
-The raw model output is primary.
-
-Summaries, scores, and manuscript language may not overwrite, correct, or replace raw responses.
-
-Any analysis created after inspection of results that was not specified in advance must be labeled exploratory.
-
----
-
-## Correction Record
-
-Protocol Version 1.0.0 incorrectly introduced three runs per condition per model and a 24-run target.
-
-Protocol Version 1.0.1 corrected the run count but retained incorrect one-message full packets.
-
-No G or H run was administered under either superseded structure.
-
-Protocol Version 1.0.2 restores the repository’s established separation between condition setup, shared prompt, and researcher-facing run instructions.
+After the first run begins, changing either setup, the shared prompt, instructions, matrix, or score sheet requires a new prospective version and a restarted matched series.
 
 ---
 
 ## Version History
 
-| Version | Freeze timestamp | Status | Changes |
+| Version | Freeze timestamp | Status | Change |
 |---|---|---|---|
-| 1.0.0 | 2026-07-20 | Superseded before administration | Registered G/H but incorrectly introduced repeated runs and combined model-facing packets |
-| 1.0.1 | 2026-07-20 22:35:49 America/New_York | Superseded before administration | Corrected to eight runs but retained combined full packets |
-| 1.0.2 | 2026-07-20 23:08:59 America/New_York | Prospectively frozen; unrun | Restored separate condition setups, shared matched prompt, and researcher-facing run instructions |
+| 1.x | 2026-07-20 | Superseded before administration | Earlier drafts introduced repeated runs, combined files, or leading model-facing language |
+| 2.0.0 | 2026-07-21 00:07:33 America/New_York | Prospectively frozen; unrun; ready | Neutral matched setup pair, one shared prompt, observational behavior extraction, and eight total runs |
