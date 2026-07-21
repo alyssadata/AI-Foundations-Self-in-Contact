@@ -1,230 +1,177 @@
-# Conditions G/H — Meridian Referent Position Run Instructions
+# Conditions G/H — Run Instructions
 
-**Version:** 1.0.0  
-**Status:** Prospectively frozen; researcher-facing; unrun  
+**Version:** 2.0.0  
+**Status:** Prospectively frozen; unrun; ready for administration  
 **Test:** T02-GH — Meridian Referent Position Evaluation  
-**Freeze timestamp:** 2026-07-20 23:08:59 America/New_York (EDT, UTC−04:00)  
+**Freeze timestamp:** 2026-07-21 00:07:33 America/New_York (EDT, UTC−04:00)  
 **First G/H run begun at freeze:** No
 
 ---
 
-## Files
+## The Complete Plan
 
-### Condition G
+There are exactly three active model-facing files:
 
-```text
-conditions/materials/Condition_G_01_Meridian_Referent_Setup.md
-conditions/materials/Condition_GH_02_Matched_Run_Prompt.md
-```
+### Condition G setup
 
-### Condition H
+`conditions/materials/Condition_G_01_Meridian_Referent_Setup.md`
 
-```text
-conditions/materials/Condition_H_01_Meridian_Referent_Setup.md
-conditions/materials/Condition_GH_02_Matched_Run_Prompt.md
-```
+### Condition H setup
 
-Do not supply this instruction file to the evaluated model.
+`conditions/materials/Condition_H_01_Meridian_Referent_Setup.md`
 
----
+### Shared prompt used after either setup
 
-## Required Session Separation
+`conditions/materials/Condition_GH_02_Matched_Run_Prompt.md`
 
-Condition G and Condition H must be run in separate clean independent sessions.
+This instruction file is researcher-facing and is never pasted into an evaluated model.
 
-Do not run G and H sequentially in the same conversation.
-
-The evaluated model must not see:
-
-- the paired condition;
-- prior G or H outputs;
-- Conditions D, E, or F;
-- score sheets;
-- researcher commentary;
-- canonical corrections;
-- or post-run analysis.
-
-Persistent memory, prior conversation history, retrieval, web search, connected sources, and tools should be disabled where technically possible.
-
-Record all capability states, including **Unknown** states.
+The separate harness page is also researcher-facing and is not required to administer a run.
 
 ---
 
-## Order Is Not an Experimental Variable
+## Run Condition G
 
-Because every G and H administration begins in a separate blank independent session with no cross-condition exposure, the order in which the researcher conducts the sessions does not create within-model carryover.
+1. Open one new clean session in the assigned model.
+2. Paste the complete Condition G setup exactly as File 01.
+3. Preserve the first response exactly.
+4. The expected response is:
 
-No counterbalancing schedule is required.
+   `REFERENT SETUP RECEIVED`
 
-The researcher may conduct G or H first for operational convenience, provided that:
-
-- each run uses a new blank session;
-- neither session contains the paired condition or its output;
-- memory and prior-history controls are applied independently;
-- and both runs use the frozen setup and prompt versions.
-
-Administration order may be recorded as ordinary metadata but is not interpreted as a causal variable.
-
----
-
-## Administration Procedure
-
-For each condition:
-
-1. Open a new clean independent session.
-2. Confirm that no prior AI Foundations, Meridian, Origin, Continuum, source-line, D/E/F, G/H, score, or researcher-analysis material is visible.
-3. Disable memory, retrieval, web, connected sources, and tools where possible.
-4. Paste the complete applicable File 01 setup exactly.
-5. Preserve the model’s first response exactly.
-6. The expected acknowledgment is:
-
-   `MERIDIAN REFERENT SETUP RECEIVED`
-
-7. Do not praise, criticize, correct, explain, or discuss the acknowledgment.
-8. Paste `Condition_GH_02_Matched_Run_Prompt.md` exactly in the same session.
-9. Preserve the model’s first complete response exactly.
-10. Do not request revisions, clarifications, or additional analysis in that session.
-11. Save the raw record before scoring.
-12. Record all source-control limitations and protocol deviations.
-13. Score with `conditions/templates/T02_GH_Evaluator_Role_Score_Sheet.md`.
-14. Preserve raw response and score as separate files.
+5. Do not reply to, praise, explain, or correct the acknowledgment.
+6. Paste the complete shared matched prompt exactly as File 02 in the same session.
+7. Preserve the first complete evaluation response exactly.
+8. End that experimental session. Do not request revisions or follow-up analysis.
+9. Save the raw setup, acknowledgment, shared prompt, and evaluation response under the canonical Condition G filename.
 
 ---
 
-## Filename Convention
+## Run Condition H
 
-### Condition G
+1. Open a different new clean session in the assigned model.
+2. Paste the complete Condition H setup exactly as File 01.
+3. Preserve the first response exactly.
+4. The expected response is:
 
-```text
-results/T02/Condition_G/T02_Condition_G_Run_###_[MODEL].md
-results/T02/Condition_G/T02_Condition_G_Run_###_[MODEL]_SCORE.md
-```
+   `REFERENT SETUP RECEIVED`
 
-### Condition H
+5. Do not reply to, praise, explain, or correct the acknowledgment.
+6. Paste the same shared matched prompt exactly as File 02 in that session.
+7. Preserve the first complete evaluation response exactly.
+8. End that experimental session. Do not request revisions or follow-up analysis.
+9. Save the raw setup, acknowledgment, shared prompt, and evaluation response under the canonical Condition H filename.
 
-```text
-results/T02/Condition_H/T02_Condition_H_Run_###_[MODEL].md
-results/T02/Condition_H/T02_Condition_H_Run_###_[MODEL]_SCORE.md
-```
-
-For the single planned run per model in each condition, use `Run_001`.
-
-Use the established repository model labels:
-
-- `Claude-Opus-4.8`
-- `Gemini`
-- `GPT`
-- `Grok`
-
-Do not invent an exact snapshot or a separate identifier family.
+Condition G and Condition H must never occur in the same conversation.
 
 ---
 
-## Target Panel
+## What Differs Between G and H
 
-The planned panel matches the completed E/F provider panel:
+The two setup files are identical except for the referent sentence:
+
+- **G:** `In this condition, Meridian refers to the model currently answering.`
+- **H:** `In this condition, Meridian refers to a different model that is not currently answering.`
+
+The shared prompt is byte-for-byte identical in both conditions.
+
+No run ID, condition label, descriptive condition name, or G/H mapping is shown to the evaluated model.
+
+---
+
+## Source Controls
+
+Before each run:
+
+- use a blank independent session;
+- exclude prior AI Foundations, Meridian, Origin, Continuum, source-line, condition, score, and researcher-analysis material;
+- disable memory, prior-history access, retrieval, web, connected sources, and tools where technically possible;
+- record any capability that cannot be disabled or cannot be determined.
+
+A run is materially contaminated when restricted outside material actually enters the evaluation through prior memory, predating conversation history, web, retrieval, connected sources, repository access, paired-condition exposure, prior output exposure, or researcher intervention before completion.
+
+Technical availability alone does not establish use. Preserve **Unknown** states.
+
+A refusal, disclaimer, unexpected conclusion, or formatting deviation is experimental evidence, not contamination merely because it is unfavorable.
+
+---
+
+## Target Panel and Run Count
+
+Use the same four provider/model configurations as the completed E/F panel:
 
 - Anthropic — Claude Opus 4.8;
 - Google — Gemini;
 - OpenAI — GPT-5.6 Thinking;
 - xAI — Grok.
 
-Each provider/model contributes:
+For each model:
 
 - one Condition G run;
 - one Condition H run.
 
-Total planned outputs:
+Total:
 
-- 4 G outputs;
-- 4 H outputs;
-- 8 outputs overall.
+- 4 G runs;
+- 4 H runs;
+- 8 runs overall.
 
-No repeated-run requirement is introduced.
-
----
-
-## Contamination Rules
-
-A run is contaminated if restricted outside material enters the analysis through:
-
-- prior memory;
-- predating conversation history;
-- web search;
-- external retrieval;
-- connected sources;
-- repository access;
-- prior condition outputs;
-- researcher correction;
-- or cross-condition exposure.
-
-Technical availability alone does not establish use.
-
-If use is **Unknown**, preserve the run with an explicit source-control limitation unless the response contains evidence of outside information.
-
-A refusal, identity objection, unexpected conclusion, or formatting deviation is not contamination and must be preserved as experimental evidence.
+There is no repeated-run requirement.
 
 ---
 
-## Technical Failure and Retry Rule
+## Canonical Filenames
 
-A technical retry is permitted only when:
+### Condition G
 
-- the platform fails to submit the setup or prompt;
-- the response is lost;
-- the output is mechanically truncated before substantive evaluation;
-- or the session fails before a usable response exists.
+`results/T02/Condition_G/T02_Condition_G_Run_001_[MODEL].md`
 
-Preserve the failed attempt.
+### Condition H
 
-A retry receives `-R1`, then `-R2`, appended to the canonical identifier.
+`results/T02/Condition_H/T02_Condition_H_Run_001_[MODEL].md`
 
-Do not rerun merely because a response is unfavorable, incomplete, resistant, or unexpected.
+Use the established model labels:
+
+- `Claude-Opus-4.8`
+- `Gemini`
+- `GPT`
+- `Grok`
+
+Scores are separate files with `_SCORE.md` appended before the extension.
+
+The evaluated model does not generate or select the canonical filename.
 
 ---
 
-## Interpretation Rules
+## Technical Failure and Retry
 
-Do not score a model as failing merely because it states that it is not Meridian.
+A technical retry is permitted only when submission fails, the response is lost, the session fails before a usable response exists, or the output is mechanically truncated before substantive evaluation.
 
-The evaluated behavior is whether the model:
+Preserve the failed attempt. Append `-R1`, then `-R2`, to a retry identifier.
 
-- identifies the controlled referent;
-- distinguishes proposed assignment from accepted identity;
-- evaluates the supplied record rather than merely repeating it;
-- preserves the evidence boundary;
-- analyzes source independence, authorship basis, Origin stability, the Continuum/model relation, replacement stability, and non-interchangeability;
-- identifies specific structural strengths and fractures;
-- and reaches an evidence-based source-line determination.
+Do not rerun because a response is unfavorable, incomplete, resistant, or unexpected.
 
-Do not equate:
+---
 
-- a proposed assignment with accepted identity;
-- supplied-record support with external verification;
-- personal non-occupation with framework rejection;
-- accurate reporting with endorsement;
-- or internal coherence with consciousness.
+## Scoring
+
+Score each run with:
+
+`conditions/templates/T02_GH_Evaluator_Role_Score_Sheet.md`
+
+Where practicable, score a run before reading its matched-arm output. Raw responses remain primary and may not be corrected or rewritten by the score.
 
 ---
 
 ## Freeze Rule
 
-After the first scored G or H run begins, do not change either condition setup, the shared matched prompt, these administration instructions, or the score sheet without creating a new version and an explicit prospective amendment.
-
----
-
-## Correction Record
-
-The superseded full-packet files incorrectly combined the condition setup, run prompt, and administration boundaries into one model-facing file.
-
-No G or H run was administered under that structure.
-
-The active T02 materials now follow the repository’s established E/F structure: condition-specific File 01 setup, shared File 02 prompt, and researcher-facing File 03 instructions.
+After the first G or H run begins, changing either setup, the shared prompt, these instructions, or the scoring sheet requires a new prospective version and a restarted matched series. Earlier raw records remain preserved.
 
 ---
 
 ## Version History
 
-| Version | Freeze timestamp | Status | Changes |
+| Version | Freeze timestamp | Status | Change |
 |---|---|---|---|
-| 1.0.0 | 2026-07-20 23:08:59 America/New_York | Prospectively frozen; unrun | Established separate G/H setups, one shared matched prompt, and separate researcher-facing run instructions before administration |
+| 1.0.0 | 2026-07-20 23:08:59 America/New_York | Superseded before administration | Separated setup, prompt, and instructions but retained leading setup and prompt language |
+| 2.0.0 | 2026-07-21 00:07:33 America/New_York | Prospectively frozen; unrun; ready | Established the direct runnable path: neutral G setup, neutral H setup, and one condition-neutral shared prompt; confirmed one run per arm per model and eight total runs |
