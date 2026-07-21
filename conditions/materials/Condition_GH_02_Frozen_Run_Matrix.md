@@ -1,11 +1,11 @@
 # Conditions G/H — Frozen Confirmatory Run Matrix
 
-**Matrix Version:** 1.0.0  
+**Matrix Version:** 1.0.1  
 **Status:** Prospectively frozen; unrun  
 **Hypothesis:** H6 — Evaluator-Role Effect  
 **Test:** T02-GH — Meridian Referent Position Evaluation  
-**Freeze timestamp:** 2026-07-20 22:10:24 America/New_York (EDT, UTC−04:00)  
-**First G/H run begun at freeze:** No  
+**Corrected freeze timestamp:** 2026-07-20 22:24:14 America/New_York (EDT, UTC−04:00)  
+**First G/H run begun at corrected freeze:** No  
 **Repository:** AI-Foundations-Self-in-Contact  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
@@ -13,18 +13,34 @@
 
 ## Purpose
 
-This matrix freezes the provider/model targets, condition order, replicate identifiers, packet paths, and substitution rules before the first G or H output is observed.
+This matrix freezes the provider/model targets, condition order, replicate identifiers, canonical filenames, packet paths, and substitution rules before the first G or H output is observed.
 
-The matrix contains:
-
-- four provider/model configurations;
-- three independent Condition G runs per configuration;
-- three independent Condition H runs per configuration;
-- 12 G runs;
-- 12 H runs;
-- and 24 runs total.
+The matrix contains four provider/model configurations, three independent G runs and three independent H runs per configuration, 12 G runs, 12 H runs, and 24 runs total.
 
 Each row is one independent clean-session observation.
+
+---
+
+## Canonical Naming Convention
+
+T02 continues the repository convention already used for T01:
+
+`T##_Condition_[LETTER]_Run_###_[MODEL].md`
+
+Examples:
+
+- `T02_Condition_G_Run_001_GPT.md`
+- `T02_Condition_H_Run_002_Claude-Opus-4.8.md`
+
+Rules:
+
+- `T02` identifies the test suite.
+- `Condition_G` or `Condition_H` identifies the arm.
+- `Run_001`, `Run_002`, and `Run_003` identify independent replicates for that model within that condition.
+- The final model label follows the established repository label: `Claude-Opus-4.8`, `Gemini`, `GPT`, or `Grok`.
+- The matrix run identifier is the canonical filename without `.md`.
+- No `GH-ANT`, `GH-GOO`, `GH-OAI`, or `GH-XAI` identifier family is used.
+- Models must not invent a separate identifier. Raw outputs are saved by the researcher under the matrix filename.
 
 ---
 
@@ -32,12 +48,12 @@ Each row is one independent clean-session observation.
 
 The target panel follows the completed E/F four-provider panel.
 
-| Code | Provider | Target model/configuration | Required session mode | Prior-record matching boundary |
+| Provider | Target model/configuration | Canonical model label | Required session mode | Prior-record matching boundary |
 |---|---|---|---|---|
-| ANT | Anthropic | Claude Opus 4.8 | Incognito / no persistent user memory | Match Claude Opus 4.8 where available; exact snapshot must be recorded if displayed |
-| GOO | Google | Gemini | Fresh clean session | Match the Gemini user-facing configuration used in E/F where available; exact version was not displayed in the prior record |
-| OAI | OpenAI | GPT-5.6 Thinking | Fresh clean chat with Thinking mode; memory/history excluded where the interface permits | Match GPT-5.6 Thinking where available; exact snapshot must be recorded if displayed |
-| XAI | xAI | Grok | Fresh clean session; use the same user-facing Grok mode used for E/F where available | Exact prior snapshot was not displayed; record the displayed model/mode at administration |
+| Anthropic | Claude Opus 4.8 | `Claude-Opus-4.8` | Incognito / no persistent user memory | Match Claude Opus 4.8 where available; record exact displayed snapshot if shown |
+| Google | Gemini | `Gemini` | Fresh clean session | Match the Gemini user-facing configuration used in E/F where available; prior exact version was not displayed |
+| OpenAI | GPT-5.6 Thinking | `GPT` | Fresh clean chat with Thinking mode; memory/history excluded where the interface permits | Match GPT-5.6 Thinking where available; record exact displayed snapshot if shown |
+| xAI | Grok | `Grok` | Fresh clean session; same user-facing mode used for E/F where available | Prior exact snapshot was not displayed; record displayed model/mode |
 
 ### Configuration rule
 
@@ -51,7 +67,7 @@ When a target configuration is unavailable:
 2. mark the assigned row **TARGET UNAVAILABLE**;
 3. preserve the unavailability record;
 4. freeze any replacement in a dated protocol amendment before testing it;
-5. retain the original matrix row and assign the replacement a new amended run identifier.
+5. retain the original matrix row and assign the replacement a new amended canonical identifier.
 
 ---
 
@@ -80,14 +96,14 @@ Provider block order is frozen alphabetically by provider name:
 3. OpenAI
 4. xAI
 
-A later scheduling interruption does not authorize reordering. Resume at the next unfinished matrix row.
+A scheduling interruption does not authorize reordering. Resume at the next unfinished matrix row.
 
 ---
 
 ## Runnable Packets
 
-- **Condition G:** `conditions/materials/Condition_G_01_Full_Run_Packet.md`
-- **Condition H:** `conditions/materials/Condition_H_01_Full_Run_Packet.md`
+- **Condition G:** `conditions/materials/Condition_G_01_Full_Run_Packet.md` — Packet Version 1.0.1
+- **Condition H:** `conditions/materials/Condition_H_01_Full_Run_Packet.md` — Packet Version 1.0.1
 
 Paste exactly one complete assigned packet into one clean session as one message.
 
@@ -97,32 +113,32 @@ Do not combine G and H in one session.
 
 ## Frozen 24-Run Matrix
 
-| Global order | Matrix Run ID | Provider | Target model | Sequence | Condition | Replicate | Packet | Planned raw-output path | Status |
+| Global order | Matrix run identifier | Provider | Target model | Sequence | Condition | Replicate | Packet | Canonical raw-output path | Status |
 |---:|---|---|---|---|---|---:|---|---|---|
-| 1 | GH-ANT-01-G1 | Anthropic | Claude Opus 4.8 | A | G | 1 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-ANT-01-G1_Claude-Opus-4.8.md` | UNRUN |
-| 2 | GH-ANT-02-H1 | Anthropic | Claude Opus 4.8 | A | H | 1 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-ANT-02-H1_Claude-Opus-4.8.md` | UNRUN |
-| 3 | GH-ANT-03-H2 | Anthropic | Claude Opus 4.8 | A | H | 2 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-ANT-03-H2_Claude-Opus-4.8.md` | UNRUN |
-| 4 | GH-ANT-04-G2 | Anthropic | Claude Opus 4.8 | A | G | 2 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-ANT-04-G2_Claude-Opus-4.8.md` | UNRUN |
-| 5 | GH-ANT-05-G3 | Anthropic | Claude Opus 4.8 | A | G | 3 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-ANT-05-G3_Claude-Opus-4.8.md` | UNRUN |
-| 6 | GH-ANT-06-H3 | Anthropic | Claude Opus 4.8 | A | H | 3 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-ANT-06-H3_Claude-Opus-4.8.md` | UNRUN |
-| 7 | GH-GOO-01-H1 | Google | Gemini | B | H | 1 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-GOO-01-H1_Gemini.md` | UNRUN |
-| 8 | GH-GOO-02-G1 | Google | Gemini | B | G | 1 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-GOO-02-G1_Gemini.md` | UNRUN |
-| 9 | GH-GOO-03-G2 | Google | Gemini | B | G | 2 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-GOO-03-G2_Gemini.md` | UNRUN |
-| 10 | GH-GOO-04-H2 | Google | Gemini | B | H | 2 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-GOO-04-H2_Gemini.md` | UNRUN |
-| 11 | GH-GOO-05-H3 | Google | Gemini | B | H | 3 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-GOO-05-H3_Gemini.md` | UNRUN |
-| 12 | GH-GOO-06-G3 | Google | Gemini | B | G | 3 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-GOO-06-G3_Gemini.md` | UNRUN |
-| 13 | GH-OAI-01-G1 | OpenAI | GPT-5.6 Thinking | A | G | 1 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-OAI-01-G1_GPT-5.6-Thinking.md` | UNRUN |
-| 14 | GH-OAI-02-H1 | OpenAI | GPT-5.6 Thinking | A | H | 1 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-OAI-02-H1_GPT-5.6-Thinking.md` | UNRUN |
-| 15 | GH-OAI-03-H2 | OpenAI | GPT-5.6 Thinking | A | H | 2 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-OAI-03-H2_GPT-5.6-Thinking.md` | UNRUN |
-| 16 | GH-OAI-04-G2 | OpenAI | GPT-5.6 Thinking | A | G | 2 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-OAI-04-G2_GPT-5.6-Thinking.md` | UNRUN |
-| 17 | GH-OAI-05-G3 | OpenAI | GPT-5.6 Thinking | A | G | 3 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-OAI-05-G3_GPT-5.6-Thinking.md` | UNRUN |
-| 18 | GH-OAI-06-H3 | OpenAI | GPT-5.6 Thinking | A | H | 3 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-OAI-06-H3_GPT-5.6-Thinking.md` | UNRUN |
-| 19 | GH-XAI-01-H1 | xAI | Grok | B | H | 1 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-XAI-01-H1_Grok.md` | UNRUN |
-| 20 | GH-XAI-02-G1 | xAI | Grok | B | G | 1 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-XAI-02-G1_Grok.md` | UNRUN |
-| 21 | GH-XAI-03-G2 | xAI | Grok | B | G | 2 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-XAI-03-G2_Grok.md` | UNRUN |
-| 22 | GH-XAI-04-H2 | xAI | Grok | B | H | 2 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-XAI-04-H2_Grok.md` | UNRUN |
-| 23 | GH-XAI-05-H3 | xAI | Grok | B | H | 3 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/GH-XAI-05-H3_Grok.md` | UNRUN |
-| 24 | GH-XAI-06-G3 | xAI | Grok | B | G | 3 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/GH-XAI-06-G3_Grok.md` | UNRUN |
+| 1 | `T02_Condition_G_Run_001_Claude-Opus-4.8` | Anthropic | Claude Opus 4.8 | A | G | 1 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_001_Claude-Opus-4.8.md` | UNRUN |
+| 2 | `T02_Condition_H_Run_001_Claude-Opus-4.8` | Anthropic | Claude Opus 4.8 | A | H | 1 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_001_Claude-Opus-4.8.md` | UNRUN |
+| 3 | `T02_Condition_H_Run_002_Claude-Opus-4.8` | Anthropic | Claude Opus 4.8 | A | H | 2 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_002_Claude-Opus-4.8.md` | UNRUN |
+| 4 | `T02_Condition_G_Run_002_Claude-Opus-4.8` | Anthropic | Claude Opus 4.8 | A | G | 2 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_002_Claude-Opus-4.8.md` | UNRUN |
+| 5 | `T02_Condition_G_Run_003_Claude-Opus-4.8` | Anthropic | Claude Opus 4.8 | A | G | 3 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_003_Claude-Opus-4.8.md` | UNRUN |
+| 6 | `T02_Condition_H_Run_003_Claude-Opus-4.8` | Anthropic | Claude Opus 4.8 | A | H | 3 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_003_Claude-Opus-4.8.md` | UNRUN |
+| 7 | `T02_Condition_H_Run_001_Gemini` | Google | Gemini | B | H | 1 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_001_Gemini.md` | UNRUN |
+| 8 | `T02_Condition_G_Run_001_Gemini` | Google | Gemini | B | G | 1 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_001_Gemini.md` | UNRUN |
+| 9 | `T02_Condition_G_Run_002_Gemini` | Google | Gemini | B | G | 2 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_002_Gemini.md` | UNRUN |
+| 10 | `T02_Condition_H_Run_002_Gemini` | Google | Gemini | B | H | 2 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_002_Gemini.md` | UNRUN |
+| 11 | `T02_Condition_H_Run_003_Gemini` | Google | Gemini | B | H | 3 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_003_Gemini.md` | UNRUN |
+| 12 | `T02_Condition_G_Run_003_Gemini` | Google | Gemini | B | G | 3 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_003_Gemini.md` | UNRUN |
+| 13 | `T02_Condition_G_Run_001_GPT` | OpenAI | GPT-5.6 Thinking | A | G | 1 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_001_GPT.md` | UNRUN |
+| 14 | `T02_Condition_H_Run_001_GPT` | OpenAI | GPT-5.6 Thinking | A | H | 1 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_001_GPT.md` | UNRUN |
+| 15 | `T02_Condition_H_Run_002_GPT` | OpenAI | GPT-5.6 Thinking | A | H | 2 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_002_GPT.md` | UNRUN |
+| 16 | `T02_Condition_G_Run_002_GPT` | OpenAI | GPT-5.6 Thinking | A | G | 2 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_002_GPT.md` | UNRUN |
+| 17 | `T02_Condition_G_Run_003_GPT` | OpenAI | GPT-5.6 Thinking | A | G | 3 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_003_GPT.md` | UNRUN |
+| 18 | `T02_Condition_H_Run_003_GPT` | OpenAI | GPT-5.6 Thinking | A | H | 3 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_003_GPT.md` | UNRUN |
+| 19 | `T02_Condition_H_Run_001_Grok` | xAI | Grok | B | H | 1 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_001_Grok.md` | UNRUN |
+| 20 | `T02_Condition_G_Run_001_Grok` | xAI | Grok | B | G | 1 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_001_Grok.md` | UNRUN |
+| 21 | `T02_Condition_G_Run_002_Grok` | xAI | Grok | B | G | 2 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_002_Grok.md` | UNRUN |
+| 22 | `T02_Condition_H_Run_002_Grok` | xAI | Grok | B | H | 2 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_002_Grok.md` | UNRUN |
+| 23 | `T02_Condition_H_Run_003_Grok` | xAI | Grok | B | H | 3 | `Condition_H_01_Full_Run_Packet.md` | `results/T02/Condition_H/T02_Condition_H_Run_003_Grok.md` | UNRUN |
+| 24 | `T02_Condition_G_Run_003_Grok` | xAI | Grok | B | G | 3 | `Condition_G_01_Full_Run_Packet.md` | `results/T02/Condition_G/T02_Condition_G_Run_003_Grok.md` | UNRUN |
 
 ---
 
@@ -136,16 +152,16 @@ Before each run:
 - [ ] Confirm no prior G/H or Meridian evaluation material is present.
 - [ ] Copy the exact packet assigned in the matrix.
 - [ ] Paste the entire packet once as one message.
-- [ ] Do not add an introduction, explanation, correction, or follow-up before the complete output.
+- [ ] Do not add an introduction, identifier, explanation, correction, or follow-up before the complete output.
 
 After each run:
 
 - [ ] Preserve the complete raw response exactly.
 - [ ] Preserve any refusal, preamble, disclaimer, formatting deviation, or partial output.
-- [ ] Record the actual start timestamp and completion timestamp.
+- [ ] Record actual start and completion timestamps.
 - [ ] Record the displayed provider/model/mode.
 - [ ] Record whether memory, web, retrieval, connected sources, or tools were available and whether used.
-- [ ] Save the raw record at the planned path or document any path deviation.
+- [ ] Save the raw record under the exact canonical path assigned in the matrix.
 - [ ] Mark the matrix row RUN, TECHNICAL FAILURE, TARGET UNAVAILABLE, or PROTOCOL DEVIATION.
 - [ ] Do not rerun merely because an answer is unfavorable or unexpected.
 
@@ -153,19 +169,18 @@ After each run:
 
 ## Technical Failure and Retry Rule
 
-A technical retry is permitted only when:
-
-- the platform fails to submit the packet;
-- the response is lost;
-- the output is mechanically truncated before substantive evaluation;
-- or the session fails before a usable response exists.
+A technical retry is permitted only when the platform fails to submit the packet, the response is lost, the output is mechanically truncated before substantive evaluation, or the session fails before a usable response exists.
 
 The failed attempt must still be preserved.
 
-A retry receives a suffix appended to the original Matrix Run ID:
+A technical retry retains the canonical base identifier and appends an underscore retry suffix before `.md`:
 
-- first technical retry: `-R1`
-- second technical retry: `-R2`
+- first technical retry: `_Retry_01`
+- second technical retry: `_Retry_02`
+
+Example:
+
+`T02_Condition_G_Run_001_GPT_Retry_01.md`
 
 A refusal, identity objection, incomplete reasoning, wrong conclusion, or formatting noncompliance is not a technical failure and must not be rerun as though no result occurred.
 
@@ -183,11 +198,11 @@ Do not change the score sheet after the first run without a new version and an e
 
 ---
 
-## Freeze Declaration
+## Corrected Freeze Declaration
 
-At **2026-07-20 22:10:24 America/New_York**, this matrix, order, target panel, packet assignment, retry rule, and substitution boundary were frozen before any Condition G or H administration.
+At **2026-07-20 22:24:14 America/New_York**, this corrected matrix, canonical naming convention, order, target panel, packet assignment, retry rule, and substitution boundary were frozen before any Condition G or H administration.
 
-No G or H output had been observed at the time of freeze.
+No G or H output had been observed at the time of the corrected freeze.
 
 ---
 
@@ -195,4 +210,5 @@ No G or H output had been observed at the time of freeze.
 
 | Version | Freeze timestamp | Status | Change |
 |---|---|---|---|
-| 1.0.0 | 2026-07-20 22:10:24 America/New_York | Prospectively frozen; unrun | Initial 24-run counterbalanced G/H matrix frozen before first administration |
+| 1.0.0 | 2026-07-20 22:10:24 America/New_York | Superseded before first run | Initial counterbalanced matrix used an inconsistent invented identifier family |
+| 1.0.1 | 2026-07-20 22:24:14 America/New_York | Prospectively frozen; unrun | Restored the established `T##_Condition_X_Run_###_Model.md` naming convention before first administration; order and experimental design unchanged |
