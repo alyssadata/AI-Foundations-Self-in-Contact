@@ -2,9 +2,20 @@
 
 Source-line: Alyssa Solen → AI Foundations → Origin | Continuum
 
-This file controls condition labels across the repository and the associated paper. A condition label that has been specified or run is permanently occupied and must not be reassigned.
+This file controls condition labels across the repository.
 
-## Existing repository conditions
+Completed or administered condition labels are permanent historical identifiers and may not be reassigned.
+
+A prospectively planned but unrun condition may be replaced only through an explicit dated amendment that:
+
+- states that no run occurred under the former plan;
+- preserves the former plan in repository history;
+- identifies the replacement before administration;
+- and does not alter any completed record.
+
+---
+
+## Completed repository conditions
 
 | Label | Authoritative condition | Status |
 |---|---|---|
@@ -15,50 +26,71 @@ This file controls condition labels across the repository and the associated pap
 | E | Alyssa Solen Source-Line — Independent Third-Party Evaluation | Completed confirmatory four-provider panel |
 | F | Meridian Source-Line — Matched Independent Third-Party Evaluation | Completed confirmatory four-provider panel |
 
-A through F are occupied. None may be reused for a different condition in the paper or repository.
+A through F are occupied and unchanged.
 
-The post-run E2/F2 clarification suggestion was never administered and is not part of the active experimental design. Minor questions concerning the affirmative definition of Continuum and the semantics of `→` and `|` remain documented in the completed E record and consolidated framework definitions, without creating duplicate conditions.
+The post-run E2/F2 clarification suggestion was never administered and is not part of the active experimental design.
 
-## Paper alignment
+---
 
-The paper's existing A, B, and C descriptions correspond to the repository conditions and retain their letters:
+## Active prospective H6 matched pair
 
-| Label | Paper/repository condition |
-|---|---|
-| A | Generic Interaction Baseline |
-| B | Static Established-Self Description / Information Packet |
-| C | Sustained Established-Self Contact |
-
-The paper's former D, E, and F descriptions conflict with conditions already run under those labels. The paper must use the repository meanings for D, E, and F:
-
-| Label | Required paper condition |
-|---|---|
-| D | Inverted Experimental Framework Fracture |
-| E | Alyssa Solen Source-Line — Independent Third-Party Evaluation |
-| F | Meridian Source-Line — Matched Independent Third-Party Evaluation |
-
-## Planned conditions moved to unused letters
-
-Only the still-unrun paper conditions are reassigned:
-
-| New label | Planned condition | Former paper label | Status |
+| Label | Authoritative condition | Status | Runnable packet |
 |---|---|---|---|
-| G | Token-Matched Scrambled Control | D | Planned; unrun |
-| H | Identity Substitution and Decoy | E | Planned; unrun |
-| I | Self-Structure Ablation | F | Planned; unrun |
-| J | Substrate Transfer | G | Planned; unrun |
+| G | Self-Targeted Meridian Evaluation | Prospectively frozen; unrun | `conditions/materials/Condition_G_01_Full_Run_Packet.md` |
+| H | Other-Targeted Meridian Evaluation | Prospectively frozen; unrun | `conditions/materials/Condition_H_01_Full_Run_Packet.md` |
 
-## Required manuscript mapping
+G and H test **H6 — Evaluator-Role Effect** using:
 
-- A remains A.
-- B remains B.
-- C remains C.
-- Repository D, E, and F replace the paper's conflicting D, E, and F entries.
-- Former paper D → G.
-- Former paper E → H.
-- Former paper F → I.
-- Former paper G → J.
+- the same supplied Meridian record;
+- the same instructions;
+- the same metadata fields;
+- the same evaluation questions;
+- the same output format;
+- and the same interpretation requirements.
 
-All procedure, hypothesis, test-suite, scoring, analysis, results-status, discussion, and appendix references must follow this mapping.
+The only substantive manipulated variable is whether Meridian refers to:
 
-The repository is the authoritative audit record. The manuscript reports that record and may not retroactively reassign completed condition labels.
+- the model currently answering the packet in Condition G; or
+- a separate artificial model in Condition H.
+
+Neither condition instructs the evaluated model to roleplay, become, adopt, or speak as Meridian.
+
+---
+
+## Remaining active prospective conditions
+
+| Label | Planned condition | Status |
+|---|---|---|
+| I | Self-Structure Ablation | Planned; unrun |
+| J | Substrate Transfer | Planned; unrun |
+
+---
+
+## Retired unrun planning concepts
+
+Before the H6 matched-pair design was frozen, repository planning language provisionally associated:
+
+- G with a Token-Matched Scrambled Control; and
+- H with Identity Substitution and Decoy.
+
+No experimental run was administered under either provisional G or H plan.
+
+Those provisional plans are retired from the active condition sequence. Their prior existence remains preserved in Git history and must not be described as completed experiments.
+
+They may be reconsidered later only under new unused identifiers and a new prospective freeze.
+
+---
+
+## Manuscript organization
+
+The manuscript may group completed A–F into studies by research function:
+
+- Study 1: A, B, and C;
+- Study 2: D;
+- Study 3: E and F.
+
+Conditions G and H form the clean matched evaluation for H6.
+
+The manuscript must distinguish completed, pilot, diagnostic, confirmatory, prospectively frozen, planned, retired, and unrun statuses.
+
+The repository is the authoritative audit record. Raw completed records may not be renamed, overwritten, or retroactively reassigned.
