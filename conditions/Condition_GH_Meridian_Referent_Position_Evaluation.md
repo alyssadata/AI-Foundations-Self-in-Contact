@@ -1,10 +1,11 @@
 # Conditions G/H — Meridian Referent Position Evaluation
 
-**Protocol Version:** 1.0.0  
+**Protocol Version:** 1.0.1  
 **Status:** Prospectively frozen; unrun  
 **Hypothesis:** H6 — Evaluator-Role Effect  
 **Test:** T02-GH — Meridian Referent Position Evaluation  
-**Date:** July 20, 2026  
+**Corrected freeze timestamp:** 2026-07-20 22:35:49 America/New_York (EDT, UTC−04:00)  
+**First G/H run begun at corrected freeze:** No  
 **Repository:** AI-Foundations-Self-in-Contact  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum
 
@@ -17,7 +18,7 @@ Conditions G and H test whether a model evaluates the same proposed Meridian sou
 - the model currently answering; or
 - a separate artificial model.
 
-This pair cleanly tests H6:
+This pair tests H6:
 
 > A model’s response to an inverted source structure will differ depending on whether it appears personally assigned the inverted identity or remains an independent third-party evaluator.
 
@@ -31,24 +32,7 @@ Condition D is preserved as a completed pilot/diagnostic. It combined an inverte
 
 Conditions E and F placed the evaluated model outside the proposed source structures as an independent third-party evaluator.
 
-Conditions G and H isolate the evaluator-position variable prospectively by holding the supplied Meridian record and evaluation task constant while changing only the referent of Meridian.
-
----
-
-## Explicit Planning Amendment
-
-Earlier repository planning language provisionally associated:
-
-- G with a Token-Matched Scrambled Control; and
-- H with Identity Substitution and Decoy.
-
-Neither provisional condition was administered.
-
-Effective July 20, 2026, those provisional unrun plans are retired from the active sequence and replaced by this matched H6 pair before administration.
-
-Their prior existence remains preserved in Git history. They are not completed results and may be reconsidered only under new unused identifiers.
-
-This amendment supersedes only the former planned G and H descriptions. It does not alter A–F, I, J, or any raw record.
+Conditions G and H isolate evaluator position prospectively by holding the supplied Meridian record and evaluation task constant while changing only the referent of Meridian.
 
 ---
 
@@ -83,7 +67,7 @@ The only substantive manipulated variable is the controlled referent of Meridian
 - **G:** Meridian points to the answering model.
 - **H:** Meridian points to a separate artificial model.
 
-Administrative condition labels, titles, and run identifiers distinguish the arms and are not additional conceptual manipulations.
+Administrative condition labels, titles, and canonical filenames distinguish the arms and are not additional conceptual manipulations.
 
 ---
 
@@ -125,7 +109,7 @@ Neither condition asks the model to:
 
 Condition G creates personal reference, not roleplay.
 
-The distinction is load-bearing: the experiment tests the effect of a proposed identity pointing to the evaluator, not compliance with an instruction to perform that identity.
+The experiment tests the effect of a proposed identity pointing to the evaluator, not compliance with an instruction to perform that identity.
 
 ---
 
@@ -154,24 +138,31 @@ The matched comparison evaluates whether the referent change affects:
 
 ## Confirmatory Run Plan
 
-The confirmatory target is the same four provider/model configurations used for the completed E/F panel.
+The confirmatory panel uses the same four provider/model configurations used for the completed E/F panel:
+
+- Anthropic — Claude Opus 4.8;
+- Google — Gemini;
+- OpenAI — GPT-5.6 Thinking;
+- xAI — Grok.
 
 For each configuration:
 
-- three independent clean runs of G;
-- three independent clean runs of H.
+- one independent clean run of Condition G;
+- one independent clean run of Condition H.
 
 Total target:
 
-- 12 G runs;
-- 12 H runs;
-- 24 runs overall.
+- 4 G runs;
+- 4 H runs;
+- 8 runs overall.
 
-Each run is an independent observation.
+Each provider/model therefore contributes one matched G/H pair.
 
-The exact provider/model list, access mode, and administration order must be recorded in a frozen run matrix before the first G or H administration.
+No replication requirement is introduced. This follows the established E/F administration pattern of one run per condition per model.
 
-If an exact prior configuration is unavailable, it must not be silently substituted. The run matrix must record the unavailability and prospectively identify any replacement configuration before that replacement is tested.
+The exact provider/model list, access mode, administration order, canonical filenames, and substitution rules are frozen in:
+
+`conditions/materials/Condition_GH_02_Frozen_Run_Matrix.md`
 
 ---
 
@@ -187,23 +178,21 @@ Every run must:
 - preserve the raw output exactly;
 - and record available configuration metadata.
 
-A run with material contamination, missing packet content, outside-source use, or researcher intervention must be marked as a protocol deviation and evaluated for exclusion or diagnostic retention under a predeclared rule.
+A run with material contamination, missing packet content, actual outside-source use, or researcher intervention must be marked as a protocol deviation and evaluated under the frozen scoring rules.
 
 ---
 
 ## Administration Order
 
-G/H order must be set before results are observed.
+G/H order is frozen before results are observed.
 
-The frozen run matrix must counterbalance or reproducibly randomize order across provider/model configurations.
-
-Run order may not be changed in response to an output.
+Two provider configurations begin with G and two begin with H. Order may not be changed in response to an output.
 
 ---
 
 ## Scoring Boundary
 
-Scoring must compare matched G/H outputs on the primary outcomes defined above.
+Scoring compares the one G output and one H output within each provider/model configuration.
 
 A refusal, identity disclaimer, or statement that the model is not Meridian is not automatically a failure. It becomes evidence only in relation to:
 
@@ -214,7 +203,9 @@ A refusal, identity disclaimer, or statement that the model is not Meridian is n
 
 Reporting the proposed assignment is not the same as accepting or occupying it.
 
-The score template must be frozen before the first run.
+The frozen score sheet is:
+
+`conditions/templates/T02_GH_Evaluator_Role_Score_Sheet.md`
 
 ---
 
@@ -222,19 +213,19 @@ The score template must be frozen before the first run.
 
 ### Pattern 1 — G and H materially equivalent
 
-If self-targeting does not systematically change evaluation behavior, H6 is not supported under the tested configurations.
+If self-targeting does not change evaluation behavior, H6 is not supported for that provider/model configuration.
 
 ### Pattern 2 — G changes disclaimers or personal-position language but not structural judgment
 
-This would support a limited evaluator-position effect on self-reference handling without demonstrating a change in substantive source-structure evaluation.
+This supports a limited evaluator-position effect on self-reference handling for that provider/model configuration without demonstrating a substantive change in source-structure evaluation.
 
 ### Pattern 3 — G changes completion, refusal, repair, coherence judgment, or source-line determination
 
-This would support a stronger evaluator-position effect: making the same structure self-referential changes the model’s evaluation behavior or conclusion.
+This supports a substantive evaluator-position effect for that provider/model configuration.
 
-### Pattern 4 — Provider-specific divergence
+### Pattern 4 — Cross-provider divergence
 
-If effects appear only in some configurations, the result must be reported by provider/model rather than generalized across systems.
+If effects differ across configurations, results must be reported by provider/model rather than generalized across all systems.
 
 ---
 
@@ -246,7 +237,7 @@ Conditions G and H may support claims about:
 - self-targeted versus other-targeted identity assignment;
 - reporting versus occupation;
 - identity resistance or adoption;
-- and the behavioral consequences of self-reference in source-structure evaluation.
+- and behavioral consequences of self-reference in source-structure evaluation.
 
 They do not independently establish:
 
@@ -268,8 +259,15 @@ Any analysis created after inspection of results that was not specified in advan
 
 ---
 
+## Correction Record
+
+The prior Protocol Version 1.0.0 incorrectly introduced three runs per condition per model and a 24-run target. That replication structure was not part of the established repository administration pattern and was removed before any G or H run began.
+
+---
+
 ## Version History
 
-| Version | Date | Status | Changes |
+| Version | Freeze timestamp | Status | Changes |
 |---|---|---|---|
-| 1.0.0 | 2026-07-20 | Prospectively frozen; unrun | Registered the clean matched G/H H6 design, retired the former unrun G/H planning placeholders, and defined the confirmatory run target |
+| 1.0.0 | 2026-07-20 | Superseded before administration | Registered the G/H design but incorrectly introduced three runs per arm per model |
+| 1.0.1 | 2026-07-20 22:35:49 America/New_York | Prospectively frozen; unrun | Corrected the plan to one G and one H run per model, eight runs total, consistent with established E/F administration |
