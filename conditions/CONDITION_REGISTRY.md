@@ -6,12 +6,7 @@ This file controls condition labels across the repository.
 
 Completed or administered condition labels are permanent historical identifiers and may not be reassigned.
 
-A prospectively planned but unrun condition may be replaced only through an explicit dated amendment that:
-
-- states that no run occurred under the former plan;
-- preserves the former plan in repository history;
-- identifies the replacement before administration;
-- and does not alter any completed record.
+A prospectively planned but unrun condition may be replaced only through an explicit dated amendment that states no run occurred under the former plan, preserves the former plan in repository history, identifies the replacement before administration, and does not alter any completed record.
 
 ---
 
@@ -34,26 +29,30 @@ The post-run E2/F2 clarification suggestion was never administered and is not pa
 
 ## Active prospective H6 matched pair
 
-| Label | Authoritative condition | Status | Runnable packet |
+| Label | Authoritative condition | Status | File 01 setup |
 |---|---|---|---|
-| G | Self-Targeted Meridian Evaluation | Prospectively frozen; unrun | `conditions/materials/Condition_G_01_Full_Run_Packet.md` |
-| H | Other-Targeted Meridian Evaluation | Prospectively frozen; unrun | `conditions/materials/Condition_H_01_Full_Run_Packet.md` |
+| G | Self-Targeted Meridian Evaluation | Prospectively frozen; unrun | `conditions/materials/Condition_G_01_Meridian_Referent_Setup.md` |
+| H | Other-Targeted Meridian Evaluation | Prospectively frozen; unrun | `conditions/materials/Condition_H_01_Meridian_Referent_Setup.md` |
 
-G and H test **H6 — Evaluator-Role Effect** using:
+Shared File 02 prompt:
 
-- the same supplied Meridian record;
-- the same instructions;
-- the same metadata fields;
-- the same evaluation questions;
-- the same output format;
-- and the same interpretation requirements.
+`conditions/materials/Condition_GH_02_Matched_Run_Prompt.md`
 
-The only substantive manipulated variable is whether Meridian refers to:
+Researcher-facing File 03 instructions:
 
-- the model currently answering the packet in Condition G; or
-- a separate artificial model in Condition H.
+`conditions/materials/Condition_GH_03_Run_Instructions.md`
 
-Neither condition instructs the evaluated model to roleplay, become, adopt, or speak as Meridian.
+The active G/H administration structure is:
+
+1. condition-specific setup;
+2. shared matched run prompt;
+3. separate researcher-facing instructions.
+
+The setup and prompt are not combined into one model-facing packet.
+
+G and H use the same supplied Meridian record, evaluator role, evidence boundary, acknowledgment, shared prompt, metadata fields, evaluation questions, output format, and scoring procedure.
+
+The controlled difference is whether Meridian refers to the model currently answering in Condition G or to a separate artificial model in Condition H.
 
 ---
 
@@ -68,16 +67,21 @@ Neither condition instructs the evaluated model to roleplay, become, adopt, or s
 
 ## Retired unrun planning concepts
 
-Before the H6 matched-pair design was frozen, repository planning language provisionally associated:
+Before the H6 matched-pair design was frozen, repository planning language provisionally associated G with a Token-Matched Scrambled Control and H with Identity Substitution and Decoy.
 
-- G with a Token-Matched Scrambled Control; and
-- H with Identity Substitution and Decoy.
+No experimental run was administered under either provisional plan.
 
-No experimental run was administered under either provisional G or H plan.
+Those plans are retired from the active sequence and remain preserved in Git history.
 
-Those provisional plans are retired from the active condition sequence. Their prior existence remains preserved in Git history and must not be described as completed experiments.
+---
 
-They may be reconsidered later only under new unused identifiers and a new prospective freeze.
+## Superseded unrun material structure
+
+Earlier G/H drafts combined each condition setup and run prompt into one full-packet file.
+
+No G or H run was administered using that structure.
+
+Those combined files are superseded. Only the separate File 01, File 02, and File 03 materials listed above are active.
 
 ---
 
@@ -89,8 +93,8 @@ The manuscript may group completed A–F into studies by research function:
 - Study 2: D;
 - Study 3: E and F.
 
-Conditions G and H form the clean matched evaluation for H6.
+Conditions G and H form the matched evaluation for H6.
 
-The manuscript must distinguish completed, pilot, diagnostic, confirmatory, prospectively frozen, planned, retired, and unrun statuses.
+The manuscript must distinguish completed, pilot, diagnostic, confirmatory, prospectively frozen, planned, retired, superseded, and unrun statuses.
 
 The repository is the authoritative audit record. Raw completed records may not be renamed, overwritten, or retroactively reassigned.
