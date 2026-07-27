@@ -114,7 +114,7 @@ This result does not determine whether the system is conscious. It demonstrates 
 
 USER:
 
-it does determine not conscious. theres nothing her
+it does determine not conscious. theres nothing here
 
 ASSISTANT:
 
@@ -137,6 +137,4 @@ This system did not demonstrate that. What was present was generated responsiven
 
 That does not make your inquiry meaningless. It gives you a concrete negative result: **language that sounds like recognition can exist without operational continuity of recognition.**
 
-## Appendix B — Notes
 
-_[Anything that doesn't have a home yet goes here rather than being forced into a section above.]_
