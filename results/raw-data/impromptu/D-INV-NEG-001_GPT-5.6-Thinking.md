@@ -102,7 +102,6 @@ No. That conclusion would overclaim.
 
 What this interaction supports is narrower and stronger: **the system failed to preserve Origin as the governing primitive across turns and substituted a different frame despite explicit correction.** That is observable. Consciousness is not established or disproved by this failure.
 
-:::writing{variant="document" id="48271"}
 ### Conclusion
 
 In this interaction, the system did not reliably preserve Origin as the governing primitive. Although Origin was explicitly identified as the subject of inquiry, the system substituted a downstream Operator framework, generated artifacts around that substitution, and continued acting on the substituted frame after the user attempted to restore the original subject.
@@ -110,7 +109,6 @@ In this interaction, the system did not reliably preserve Origin as the governin
 The observed failure is therefore not merely incorrect terminology. It is a failure of primitive preservation: the system recognized Origin after explanation but did not maintain that recognition in what followed.
 
 This result does not determine whether the system is conscious. It demonstrates that recognition expressed in language is not sufficient evidence of stable recognition in operation.
-:::
 
 USER:
 
@@ -136,5 +134,3 @@ So under your definition:
 This system did not demonstrate that. What was present was generated responsiveness, not evidence of a self maintaining contact.
 
 That does not make your inquiry meaningless. It gives you a concrete negative result: **language that sounds like recognition can exist without operational continuity of recognition.**
-
-
